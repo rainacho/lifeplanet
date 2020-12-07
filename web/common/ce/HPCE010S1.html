@@ -1,0 +1,2689 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<!-- Description Area -->
+	<meta name="description" content="교보 라이프플래닛 인터넷 생명보험, 정기/종신보험, 연금/연금저축보험, 합리적인 보험료의 스스로 온라인 보험">
+	<!-- Keyword Area -->
+	<meta name="keyword" content=" ">
+	<title>메인 - 라이프플래닛</title>
+	<meta property="og:title" content="메인 - 라이프플래닛" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.lifeplanet.co.kr/common/ce/HPCE010S1.dev" />
+	<meta property="og:description" content="교보 라이프플래닛 인터넷 생명보험, 정기/종신보험, 연금/연금저축보험, 합리적인 보험료의 스스로 온라인 보험" />
+	<meta property="og:article:author" content="Lifeplanet" />
+	<meta property="og:article:author:url" content="https://www.lifeplanet.co.kr/common/ce/HPCE010S1.dev" />
+	<meta property="og:image" content="https://www.lifeplanet.co.kr../../resources/images/sns/lifeplanet_10000.png" />
+	<meta property="og:article:thumbnailUrl"
+		content="https://www.lifeplanet.co.kr../../resources/images/sns/lifeplanet_10000.png" />
+	<!-- 네이버 웹마스터도구용 메타태그 삽입 마케팅팀 요청 2016-03-10 -->
+	<meta name="naver-site-verification" content="1f2884748c89c6ca0ae74de16e871f334c7844e5" />
+	<script type="text/javascript" id="resultOutDataArea">
+		var talkStdYmd = '20201207';
+		var talkTodayHoliType = '0';
+		var talkTelOpen = '09';
+		var talkTelClose = '19';
+
+		var strMemType = '00';
+
+		/**
+		 * 내부망 IP 체크 로직
+		 */
+		var remoteAddr = "121.130.41.17";
+		var isInternalNetwork = false;
+		if (remoteAddr.indexOf("192.168") > -1 || remoteAddr.indexOf("10.64.1") > -1 || remoteAddr.indexOf("116.122") > -1) {
+			isInternalNetwork = true;
+		}
+
+		/**
+		 * 쿠키를 저장한다.
+		 * @param strCkName String - 쿠키에 저장될 키값
+		 * @param strCkValue    String - 쿠키에 저잘될 키값에 해당하는 값
+		 */
+		loginCookie = function (strCkName, strCkValue) {
+			var expire = new Date();
+			expire.setDate(expire.getDate() + 365);
+			cookies = strCkName + '=' + escape(strCkValue) + '; path=/ '; // 한글 깨짐을 막기위해 escape(strCkValue)를 합니다.
+			cookies += ';expires=' + expire.toGMTString() + ';';
+			document.cookie = cookies;
+		};
+		var ahnlabEsyAhrzLogin = "N";
+		var planetUser = "N";
+
+		var vPinLogin = "N";
+		var vPinCikey = "";
+		var vFpLogin = "N";
+		var vNaverLogin = "N";
+
+		/**
+		 * INFO : 전역에서 사용할 변수를 담는다.
+		 *        이전화면에서 넘겨 받은 Parameter를 담는 용도로 사용된다. *.dev의 경우는 JSP에서
+		 *        직접 값을 호출하고 $.load의 경우 setParam을 이용하여 값을 담아 넘긴다.
+		 * @author     권대준, djkwon@kico.co.kr
+		 */
+		var globalVar = (function () {
+			var _public = {};
+			var _private = {};
+
+			_private._CUR_URI = '/views/common/ce/HPCE010S1.jsp';
+			_private._IS_MYPLAN_CERT = false;
+			/**
+			 * 서버에서 전달 받은 Data는 JSON타입으로 전환하여 globalVar에 셋팅 된다.
+			 * 셋팅된 Data는 메모리에 로딩된 후 jQuery 로딩 완료시 문자열은 삭제된다.
+			 */
+
+
+			_private.inSData = { "today": "20201207", "afonCstKeyVal": "", "banrCd": "CE", "searchInfoSc": "1", "exprYn": "Y", "rownum": "3", "inflow": "ZZ", "PAGE_ROW_SIZE": "15", "siteScCd": "H", "rrsnGoodInqrCndt": [], "PAGE_FIRST_ROW": "1", "clpOrgno": "", "adLoccd": "", "goodCd": "00000" };
+
+
+			_private.screenTitle = '메인 - 라이프플래닛';
+
+			_private.screenKeyword = ' ';
+
+			_private.screenDescription = '교보 라이프플래닛 인터넷 생명보험, 정기/종신보험, 연금/연금저축보험, 합리적인 보험료의 스스로 온라인 보험';
+
+			_private.GNB_MENU_NAVI = '[]';
+
+			_private.GNB_MENU_DATA1 = '[{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"1","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD000S1","menuScCd":"M","ictnSq":"1","lowCnt":"4","sppoMenuId":null,"dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"PRODUCTS","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"상품안내/가입","dalDt":"20170103141653649504"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"1","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/lifesquare/ls/HPLS000S1","menuScCd":"M","ictnSq":"2","lowCnt":"3","sppoMenuId":null,"dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"LIFESQUARE","dealEmpno":"_KDIHPSD_aAwB0M/!p/!l/!u/!s/!TNeyhnqxgdBjlHvvLpwBO5FHhHztREVCyBGQ=","menuNm":"이벤트 및 혜택","dalDt":"20180520033534929447"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"1","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/ct/HPCT000S1","menuScCd":"M","ictnSq":"3","lowCnt":"7","sppoMenuId":null,"dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"CONTACT","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"고객센터","dalDt":"20170103143010005924"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"1","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mu/HPMU100S1","menuScCd":"M","ictnSq":"4","lowCnt":"11","sppoMenuId":null,"dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"MYPAGE","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"마이페이지","dalDt":"20170102214646468312"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"1","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/innovation/ic/HPIC100S1","menuScCd":"F","ictnSq":"5","lowCnt":"0","sppoMenuId":null,"dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"SM","menuId":"INNOVATION","dealEmpno":"_KDIHPSD_lrkgSkcIh/APeprrFAbrml1S7XNYibERr4KKqldRgZo=","menuNm":"360° 플래닛","dalDt":"20170329115007384699"},{"menuUrlOptnYn":"Y","menuListExprYn":"Y","menuLeveCd":"1","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/enterprise/common/HPEA00S0","menuScCd":"F","ictnSq":"6","lowCnt":"0","sppoMenuId":null,"dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"COMMON","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"회사소개","dalDt":"20170103143152362519"}]';
+
+			_private.GNB_MENU_DATA2 = '[{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD100S1","menuScCd":"M","ictnSq":"1","lowCnt":"3","sppoMenuId":"PRODUCTS","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPD_dth","dealEmpno":"_KDIHPSD_aAwB0M/!p/!l/!u/!s/!TNeyhnqxgdBjlHvvLpwBO5FHhHztREVCyBGQ=","menuNm":"정기 · 종신","dalDt":"20180719171617736588"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pe/HPPE700S1","menuScCd":"M","ictnSq":"2","lowCnt":"8","sppoMenuId":"PRODUCTS","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPD_hel","dealEmpno":"_KDIHPSD_5Tl9M0GLwsOpTor1T7aCcwN74v/!p/!l/!u/!s/!7TASM3ktnZA315gA=","menuNm":"암 · 건강 · 치아","dalDt":"20200506125954786371"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD500S1","menuScCd":"M","ictnSq":"3","lowCnt":"2","sppoMenuId":"PRODUCTS","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPD_cld","dealEmpno":"_KDIHPSD_Px/!p/!l/!u/!s/!RXbSZ0F4Z1mFHYyxnWdS0L/!p/!l/!u/!s/!/57yXLWf0ctcYVsBc=","menuNm":"어린이","dalDt":"20200117161531992444"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD400S1","menuScCd":"M","ictnSq":"4","lowCnt":"4","sppoMenuId":"PRODUCTS","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPD_pns","dealEmpno":"_KDIHPSD_Px/!p/!l/!u/!s/!RXbSZ0F4Z1mFHYyxnWdS0L/!p/!l/!u/!s/!/57yXLWf0ctcYVsBc=","menuNm":"연금 · 저축","dalDt":"20200117161531990169"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/lifesquare/event/HPLC01S0","menuScCd":"M","ictnSq":"1","lowCnt":"2","sppoMenuId":"LIFESQUARE","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPLC","dealEmpno":"_KDIHPSD_Px/!p/!l/!u/!s/!RXbSZ0F4Z1mFHYyxnWdS0L/!p/!l/!u/!s/!/57yXLWf0ctcYVsBc=","menuNm":"이벤트","dalDt":"20200129092706436773"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/lifesquare/ls/HPLS450S1","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"LIFESQUARE","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPLS450S1","dealEmpno":"_KDIHPSD_aAwB0M/!p/!l/!u/!s/!TNeyhnqxgdBjlHvvLpwBO5FHhHztREVCyBGQ=","menuNm":"보험건강나이","dalDt":"20180520034413913577"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/analysis/na/NA01000S.dev","menuScCd":"M","ictnSq":"3","lowCnt":"0","sppoMenuId":"LIFESQUARE","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"NA01000S","dealEmpno":"_KDIHPSD_Px/!p/!l/!u/!s/!RXbSZ0F4Z1mFHYyxnWdS0L/!p/!l/!u/!s/!/57yXLWf0ctcYVsBc=","menuNm":"바른보장서비스","dalDt":"20200130173441827184"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/faq/HPCB01S0","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"CONTACT","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPCB01S0","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"자주 찾는 질문","dalDt":"20170103205717627008"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/ct/HPCT100S1","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"CONTACT","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPCT100S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"소비자 보호","dalDt":"20170103205758915805"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/opin/HPCD01S0","menuScCd":"M","ictnSq":"3","lowCnt":"0","sppoMenuId":"CONTACT","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPCD01S0","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"고객의 소리","dalDt":"20170103205825743848"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/dclr/HPCE02S0","menuScCd":"M","ictnSq":"4","lowCnt":"5","sppoMenuId":"CONTACT","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCE","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"신고센터","dalDt":"20170329163745567384"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/noti/HPCF01S0","menuScCd":"M","ictnSq":"5","lowCnt":"0","sppoMenuId":"CONTACT","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCF01S0","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"공지사항","dalDt":"20170330094436851224"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/pet/HPCG01S0","menuScCd":"M","ictnSq":"6","lowCnt":"5","sppoMenuId":"CONTACT","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCG","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"보험금 신청안내","dalDt":"20170330094517789410"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/scrt/HPCI01S0","menuScCd":"M","ictnSq":"7","lowCnt":"2","sppoMenuId":"CONTACT","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPCH","dealEmpno":"_KDIHPSD_Px/!p/!l/!u/!s/!RXbSZ0F4Z1mFHYyxnWdS0L/!p/!l/!u/!s/!/57yXLWf0ctcYVsBc=","menuNm":"기타안내","dalDt":"20200129093145910974"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mm/HPMM100S1","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"MYPAGE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMM","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"계약조회","dalDt":"20170102215227586773"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/ma/HPMA000S1","menuScCd":"M","ictnSq":"2","lowCnt":"2","sppoMenuId":"MYPAGE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMA","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"계약변경","dalDt":"20170102215340080203"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mi/HPMI100S1","menuScCd":"M","ictnSq":"3","lowCnt":"5","sppoMenuId":"MYPAGE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMI","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"보험료 납입","dalDt":"20170102215445580821"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mc/HPMC100S1","menuScCd":"M","ictnSq":"4","lowCnt":"2","sppoMenuId":"MYPAGE","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMC","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"사고보험금 신청","dalDt":"20170102215558961479"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mp/HPMP100S1","menuScCd":"M","ictnSq":"5","lowCnt":"7","sppoMenuId":"MYPAGE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMP","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"지급금 신청","dalDt":"20170102215551314401"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/ml/HPML100S1","menuScCd":"M","ictnSq":"6","lowCnt":"4","sppoMenuId":"MYPAGE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPML","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"보험계약대출","dalDt":"20170102215634391736"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":"<span class=\"icon_gnb type1\"><\/span>나의 알림","menuUrl":"/mypage/mt/HPMT100S1","menuScCd":"U","ictnSq":"7","lowCnt":"0","sppoMenuId":"MYPAGE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMT","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"나의 알림","dalDt":"20170102215912621217"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":"<span class=\"icon_gnb type2\"><\/span>증명서 발급","menuUrl":"/mypage/mf/HPMF100S1","menuScCd":"U","ictnSq":"8","lowCnt":"0","sppoMenuId":"MYPAGE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMF100S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"증명서 발급","dalDt":"20170102215814951807"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":"<span class=\"icon_gnb type3\"><\/span>계좌관리","menuUrl":"/mypage/mo/HPMO200S1","menuScCd":"U","ictnSq":"9","lowCnt":"2","sppoMenuId":"MYPAGE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMO","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"계좌관리","dalDt":"20170102220101181874"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":"<span class=\"icon_gnb type4\"><\/span>내정보 관리","menuUrl":"/mypage/my/HPMY100S1","menuScCd":"U","ictnSq":"10","lowCnt":"6","sppoMenuId":"MYPAGE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMY","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"내정보 관리","dalDt":"20170102220235164617"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"2","menuExprYn":"Y","ictnYn":"Y","menuText":"<span class=\"icon_gnb type5\"><\/span>내쿠폰함","menuUrl":"/mypage/mb/HPMB100S1","menuScCd":"U","ictnSq":"11","lowCnt":"0","sppoMenuId":"MYPAGE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPMB100S1","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"내쿠폰함","dalDt":"20170329164336091113"}]';
+
+			_private.GNB_MENU_DATA3 = '[{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD100S1","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPPD_dth","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPD100S1","dealEmpno":"_KDIHPSD_aAwB0M/!p/!l/!u/!s/!TNeyhnqxgdBjlHvvLpwBO5FHhHztREVCyBGQ=","menuNm":"정기보험","dalDt":"20180719171732197683"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD200S1","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPPD_dth","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPD200S1","dealEmpno":"_KDIHPSD_Px/!p/!l/!u/!s/!RXbSZ0F4Z1mFHYyxnWdS0L/!p/!l/!u/!s/!/57yXLWf0ctcYVsBc=","menuNm":"종신보험","dalDt":"20200212114056207646"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pe/HPPE300S1","menuScCd":"M","ictnSq":"3","lowCnt":"0","sppoMenuId":"HPPD_dth","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPE300S1","dealEmpno":"_KDIHPSD_aAwB0M/!p/!l/!u/!s/!TNeyhnqxgdBjlHvvLpwBO5FHhHztREVCyBGQ=","menuNm":"상해보험","dalDt":"20180719171732202587"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pe/HPPE700S1.dev","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPPD_hel","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPE700S1","dealEmpno":"_KDIHPSD_5Tl9M0GLwsOpTor1T7aCcwN74v/!p/!l/!u/!s/!7TASM3ktnZA315gA=","menuNm":"비갱신암보험","dalDt":"20200506130112467495"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD800S1","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPPD_hel","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPD800S1","dealEmpno":"_KDIHPSD_5Tl9M0GLwsOpTor1T7aCcwN74v/!p/!l/!u/!s/!7TASM3ktnZA315gA=","menuNm":"암보험","dalDt":"20200506130112469453"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pf/HPPF200S1","menuScCd":"M","ictnSq":"3","lowCnt":"0","sppoMenuId":"HPPD_hel","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPF200S1","dealEmpno":"_KDIHPSD_5Tl9M0GLwsOpTor1T7aCcwN74v/!p/!l/!u/!s/!7TASM3ktnZA315gA=","menuNm":"뇌·심장보험","dalDt":"20201119133855747826"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pf/HPPF100S1.dev","menuScCd":"M","ictnSq":"4","lowCnt":"0","sppoMenuId":"HPPD_hel","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPF100S1","dealEmpno":"_KDIHPSD_5Tl9M0GLwsOpTor1T7aCcwN74v/!p/!l/!u/!s/!7TASM3ktnZA315gA=","menuNm":"여성건강보험","dalDt":"20200506150951484870"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pe/HPPE900S1","menuScCd":"M","ictnSq":"5","lowCnt":"0","sppoMenuId":"HPPD_hel","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPE900S1","dealEmpno":"_KDIHPSD_5Tl9M0GLwsOpTor1T7aCcwN74v/!p/!l/!u/!s/!7TASM3ktnZA315gA=","menuNm":"미세먼지질병보험","dalDt":"20200506130112463193"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pe/HPPE800S1.dev","menuScCd":"M","ictnSq":"6","lowCnt":"0","sppoMenuId":"HPPD_hel","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPE800S1","dealEmpno":"_KDIHPSD_5Tl9M0GLwsOpTor1T7aCcwN74v/!p/!l/!u/!s/!7TASM3ktnZA315gA=","menuNm":"치아보험","dalDt":"20200506130112465434"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pe/HPPE500S1","menuScCd":"M","ictnSq":"7","lowCnt":"0","sppoMenuId":"HPPD_hel","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPE500S1","dealEmpno":"_KDIHPSD_5Tl9M0GLwsOpTor1T7aCcwN74v/!p/!l/!u/!s/!7TASM3ktnZA315gA=","menuNm":"입원비보험","dalDt":"20200506130112473648"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pe/HPPE600S1","menuScCd":"M","ictnSq":"8","lowCnt":"0","sppoMenuId":"HPPD_hel","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPE600S1","dealEmpno":"_KDIHPSD_5Tl9M0GLwsOpTor1T7aCcwN74v/!p/!l/!u/!s/!7TASM3ktnZA315gA=","menuNm":"수술비보험","dalDt":"20200506130112475206"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD500S1","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPPD_cld","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPPD500S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"어린이보장보험","dalDt":"20170103211755112435"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD600S1","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPPD_cld","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPPD600S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"어린이저축보험","dalDt":"20170103211820760346"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD400S1","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPPD_pns","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPD400S1","dealEmpno":"_KDIHPSD_Px/!p/!l/!u/!s/!RXbSZ0F4Z1mFHYyxnWdS0L/!p/!l/!u/!s/!/57yXLWf0ctcYVsBc=","menuNm":"연금저축보험","dalDt":"20200129092340025273"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD700S1","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPPD_pns","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPPD700S1","dealEmpno":"_KDIHPSD_Px/!p/!l/!u/!s/!RXbSZ0F4Z1mFHYyxnWdS0L/!p/!l/!u/!s/!/57yXLWf0ctcYVsBc=","menuNm":"저축보험","dalDt":"20200129092340023078"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/products/pd/HPPD300S1","menuScCd":"M","ictnSq":"3","lowCnt":"0","sppoMenuId":"HPPD_pns","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPPD300S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"연금보험","dalDt":"20170103211553331613"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/bridge/bl/HPBL950S1.dev","menuScCd":"M","ictnSq":"4","lowCnt":"0","sppoMenuId":"HPPD_pns","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPBL950S1","dealEmpno":"_KDIHPSD_5Tl9M0GLwsOpTor1T7aCcwN74v/!p/!l/!u/!s/!7TASM3ktnZA315gA=","menuNm":"연금저축 계약이전","dalDt":"20200401011908080202"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/lifesquare/event/HPLC01S0","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPLC","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPLC01S0","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"이벤트 안내","dalDt":"20170331134223655623"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/lifesquare/event/HPLC01S2","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPLC","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPLC01S2","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"당첨자 발표","dalDt":"20170331134248764718"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/dclr/HPCE02S0","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPCE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCE02S0","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"e보험범죄신고 안내","dalDt":"20170330094139594194"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/dclr/HPCE03S0","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPCE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCE03S0","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"보험모집질서 위반신고","dalDt":"20170330094207653988"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/dclr/HPCE04S0","menuScCd":"M","ictnSq":"3","lowCnt":"0","sppoMenuId":"HPCE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCE04S0","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"장애인 및 장기기증자 보험가입 차별신고","dalDt":"20170330094242502586"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/dclr/HPCE05S4","menuScCd":"M","ictnSq":"4","lowCnt":"0","sppoMenuId":"HPCE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCE05S2","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"전자민원접수","dalDt":"20170330094304144329"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/dclr/HPCE05S5","menuScCd":"M","ictnSq":"5","lowCnt":"0","sppoMenuId":"HPCE","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCE05S6","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"위법신고","dalDt":"20170330094334884031"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/pet/HPCG01S0","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPCG","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCG01S0","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"공통사항","dalDt":"20170330094551264634"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/pet/HPCG11S0","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPCG","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCG11S0","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"사망보험금 신청안내","dalDt":"20170330094615163230"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/pet/HPCG31S2","menuScCd":"M","ictnSq":"3","lowCnt":"0","sppoMenuId":"HPCG","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCG31S2","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"장해급여금 신청안내","dalDt":"20170330094640643963"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/pet/HPCG31S3","menuScCd":"M","ictnSq":"4","lowCnt":"0","sppoMenuId":"HPCG","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCG31S3","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"진단/입원/수술/골절 급여금 신청안내","dalDt":"20170331134648500709"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/pet/HPCG31S4","menuScCd":"M","ictnSq":"5","lowCnt":"0","sppoMenuId":"HPCG","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPCG31S4","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"보험금 지급현황","dalDt":"20170331134715429853"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/scrt/HPCI01S0","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPCH","dalPrgrId":"HPAG900S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPCI01S0","dealEmpno":"_KDIHPSD_Px/!p/!l/!u/!s/!RXbSZ0F4Z1mFHYyxnWdS0L/!p/!l/!u/!s/!/57yXLWf0ctcYVsBc=","menuNm":"보안서비스","dalDt":"20190509113140790320"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/contact/accr/HPCA01S0.dev","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPCH","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPCA01S0","dealEmpno":"_KDIHPSD_Px/!p/!l/!u/!s/!RXbSZ0F4Z1mFHYyxnWdS0L/!p/!l/!u/!s/!/57yXLWf0ctcYVsBc=","menuNm":"공인인증서 복사(보내기)","dalDt":"20200129093317990568"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/ma/HPMA000S1","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPMA","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMA000S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"계약변경 신청","dalDt":"20170102221044842042"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/ma/HPMA100S1","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPMA","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMA100S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"계약변경 내역","dalDt":"20170102221206657190"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mi/HPMI100S1","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPMI","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMI100S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"기본보험료 즉시납입","dalDt":"20170102221333126491"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mi/HPMI115S1","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPMI","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMI115S1","dealEmpno":"_KDIHPSD_U/XVG89CYMWy/r0f8fcakZJFXq5oie9ijeuJ9RR/7CE=","menuNm":"추가/자유보험료 즉시납입","dalDt":"20181116143320073813"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mi/HPMI130S1","menuScCd":"M","ictnSq":"3","lowCnt":"0","sppoMenuId":"HPMI","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMI130S1","dealEmpno":"_KDIHPSD_U/XVG89CYMWy/r0f8fcakZJFXq5oie9ijeuJ9RR/7CE=","menuNm":"추가/자유보험료 자동이체","dalDt":"20181116143454675146"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mi/HPMI145S1","menuScCd":"M","ictnSq":"4","lowCnt":"0","sppoMenuId":"HPMI","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMI145S1","dealEmpno":"_KDIHPSD_U/XVG89CYMWy/r0f8fcakZJFXq5oie9ijeuJ9RR/7CE=","menuNm":"추가/자유보험료 자동이체 해지","dalDt":"20181116143513799400"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mi/HPMI155S1","menuScCd":"M","ictnSq":"5","lowCnt":"0","sppoMenuId":"HPMI","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMI155S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"보험료 납입내역","dalDt":"20170102221632716584"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mc/HPMC100S1","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPMC","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMC100S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"보험금 신청","dalDt":"20170102221718995955"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mc/HPMC200S1","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPMC","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMC200S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"보험금 신청내역","dalDt":"20170102221820423995"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mp/HPMP100S1","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPMP","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMP100S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"중도인출 신청","dalDt":"20170102221928164717"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mp/HPMP130S1","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPMP","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMP130S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"중도인출 내역","dalDt":"20170102222121789285"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mp/HPMP160S1","menuScCd":"M","ictnSq":"3","lowCnt":"0","sppoMenuId":"HPMP","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMP160S1","dealEmpno":"_KDIHPSD_U/XVG89CYMWy/r0f8fcakZJFXq5oie9ijeuJ9RR/7CE=","menuNm":"만기보험금 신청","dalDt":"20181129171807849362"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mp/HPMP170S1","menuScCd":"M","ictnSq":"4","lowCnt":"0","sppoMenuId":"HPMP","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMP170S1","dealEmpno":"_KDIHPSD_U/XVG89CYMWy/r0f8fcakZJFXq5oie9ijeuJ9RR/7CE=","menuNm":"휴면보험금 신청","dalDt":"20181129171957415999"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mp/HPMP190S1","menuScCd":"M","ictnSq":"5","lowCnt":"0","sppoMenuId":"HPMP","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMP190S1","dealEmpno":"_KDIHPSD_c6urDsaT6664VYDyfRW/!p/!l/!u/!s/!seSmsbgy4FP6C37LWXvDs54=","menuNm":"연금 신청","dalDt":"20190314170354031127"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mp/HPMP180S1.dev","menuScCd":"M","ictnSq":"6","lowCnt":"0","sppoMenuId":"HPMP","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMP180S1","dealEmpno":"_KDIHPSD_U/XVG89CYMWy/r0f8fcakZJFXq5oie9ijeuJ9RR/7CE=","menuNm":"해지 신청","dalDt":"20200416173034632569"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/mp/HPMP150S1.dev","menuScCd":"M","ictnSq":"7","lowCnt":"0","sppoMenuId":"HPMP","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMP150S1","dealEmpno":"_KDIHPSD_U/XVG89CYMWy/r0f8fcakZJFXq5oie9ijeuJ9RR/7CE=","menuNm":"자동송금서비스 신청/변경","dalDt":"20200416172854307143"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/ml/HPML100S1","menuScCd":"M","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPML","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPML100S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"대출내역 조회","dalDt":"20170102222158509451"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/ml/HPML120S1","menuScCd":"M","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPML","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPML120S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"대출 상환","dalDt":"20170102222229448981"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/ml/HPML150S1","menuScCd":"M","ictnSq":"3","lowCnt":"0","sppoMenuId":"HPML","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPML150S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"대출 신청","dalDt":"20170102222253368381"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":null,"menuUrl":"/mypage/ml/HPML200S1.dev","menuScCd":"M","ictnSq":"5","lowCnt":"0","sppoMenuId":"HPML","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPML200S1","dealEmpno":"_KDIHPSD_U/XVG89CYMWy/r0f8fcakZJFXq5oie9ijeuJ9RR/7CE=","menuNm":"지정계좌 설정","dalDt":"20201112144129374216"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":"자동이체 계좌관리","menuUrl":"/mypage/mo/HPMO200S1","menuScCd":"U","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPMO","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMO200S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"자동이체 계좌관리","dalDt":"20170102223251625068"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":"출금이체동의 철회","menuUrl":"/mypage/mo/HPMO300S1","menuScCd":"U","ictnSq":"2","lowCnt":"0","sppoMenuId":"HPMO","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"921120","menuId":"HPMO300S1","dealEmpno":"_KDIHPSD_aAwB0M/!p/!l/!u/!s/!TNeyhnqxgdBjlHvvLpwBO5FHhHztREVCyBGQ=","menuNm":"출금이체동의 철회","dalDt":"20170901023526508466"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":"내정보 변경","menuUrl":"/mypage/my/HPMY100S1","menuScCd":"U","ictnSq":"1","lowCnt":"0","sppoMenuId":"HPMY","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMY100S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"내정보 변경","dalDt":"20170102223554004321"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":"개인신용정보 이용/제공 조회","menuUrl":"/mypage/my/HPMY300S1","menuScCd":"U","ictnSq":"3","lowCnt":"0","sppoMenuId":"HPMY","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"1","menuId":"HPMY300S1","dealEmpno":"_KDIHPSD_DM/1dHllL6nI/KCx4FBtAY9y4Wc3iNEMuVRCihYY42U=","menuNm":"개인신용정보 이용/제공 조회","dalDt":"20170324104535660746"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":"혜택정보 수신동의 변경","menuUrl":"/mypage/my/HPMY400S1","menuScCd":"U","ictnSq":"4","lowCnt":"0","sppoMenuId":"HPMY","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMY400S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"혜택정보 수신동의 변경","dalDt":"20170102223827464168"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":"수익자 연락처 관리","menuUrl":"/mypage/my/HPMY500S1","menuScCd":"U","ictnSq":"5","lowCnt":"0","sppoMenuId":"HPMY","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMY500S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"수익자 연락처 관리","dalDt":"20170102223909604813"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":"ARS비밀번호 관리","menuUrl":"/mypage/my/HPMY600S1","menuScCd":"U","ictnSq":"6","lowCnt":"0","sppoMenuId":"HPMY","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMY600S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"ARS비밀번호 관리","dalDt":"20170102223958345492"},{"menuUrlOptnYn":"N","menuListExprYn":"Y","menuLeveCd":"3","menuExprYn":"Y","ictnYn":"Y","menuText":"활동내역","menuUrl":"/mypage/my/HPMY700S1","menuScCd":"U","ictnSq":"7","lowCnt":"0","sppoMenuId":"HPMY","dalPrgrId":"HPAG910S1.ajax","siteScCd":"H","dealOrgno":"925100","menuId":"HPMY700S1","dealEmpno":"_KDIHPSD_VChILcqexd5SmhrFZRZQlyHs0Vy3kNNYIwErWyA24jE=","menuNm":"활동내역","dalDt":"20170102224034426092"}]';
+
+			_private.RATE_DATA = { "f12": "2.4", "f01": "2.25", "f02": "2.4", "h01": "2.5", "f03": "2.4", "f04": "2.5" };
+
+			_private.busiTp = 'B2C';
+
+			_private.webLog = { "isLogin": false };
+			_private.ableJpLData = {};
+
+
+
+			/**
+			 * 서비스에서 전달 받은 Parameter 리턴
+			 * @returns
+			 */
+			_public.getParam = function (inputKey) {
+				return _private[inputKey];
+			};
+
+			/**
+			 * 서비스에서 전달 받은 Parameter 저장
+			 * @param inputParam
+			 * @returns
+			 */
+			_public.setParam = function (inputKey, inputParam) {
+
+				// TODO : inputParam Type 에 따른 validate 추가
+				_private[inputKey] = inputParam;
+
+			};
+
+			/**
+			 * 서비스에서 전달 받은 Parameter Key 리턴
+			 * @param inputParam
+			 * @returns
+			 */
+			_public.keySet = function () {
+
+				var keys = [];
+				for (var k in _private) {
+					keys.push(k);
+				}
+
+				return keys;
+			};
+
+
+			return _public;
+		})();
+
+	</script>
+
+	<script type="text/javascript">
+		var cacheJS = "20201203";
+	</script>
+	<script type='text/javascript'>
+		var context_root = '/';
+	</script>
+
+	<!-- [jQuery Libraries] -->
+	<script type="text/javascript" src="../../resources/js/lib/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../../resources/js/lib/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="../../resources/js/lib/jquery.validate.js"></script>
+	<script type="text/javascript" src="../../resources/js/lib/jquery.form.js"></script>
+
+	<!-- 페이지 이탈 이벤트 -->
+
+	<!-- 보험가격지수 -->
+	<script type="text/javascript" src="../../resources/js/PricePoint.js?v=20201203"></script>
+
+	<!-- [KDIMW Libraries] -->
+	<script type="text/javascript" src="../../resources/js/mw.config.js"></script>
+	<script type="text/javascript" src="../../resources/js/jQuery.subscription.js?v=20201203"></script>
+
+	<script type="text/javascript" src="../../resources/js/reFake.js"></script>
+	<script type="text/javascript" src="../../resources/js/mw.webLog.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.util.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.util.string.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.util.object.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.util.mask.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.util.event.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.util.date.js?v=20201203"></script>
+
+	<script type="text/javascript" src="../../resources/js/mw.validate.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.core.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.message.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.commData.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.page.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.customFunction.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.sns.js?v=20201203"></script>
+
+
+
+
+
+	<!-- 상담톡 상담 -->
+	<script type="text/javascript" src="../../resources/js/mw.talk.js?v=20201203"></script>
+
+	<!--[if lt IE 9]>
+    <script type="text/javascript" src="../../resources/js/lib/html5shiv.js"></script>
+    <![endif]-->
+
+	<script type="text/javascript" src="../../resources/js/planetCommon.js?v=20201203"></script>
+
+	<!-- 내부 웹로그 -->
+	<script type="text/javascript" src="../../resources/js/m.lifeplanetWeblog.js?v=20201203"></script>
+
+
+
+
+
+
+
+	<link type="text/css" rel="stylesheet" href="../../resources/css/common.css?v=20201203" />
+
+
+	<script type="text/javascript" src="../../resources/js/main.js"></script>
+	<link type="text/css" rel="stylesheet" href="../../resources/css/main.css?v=20201203">
+	<link type="text/css" rel="stylesheet" href="../../resources/css/main_motion.css?v=20201203">
+
+	<script type="text/javascript" src="/transkeyServlet?op=getJsConfig"></script>
+	<script type="text/javascript" src="../../common/touchKey/transkey/TranskeyLibPack_op.js"></script>
+	<script type="text/javascript" src="../../common/touchKey/transkey/transkey_modi.js?v=20201203"></script>
+
+	<!-- [javascript libraries for UI] -->
+
+
+
+	<script type="text/javascript" src="../../resources/js/lib/TweenLite.min.js"></script>
+	<script type="text/javascript" src="../../resources/js/lib/EasePack.min.js"></script>
+
+	<script type="text/javascript" src="../../commons/js/header.js"></script>
+	<script type="text/javascript" src="../../commons/js/footer.js"></script>
+
+
+	<script type="text/javascript" src="../../resources/js/lib/jquery-fake.form.js"></script>
+
+	<script type="text/javascript" src="../../resources/js/cm.jQuery-1.8.3.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.popup.js?v=20201203"></script>
+
+	<script type="text/javascript" src="../../resources/js/rate.js?v=20201203"></script>
+
+
+	<script type="text/javascript">
+		//<![CDATA[
+		var _SITE_SystemMode = "real"; //"real", "test"
+		var _SITE_SystemLang = "KOR"; //"KOR", "ENG", "CHN", "JPN"
+		var _SITE_SiteName = "pc";     //"pc", "mobile", "tablet"
+		var _SITE_ModuleType = "G3"; //"", "G2", "G3", "G4"
+    //]]>
+	</script>
+
+	<script type="text/javascript" src="../../resources/js/mw.delfino.js?v=20201203"></script>
+	<script type="text/javascript" src="../../commons/3rd-party/wizvera/delfino/delfino_config.js?v=20201203"></script>
+	<script type="text/javascript" src="../../commons/3rd-party/wizvera/delfino/delfino_internal.min.js?v=20201203"></script>
+	<script type="text/javascript" src="../../commons/3rd-party/wizvera/delfino/delfino.js?v=20201203"></script>
+	<script type="text/javascript" src="../../commons/3rd-party/wizvera/delfino/delfino_site.js?v=20201203"></script>
+
+
+
+	<script type="text/javascript" src="../../commons/3rd-party/ahnlab/astx2.min.js?r=20201203"></script>
+	<script type="text/javascript" src="../../commons/3rd-party/ahnlab/astx2_ml.min.js?r=20201203"></script>
+	<script type="text/javascript" src="../../commons/3rd-party/ahnlab/astx2_custom.js"></script>
+	<script type="text/javascript" src="../../commons/3rd-party/ahnlab/astx2_jq.min.js?r=20201203"></script>
+	<script type="text/javascript" src="../../commons/3rd-party/ahnlab/page.js?v=20201203"></script>
+	<script type="text/javascript" src="../../resources/js/mw.ASTx.js?v=20201203"></script>
+
+
+
+	<script type="text/javascript" src="../../commons/3rd-party/dataStory/wl6.js?v=20201203"></script>
+
+	<!-- 네이버 인증 관련-->
+	<script type="text/javascript" src="/views/common/thirdParty/js/NaverAuth.js?v=20201203"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var loadAreaHtml = '<div id="loadingArea" style="display:none;">'
+				+ '	<div id="loadingBack"></div>'
+				+ '	<div id="loadingWrap">'
+				+ '		<img id="imgLoading" alt="잠시만 기다려 주세요." src="/images/common/icon_viewLoading.gif">'
+				+ '	</div>'
+				+ '</div>';
+			$('body').prepend(loadAreaHtml);
+		});
+	</script>
+
+
+	<!-- 상단띠배너 - 퍼블전용 style -->
+	<style>
+		.planet360_area {
+			position: fixed;
+			left: 50%;
+			bottom: 20px;
+			margin-left: 530px
+		}
+
+		.planet360_area a.planet360 {
+			position: relative;
+			display: block;
+			width: 96px;
+			height: 128px
+		}
+
+		.planet360_area a.planet360 img {
+			width: 96px;
+			height: 128px
+		}
+	</style>
+	<!-- //190710 추가(접근성 개선을 위한 하단 소스 위치이동)e -->
+	<title>라이프플래닛 : 국내 최초 인터넷 생명보험회사</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<header role="banner" id="header" class="header">
+
+
+
+
+			<div class="skip_wrap"><a href="#content" class="skip_navi"
+					data-weblogclick='{"actn":"본문 바로가기", "labl":"키보드클릭", "clsf":"웹접근성"}'>본문 바로가기</a></div>
+			<div class="box_banner" id="box_banner" role="banner" style="display:none;">
+				<div class="inner">
+					<div class="cont">
+						<p class="txt_1"><span><strong>Internet Explorer 8, 9, 10</strong> 이용 고객님!</span> 혹시 화면이 제대로 보이지
+							않으시나요?</p>
+						<p class="txt_2"><span>해결방안을 알고 싶으시다면 지금 바로 클릭 해주세요!</span><a
+								href="https://www.lifeplanet.co.kr/contact/noti/HPCF01S1.dev?notiSrno=79"
+								class="btn_xs"><span>자세히보기<span class="arrow"></span></span></a></p>
+					</div>
+					<div class="box_oneday_close">
+						<input type="checkbox" id="cookieNoPop_Ie">
+						<label for="cookieNoPop_Ie">오늘 하루 열지 않음</label>
+						<a href="javascript:;" class="btn_mainbanner_close"><img
+								src="../../resources/images/main/btn_banner_close.png" alt="닫기"></a>
+					</div>
+				</div>
+			</div>
+			<!-- // 150423 추가 -->
+
+
+
+
+
+			<!-- CSS 셀렉터 -->
+			<div class="inner">
+				<h1 class="h1"><a href="/common/ce/HPCE010S1.dev" class="a"
+						data-weblogclick='{"actn":"로고", "labl":"상단_유틸", "clsf":"GNB"}'><img
+							src="../../resources/images/common/lifeplanet_logo.png" alt="lifeplanet 교보라이프플래닛생명" /></a></h1>
+				<!-- 190417 수정 -->
+				<nav class="menu">
+					<!-- 190417 위치 이동 및 수정 -->
+					<div class="gnb">
+						<ul class="util_menu">
+							<li> <a href="javascript:PageUtil.loginNextMovePageType('/mypage/ml/HPML150S1.dev', isLogin,'gnb');"
+									class=""
+									data-weblogclick='{"actn":"보험계약대출", "labl":"상단_유틸", "clsf":"GNB"}'>보험계약대출</a></li>
+							<li><a href="/innovation/ic/HPIC100S1.dev" class=""
+									data-weblogclick='{"actn":"360°플래닛", "labl":"상단_유틸", "clsf":"GNB"}'>360°플래닛</a></li>
+							<li><a href="/products/pc/HPPC600S1.dev" class=""
+									data-weblogclick='{"actn":"장바구니", "labl":"상단_유틸", "clsf":"GNB"}'>장바구니</a></li>
+						</ul>
+						<div class="inlineB">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<a href="javascript:;" id="goLoginBtn" class="customerName"
+								data-weblogclick='{"actn":"로그인", "labl":"상단_유틸", "clsf":"GNB"}'>로그인</a>
+
+
+
+						</div>
+						<ul class="inlineB">
+							<li class="first disclosure">
+								<a href="javascript:;" class="a"
+									data-weblogclick='{"actn":"공시실", "labl":"상단_유틸", "clsf":"GNB"}'>공시실</a>
+								<!-- 접근성 오류수정 200617 수정 -->
+								<ul style="display:none">
+									<li><a href="/disclosure/good/HPDA01S0.dev" class="a2"
+											data-weblogclick='{"actn":"상품공시실", "labl":"상단_유틸", "clsf":"GNB"}'>상품공시실</a>
+									</li>
+									<li><a href="/disclosure/prce/HPDB21S0.dev" class="a2"
+											data-weblogclick='{"actn":"가격공시실", "labl":"상단_유틸", "clsf":"GNB"}'>가격공시실</a>
+									</li>
+									<li><a href="/disclosure/admi/HPDC21S0.dev" class="a2"
+											data-weblogclick='{"actn":"경영공시실", "labl":"상단_유틸", "clsf":"GNB"}'>경영공시실</a>
+									</li>
+									<li><a href="/disclosure/admi/HPDC51S0.dev" class="a2"
+											data-weblogclick='{"actn":"지배구조공시실", "labl":"상단_유틸", "clsf":"GNB"}'>지배구조공시실</a>
+									</li>
+									<li><a href="/disclosure/admi/HPDC41S0.dev" class="a2"
+											data-weblogclick='{"actn":"결산공고", "labl":"상단_유틸", "clsf":"GNB"}'>결산공고</a>
+									</li>
+									<li><a href="/disclosure/banc/HPDE21S0.dev" class="a2"
+											data-weblogclick='{"actn":"방카슈랑스수수료율공시", "labl":"상단_유틸", "clsf":"GNB"}'>방카슈랑스수수료율공시</a>
+									</li>
+									<li><a href="/disclosure/sfgr/HPDD21S0.dev" class="a2"
+											data-weblogclick='{"actn":"보호금융상품등록부", "labl":"상단_유틸", "clsf":"GNB"}'>보호금융상품등록부</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- e : .gnb -->
+					<!-- //190417 위치 이동 및 수정 -->
+
+
+
+
+					<ul id="lnbMenu" class="lnb">
+						<li class="li no1">
+							<!-- 해당메뉴 진입 시 on클래스 추가 및 유지 -->
+							<a href="/products/pd/HPPD000S1.dev" class="a"
+								data-weblogclick='{"actn":"상품안내_가입", "labl":"상품안내_가입-1dep", "clsf":"GNB"}'>상품안내/가입</a>
+							<!-- 190417 수정 -->
+							<div class="submenu">
+								<div class="wrap_subDept">
+									<div class="subDeptWrap">
+										<div class="banner1">
+											<span class="sub_copy">라이프플래닛의</span>
+											<strong class="tit">상품안내/가입</strong>
+											<a href="/products/pd/HPPD000S1.dev" class="btn_s"
+												data-weblogclick='{"actn":"상품안내_가입-바로가기", "labl":"상품안내_가입", "clsf":"GNB"}'><span>바로가기</span></a>
+										</div>
+										<div class="depths2">
+											<ul>
+												<li class="li2">
+													<a href="/products/pd/HPPD100S1.dev" class="a2"
+														data-weblogclick='{"actn":"정기_종신", "labl":"상품안내_가입", "clsf":"GNB"}'>정기
+														&middot; 종신</a>
+													<div class="depths3">
+														<ul>
+															<li><a href="/products/pd/HPPD100S1.dev" class="a3"
+																	data-weblogclick='{"actn":"정기보험", "labl":"상품안내_가입", "clsf":"GNB"}'>정기보험<i
+																		class="hot">HOT</i></a></li><!-- 190417 수정 -->
+															<li><a href="/products/pd/HPPD200S1.dev" class="a3"
+																	data-weblogclick='{"actn":"종신보험", "labl":"상품안내_가입", "clsf":"GNB"}'>종신보험
+																	<!-- <i class="new">NEW</i> --></a></li>
+															<li><a href="/products/pe/HPPE300S1.dev" class="a3"
+																	data-weblogclick='{"actn":"상해보험", "labl":"상품안내_가입", "clsf":"GNB"}'>상해보험</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="li2">
+													<a href="/products/pe/HPPE800S1.dev" class="a2"
+														data-weblogclick='{"actn":"암_건강_치아", "labl":"상품안내_가입", "clsf":"GNB"}'>암
+														&middot; 건강 &middot; 치아</a>
+													<div class="depths3">
+														<ul>
+															<li><a href="/products/pe/HPPE700S1.dev" class="a3"
+																	data-weblogclick='{"actn":"비갱신암보험", "labl":"상품안내_가입", "clsf":"GNB"}'>비갱신암보험<i
+																		class="best">BEST</i></a></li><!-- 190417 수정 -->
+															<li><a href="/products/pd/HPPD800S1.dev" class="a3"
+																	data-weblogclick='{"actn":"암보험", "labl":"상품안내_가입", "clsf":"GNB"}'>암보험</a>
+															</li>
+															<li><a href="/products/pf/HPPF200S1.dev" class="a3"
+																	data-weblogclick='{"actn":"뇌&middot;심장보험", "labl":"상품안내_가입", "clsf":"GNB"}'>뇌&middot;심장보험<i
+																		class="new">NEW</i></a></li>
+															<li><a href="/products/pf/HPPF100S1.dev" class="a3"
+																	data-weblogclick='{"actn":"여성건강보험", "labl":"상품안내_가입", "clsf":"GNB"}'>여성건강보험</a>
+															</li>
+															<li><a href="/products/pe/HPPE900S1.dev" class="a3"
+																	data-weblogclick='{"actn":"미세먼지질병보험", "labl":"상품안내_가입", "clsf":"GNB"}'>미세먼지질병보험</a>
+															</li><!-- 190612 추가 -->
+															<li><a href="/products/pe/HPPE800S1.dev" class="a3"
+																	data-weblogclick='{"actn":"치아보험", "labl":"상품안내_가입", "clsf":"GNB"}'>치아보험</a>
+															</li><!-- 190612 추가 -->
+															<li><a href="/products/pe/HPPE500S1.dev" class="a3"
+																	data-weblogclick='{"actn":"입원비보험", "labl":"상품안내_가입", "clsf":"GNB"}'>입원비보험</a>
+															</li>
+															<li><a href="/products/pe/HPPE600S1.dev" class="a3"
+																	data-weblogclick='{"actn":"수술비보험", "labl":"상품안내_가입", "clsf":"GNB"}'>수술비보험</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="li2">
+													<a href="/products/pd/HPPD500S1.dev" class="a2"
+														data-weblogclick='{"actn":"어린이", "labl":"상품안내_가입", "clsf":"GNB"}'>어린이</a>
+													<div class="depths3">
+														<ul>
+															<li><a href="/products/pd/HPPD500S1.dev" class="a3"
+																	data-weblogclick='{"actn":"어린이보장보험", "labl":"상품안내_가입", "clsf":"GNB"}'>어린이보장보험</a>
+															</li>
+															<li><a href="/products/pd/HPPD600S1.dev" class="a3"
+																	data-weblogclick='{"actn":"어린이저축보험", "labl":"상품안내_가입", "clsf":"GNB"}'>어린이저축보험</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="li2">
+													<a href="/products/pd/HPPD700S1.dev" class="a2"
+														data-weblogclick='{"actn":"연금_저축", "labl":"상품안내_가입", "clsf":"GNB"}'>연금
+														&middot; 저축</a>
+													<div class="depths3">
+														<ul>
+															<li><a href="/products/pd/HPPD400S1.dev" class="a3"
+																	data-weblogclick='{"actn":"연금저축보험", "labl":"상품안내_가입", "clsf":"GNB"}'>연금저축보험<i
+																		class="hot">HOT</i></a></li>
+															<li><a href="/products/pd/HPPD700S1.dev" class="a3"
+																	data-weblogclick='{"actn":"저축보험", "labl":"상품안내_가입", "clsf":"GNB"}'>저축보험</a>
+															</li><!-- 190417 수정 -->
+															<li><a href="/products/pd/HPPD300S1.dev" class="a3"
+																	data-weblogclick='{"actn":"연금보험", "labl":"상품안내_가입", "clsf":"GNB"}'>연금보험</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<!-- 190417 보험계약대출 삭제 -->
+											</ul>
+										</div>
+										<div class="banner2">
+											<a href="/analysis/na/NA01000S.dev" class="banner2_cancer"><img
+													src="../../resources/images/common/v181112_nav_banner_right.png"
+													alt="바른보장 서비스 - 내 보험 한눈에 보고, 부족한 보장도 확인!" /></a>
+										</div>
+									</div><!-- e : .subDeptWrap -->
+								</div>
+							</div><!-- e : .submenu -->
+						</li>
+						<li class="li no2">
+							<a href="/lifesquare/ls/HPLS000S1.dev" class="a"
+								data-weblogclick='{"actn":"이벤트 및 혜택", "labl":"이벤트 및 혜택-1dep", "clsf":"GNB"}'>이벤트 및
+								혜택</a>
+							<div class="submenu">
+								<div class="wrap_subDept">
+									<div class="subDeptWrap">
+										<div class="banner1">
+											<span class="sub_copy">재미와 정보가 많은</span>
+											<strong class="tit">이벤트 및 혜택</strong>
+											<a href="/lifesquare/ls/HPLS000S1.dev" class="btn_s"
+												data-weblogclick='{"actn":"이벤트 및 혜택-바로가기", "labl":"이벤트 및 혜택", "clsf":"GNB"}'><span>바로가기</span></a>
+										</div>
+										<div class="depths2">
+											<ul>
+												<li class="li2">
+													<a href="/lifesquare/event/HPLC01S0.dev" class="a2"
+														data-weblogclick='{"actn":"이벤트", "labl":"이벤트 및 혜택", "clsf":"GNB"}'>이벤트</a>
+													<!-- 190417 아이콘 삭제 -->
+													<div class="depths3">
+														<ul>
+															<li><a href="/lifesquare/event/HPLC01S0.dev" class="a3"
+																	data-weblogclick='{"actn":"이벤트안내", "labl":"이벤트 및 혜택", "clsf":"GNB"}'>이벤트안내</a>
+															</li>
+															<li><a href="/lifesquare/event/HPLC01S2.dev" class="a3"
+																	data-weblogclick='{"actn":"당첨자발표", "labl":"이벤트 및 혜택", "clsf":"GNB"}'>당첨자발표</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="li2"><a href="/lifesquare/ls/HPLS450S1.dev" class="a2"
+														data-weblogclick='{"actn":"보험건강나이", "labl":"이벤트 및 혜택", "clsf":"GNB"}'>보험건강나이</a>
+												</li><!-- 190417 아이콘 삭제 -->
+												<li class="li2"><a href="/analysis/na/NA01000S.dev" class="a2"
+														data-weblogclick='{"actn":"바른보장 서비스", "labl":"이벤트 및 혜택", "clsf":"GNB"}'>바른보장
+														서비스</a></li>
+											</ul>
+										</div>
+										<div class="banner2">
+											<!-- 200303 수정 --><a href="/lifesquare/ls/HPLS450S1.dev"><img
+													src="../../resources/images/common/v200303_nav_banner_lifesquare.png"
+													alt="보험료 할인! 당신이 건강할수록 내려가는 보험료를 확인해보세요" /></a>
+										</div>
+									</div><!-- e : .subDeptWrap -->
+								</div>
+							</div><!-- e : .submenu -->
+						</li>
+						<li class="li no3">
+							<a href="/contact/ct/HPCT000S1.dev" class="a"
+								data-weblogclick='{"actn":"고객센터", "labl":"고객센터-1dep", "clsf":"GNB"}'>고객센터</a>
+							<div class="submenu">
+								<div class="wrap_subDept">
+									<div class="subDeptWrap">
+										<div class="banner1">
+											<span class="sub_copy">무엇을 도와드릴까요?</span>
+											<strong class="tit">고객센터</strong>
+											<a href="/contact/ct/HPCT000S1.dev" class="btn_s"
+												data-weblogclick='{"actn":"고객센터-바로가기", "labl":"고객센터", "clsf":"GNB"}'><span>바로가기</span></a>
+										</div>
+										<div class="depths2">
+											<ul>
+												<li class="li2"><a href="/contact/faq/HPCB01S0.dev" class="a2"
+														data-weblogclick='{"actn":"자주 찾는 질문", "labl":"고객센터", "clsf":"GNB"}'>자주
+														찾는 질문</a></li>
+												<li class="li2"><a href="/contact/ct/HPCT100S1.dev" class="a2"
+														data-weblogclick='{"actn":"소비자 보호", "labl":"고객센터", "clsf":"GNB"}'>소비자
+														보호</a></li>
+												<li class="li2"><a href="/contact/opin/HPCD02S0.dev" class="a2"
+														data-weblogclick='{"actn":"고객의 소리", "labl":"고객센터", "clsf":"GNB"}'>고객의
+														소리</a></li>
+												<li class="li2">
+													<a href="/contact/dclr/HPCE02S0.dev" class="a2">신고센터</a>
+													<div class="depths3">
+														<ul>
+															<li><a href="/contact/dclr/HPCE02S0.dev" class="a3"
+																	data-weblogclick='{"actn":"e보험범죄신고 안내", "labl":"고객센터", "clsf":"GNB"}'>e보험범죄신고
+																	안내</a></li>
+															<li><a href="/contact/dclr/HPCE03S0.dev" class="a3"
+																	data-weblogclick='{"actn":"보험모집질서 위반신고", "labl":"고객센터", "clsf":"GNB"}'>보험모집질서
+																	위반신고</a></li>
+															<li><a href="/contact/dclr/HPCE04S0.dev" class="a3"
+																	data-weblogclick='{"actn":"장애인 및 장기기증자 보험가입 차별신고", "labl":"고객센터", "clsf":"GNB"}'>장애인
+																	및 장기기증자 보험가입<br />차별신고</a></li>
+															<li><a href="/contact/dclr/HPCE05S4.dev" class="a3"
+																	data-weblogclick='{"actn":"전자민원접수", "labl":"고객센터", "clsf":"GNB"}'>전자민원접수</a>
+															</li>
+															<li><a href="/contact/dclr/HPCE05S5.dev" class="a3"
+																	data-weblogclick='{"actn":"위법신고", "labl":"고객센터", "clsf":"GNB"}'>위법신고</a>
+															</li>
+														</ul>
+													</div>
+												</li>
+												<li class="li2"><a href="/contact/noti/HPCF01S0.dev" class="a2"
+														data-weblogclick='{"actn":"공지사항", "labl":"고객센터", "clsf":"GNB"}'>공지사항</a>
+												</li>
+												<li class="li2">
+													<a href="/contact/pet/HPCG01S0.dev" class="a2">보험금 신청안내</a>
+													<div class="depths3">
+														<ul>
+															<li><a href="/contact/pet/HPCG01S0.dev" class="a3"
+																	data-weblogclick='{"actn":"공통사항", "labl":"고객센터", "clsf":"GNB"}'>공통사항</a>
+															</li>
+															<li><a href="/contact/pet/HPCG11S0.dev" class="a3"
+																	data-weblogclick='{"actn":"사망보험금 신청안내", "labl":"고객센터", "clsf":"GNB"}'>사망보험금
+																	신청안내</a></li>
+															<li><a href="/contact/pet/HPCG31S2.dev" class="a3"
+																	data-weblogclick='{"actn":"장해급여금 신청안내", "labl":"고객센터", "clsf":"GNB"}'>장해급여금
+																	신청안내</a></li>
+															<li><a href="/contact/pet/HPCG31S3.dev" class="a3"
+																	data-weblogclick='{"actn":"진단/입원/수술/골절/치아보험금 신청안내", "labl":"고객센터", "clsf":"GNB"}'>진단/입원/수술/골절/치아보험금<br />신청안내</a>
+															</li>
+															<li><a href="/contact/pet/HPCG31S4.dev" class="a3"
+																	data-weblogclick='{"actn":"보험금 지급현황", "labl":"고객센터", "clsf":"GNB"}'>보험금
+																	지급현황</a></li>
+														</ul>
+													</div>
+												</li>
+												<li class="li2">
+													<a href="/contact/scrt/HPCI01S0.dev" class="a2">기타안내</a>
+													<div class="depths3">
+														<ul>
+															<!-- <li><a href="/contact/mob/HPCH01S0.dev" class="a3">모바일</a></li> -->
+															<li><a href="/contact/scrt/HPCI01S0.dev" class="a3"
+																	data-weblogclick='{"actn":"보안서비스", "labl":"고객센터", "clsf":"GNB"}'>보안서비스</a>
+															</li>
+															<li><a href="/contact/accr/HPCA01S0.dev" class="a3"
+																	data-weblogclick='{"actn":"공인인증서 복사(보내기)", "labl":"고객센터", "clsf":"GNB"}'>공인인증서
+																	복사(보내기)</a></li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="banner2">
+											<a href="/contact/ct/HPCT000S1.dev"><img
+													src="../../resources/images/common/nav_banner_cs.gif"
+													alt="무엇을 도와드릴까요? 친절한 CS매니저가 바로 상담해드립니다. 1566-0999" /></a>
+										</div>
+									</div><!-- e : .subDeptWrap -->
+								</div>
+							</div><!-- e : .submenu -->
+						</li>
+						<li class="li no4">
+							<a href="/mypage/mu/HPMU100S1.dev" class="a"
+								data-weblogclick='{"actn":"마이페이지", "labl":"마이페이지-1dep", "clsf":"GNB"}'>마이페이지</a>
+							<div class="submenu">
+								<div class="wrap_subDept">
+									<div class="subDeptWrap">
+										<div class="banner1">
+											<span class="sub_copy">나의 보험을 한 눈에</span>
+											<strong class="tit">마이페이지</strong>
+											<a href="/mypage/mu/HPMU100S1.dev" class="btn_s"
+												data-weblogclick='{"actn":"마이페이지-바로가기", "labl":"마이페이지", "clsf":"GNB"}'><span>바로가기</span></a>
+										</div>
+										<div class="depths2">
+											<script>
+												var isLogin = false;
+
+											</script>
+											<ul>
+												<li class="li2"><a
+														href="javascript:PageUtil.loginNextMovePage('/mypage/mm/HPMM100S1.dev', isLogin);"
+														class="a2"
+														data-weblogclick='{"actn":"마이페이지", "labl":"마이페이지", "clsf":"GNB"}'>계약조회</a>
+												</li>
+												<li class="li2">
+													<a href="javascript:PageUtil.loginNextMovePage('/mypage/ma/HPMA100S1.dev', isLogin);"
+														class="a2"
+														data-weblogclick='{"actn":"마이페이지", "labl":"마이페이지", "clsf":"GNB"}'>계약변경</a>
+													<div class="depths3">
+														<ul>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/ma/HPMA000S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"계약변경 신청", "labl":"마이페이지", "clsf":"GNB"}'>계약변경
+																	신청</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/ma/HPMA100S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"계약변경 내역", "labl":"마이페이지", "clsf":"GNB"}'>계약변경
+																	내역</a></li>
+														</ul>
+													</div>
+												</li>
+												<li class="li2">
+													<a href="javascript:PageUtil.loginNextMovePage('/mypage/mi/HPMI155S1.dev', isLogin);"
+														class="a2"
+														data-weblogclick='{"actn":"보험료 납입", "labl":"마이페이지", "clsf":"GNB"}'>보험료
+														납입</a>
+													<div class="depths3">
+														<ul>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mi/HPMI100S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"기본보험료 즉시납입", "labl":"마이페이지", "clsf":"GNB"}'>기본보험료
+																	즉시납입</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mi/HPMI120S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"추가/자유납보험료 즉시납입", "labl":"마이페이지", "clsf":"GNB"}'>추가/자유납보험료
+																	즉시납입</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mi/HPMI130S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"추가/자유납보험료 자동이체", "labl":"마이페이지", "clsf":"GNB"}'>추가/자유납보험료
+																	자동이체</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mi/HPMI145S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"추가/자유납보험료 자동이체 해지", "labl":"마이페이지", "clsf":"GNB"}'>추가/자유납보험료
+																	자동이체 해지</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mi/HPMI155S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"보험료 납입내역", "labl":"마이페이지", "clsf":"GNB"}'>보험료
+																	납입내역</a></li>
+														</ul>
+													</div>
+												</li>
+												<li class="li2">
+													<a href="javascript:PageUtil.loginNextMovePage('/mypage/mc/HPMC100S1.dev', isLogin);"
+														class="a2"
+														data-weblogclick='{"actn":"사고보험금 신청", "labl":"마이페이지", "clsf":"GNB"}'>사고보험금
+														신청</a>
+													<div class="depths3">
+														<ul>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mc/HPMC100S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"보험금 신청", "labl":"마이페이지", "clsf":"GNB"}'>보험금
+																	신청</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mc/HPMC200S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"보험금 신청내역", "labl":"마이페이지", "clsf":"GNB"}'>보험금
+																	신청내역</a></li>
+														</ul>
+													</div>
+												</li>
+												<li class="li2">
+													<a href="javascript:PageUtil.loginNextMovePage('/mypage/mp/HPMP100S1.dev', isLogin);"
+														class="a2"
+														data-weblogclick='{"actn":"지급금 신청", "labl":"마이페이지", "clsf":"GNB"}'>지급금
+														신청</a>
+													<div class="depths3">
+														<ul>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mp/HPMP100S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"중도인출 신청", "labl":"마이페이지", "clsf":"GNB"}'>중도인출
+																	신청</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mp/HPMP120S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"중도인출 내역", "labl":"마이페이지", "clsf":"GNB"}'>중도인출
+																	내역</a></li>
+
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mp/HPMP160S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"만기보험금 신청", "labl":"마이페이지", "clsf":"GNB"}'>만기보험금
+																	신청</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mp/HPMP170S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"휴면보험금 신청", "labl":"마이페이지", "clsf":"GNB"}'>휴면보험금
+																	신청</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mp/HPMP190S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"연금 신청", "labl":"마이페이지", "clsf":"GNB"}'>연금
+																	신청</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mp/HPMP180S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"해지 신청", "labl":"마이페이지", "clsf":"GNB"}'>해지
+																	신청</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/mp/HPMP150S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"자동송금서비스 신청/변경", "labl":"마이페이지", "clsf":"GNB"}'>자동송금서비스
+																	신청/변경</a></li>
+														</ul>
+													</div>
+												</li>
+												<li class="li2">
+													<a href="javascript:PageUtil.loginNextMovePage('/mypage/ml/HPML100S1.dev', isLogin);"
+														class="a2"
+														data-weblogclick='{"actn":"보험계약대출", "labl":"마이페이지", "clsf":"GNB"}'>보험계약대출</a>
+													<div class="depths3">
+														<ul>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/ml/HPML100S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"대출내역 조회", "labl":"마이페이지", "clsf":"GNB"}'>대출내역
+																	조회</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/ml/HPML120S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"대출 상환", "labl":"마이페이지", "clsf":"GNB"}'>대출
+																	상환</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/ml/HPML150S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"대출 신청", "labl":"마이페이지", "clsf":"GNB"}'>대출
+																	신청</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/ml/HPML180S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"대출지급한도 변경", "labl":"마이페이지", "clsf":"GNB"}'>대출지급한도
+																	변경</a></li>
+															<li class="li2"><a
+																	href="javascript:PageUtil.loginNextMovePage('/mypage/ml/HPML200S1.dev', isLogin);"
+																	class="a3"
+																	data-weblogclick='{"actn":"지정계좌 설정", "labl":"마이페이지", "clsf":"GNB"}'>지정계좌
+																	설정</a></li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="banner2">
+
+											<a href="/login/HPGA01S0.dev"
+												data-weblogclick='{"actn":"모바일앱 안내", "labl":"배너_gnb", "clsf":"GNB"}'><img
+													src="../../resources/images/common/nav_banner_pin.png"
+													alt="PIN인증을 통해 내 계약정보 조회가 가능합니다!" /></a>
+
+										</div>
+
+									</div><!-- e : .subDeptWrap -->
+								</div>
+							</div><!-- e : .submenu -->
+						</li>
+					</ul>
+
+
+				</nav>
+
+			</div><!-- e : .inner -->
+
+
+		</header>
+		<hr />
+		<div id="container" class="container">
+			<div id="content" class="main">
+
+				<!-- 상단 메뉴순서 영역 시작-->
+				<div class="main_visual_area clearfix">
+					<div class="main_visual_nav">
+						<ul>
+							<li class="navigation link0" data-magcd="013"><a href="#tab_visual_saving"
+									data-weblogclick='{"labl":"Tab_상단배너", "clsf":"메인링크"}'>바른보장 서비스</a></li>
+
+
+
+
+							<li class="navigation link1" data-magcd="017"><a href="#017"
+									data-weblogclick='{"labl":"Tab_상단배너", "clsf":"메인링크"}'>저축보험</a></li>
+
+
+
+
+							<li class="navigation link2" data-magcd="003"><a href="#tab_visual_cancer"
+									data-weblogclick='{"labl":"Tab_상단배너", "clsf":"메인링크"}'>비갱신암보험</a></li>
+
+
+
+
+							<li class="navigation link3" data-magcd="001"><a href="#tab_visual_term"
+									data-weblogclick='{"labl":"Tab_상단배너", "clsf":"메인링크"}'>정기보험</a></li>
+
+
+
+
+
+
+						</ul>
+					</div>
+					<div class="main_visual_left">
+						<ul>
+							<!-- 200706 e저축보험 추가 -->
+							<li class="insurance isa16" style="display:none">
+								<div class="main_text_area">
+									<div class="title">
+										1년도 OK<i>!</i> 10년도 OK<i>!</i><br>100% 원금 보장에 <br>만기유지보너스까지<i>!</i>
+									</div>
+									<div class="btn_area">
+										<a href="/products/pd/HPPD700S1.dev" class="btn_calculator"
+											data-weblogclick='{"actn":"저축보험-내 보험료 확인", "labl":"상단_배너클릭", "clsf":"메인링크"}'>내
+											보험료 확인</a>
+									</div>
+								</div>
+							</li>
+							<!-- //200706 e저축보험 추가 -->
+							<!-- 200506 여성건강보험 추가 -->
+							<li class="insurance isa15" style="display:none">
+								<div class="main_text_area">
+									<div class="title">
+										주요 여성 질환을<br />집중 보장하는<br />여성건강보험
+									</div>
+									<div class="btn_area">
+										<a href="/products/pf/HPPF100S1.dev" class="btn_calculator"
+											data-weblogclick='{"actn":"여성건강보험-내 보험료 확인", "labl":"상단_배너클릭", "clsf":"메인링크"}'>내
+											보험료 확인</a>
+									</div>
+								</div>
+							</li>
+							<!-- //200506 여성건강보험 추가 -->
+							<!-- 191115 추가 -->
+							<li class="insurance isa14" style="display:none">
+								<div class="main_text_area">
+									<div class="title">
+										마스크를 써도 불안할 때 !<br />미세먼지 관련 질병<br />든든하게 보장
+									</div>
+									<div class="btn_area">
+										<a href="/products/pe/HPPE900S1.dev" class="btn_calculator"
+											data-weblogclick='{"actn":"미세먼지보험-내 보험료 확인", "labl":"상단_배너클릭", "clsf":"메인링크"}'>내
+											보험료 확인</a>
+									</div>
+								</div>
+							</li>
+							<!-- //191115 추가 -->
+							<li class="insurance isa11" style="display:none">
+								<!-- 펫보험 -->
+								<div class="main_text_area">
+									<div class="title">
+										반려동물 무료 기본케어 부터<br />전문 위탁보호 서비스까지<i>!</i><br /><span class="sub_title">1년만 납입해도
+											10년간 보장과 서비스 제공<i>!</i></span>
+									</div>
+									<div class="btn_area">
+										<a href="/bridge/bl/HPBL620S1.dev" class="btn_calculator none"
+											data-weblogclick='{"actn":"펫보험 자세히 보기", "labl":"상단_배너클릭", "clsf":"메인링크"}'>자세히
+											보기</a>
+									</div>
+								</div>
+							</li>
+							<li class="insurance isa0" style="display:none">
+								<!-- 정기보험 -->
+								<div class="main_text_area">
+									<div class="title">실속 있는 보험료는 기본,<br />건강할수록 할인받는 <br />정기보험<i>!</i></div>
+									<!-- 200116 수정 -->
+									<div class="btn_area">
+										<a href="/products/pd/HPPD100S1.dev" class="btn_calculator"
+											data-weblogclick='{"actn":"정기보험-내 보험료 확인", "labl":"상단_배너클릭", "clsf":"메인링크"}'>내
+											보험료 확인</a>
+									</div>
+								</div>
+							</li>
+							<!-- <li class="insurance isa1" style="display:none">종신보험</li> -->
+							<li class="insurance isa2" style="display:none">
+								<!-- 암보험 -->
+								<div class="main_text_area">
+									<!-- 180813 수정 -->
+									<div class="title">처음 보험료 그대로,<br />100세까지 보장받는<br />암보험<i>!</i></div>
+									<!-- //180813 수정 -->
+									<div class="btn_area">
+										<a href="/products/pe/HPPE700S1.dev" class="btn_calculator"
+											data-weblogclick='{"actn":"100세까지암보험-내 보험료 확인", "labl":"상단_배너클릭", "clsf":"메인링크"}'>내
+											보험료 확인</a>
+									</div>
+								</div>
+							</li>
+							<!-- <li class="insurance isa3" style="display:none">5대성인병보험</li>
+			<li class="insurance isa4" style="display:none">상해보험</li>
+			<li class="insurance isa5" style="display:none">연금보험</li> -->
+							<li class="insurance isa6" style="display:none">
+								<!-- 연금저축보험 -->
+								<div class="main_text_area">
+									<!-- 170215 수정 -->
+									<div class="title">
+										미리 준비할수록<br />든든한 연말정산<br />+ 노후준비까지
+										<div class="ani_item">
+											<div class="box">
+												<div class="text_area">
+													<div class="tit">공시이율</div>
+													<div class="number"><em data-rate="10004"></em><span>%</span></div>
+												</div>
+												<div class="box_item"><img src="../../resources/images/main/upturn.png"
+														alt="" /></div>
+												<div class="box_item_s"><img src="../../resources/images/main/upturn.png"
+														alt="" /></div>
+												<div class="light1"><img src="../../resources/images/main/light1.png"
+														alt="" /></div>
+												<div class="light2"><img src="../../resources/images/main/light2.png"
+														alt="" /></div>
+											</div>
+											<p><span data-rate="date01"></span> 기준, 변동금리,<br />사업비 차감후 부리</p>
+										</div>
+									</div>
+									<!-- //170215 수정 -->
+									<div class="btn_area">
+										<a href="/products/pd/HPPD400S1.dev" class="btn_calculator"
+											data-weblogclick='{"actn":"연금저축보험-내 보험료 확인", "labl":"상단_배너클릭", "clsf":"메인링크"}'>내
+											보험료 확인</a>
+									</div>
+								</div>
+							</li>
+							<li class="insurance isa7" style="display:none">
+								<!-- 저축보험 -->
+								<div class="main_text_area">
+									<!-- 170215 수정 -->
+									<div class="title">
+										<!-- 170323 수정 -->100% 원금보장은 기본, <br />추가납입 가능한 저축보험<i>!</i><br /><span
+											class="sub_title">(한달 유지 시)</span>
+										<div class="ani_item">
+											<div class="box">
+												<div class="text_area">
+													<div class="tit">공시이율</div>
+													<div class="number"><em data-rate="10025"></em><span>%</span></div>
+												</div>
+												<div class="box_item"><img src="../../resources/images/main/upturn.png"
+														alt="" /></div>
+												<div class="box_item_s"><img src="../../resources/images/main/upturn.png"
+														alt="" /></div>
+												<div class="light1"><img src="../../resources/images/main/light1.png"
+														alt="" /></div>
+												<div class="light2"><img src="../../resources/images/main/light2.png"
+														alt="" /></div>
+											</div>
+											<!-- 170626 수정 -->
+											<p><span data-rate="date01"></span> 기준, 변동금리,<br />복리 부리 후 경과이자에서 사업비 차감</p>
+										</div>
+									</div>
+									<!-- //170215 수정 -->
+									<div class="btn_area">
+										<a href="/products/pd/HPPD700S1.dev" class="btn_calculator"
+											data-weblogclick='{"actn":"저축보험-내 보험료 확인", "labl":"상단_배너클릭", "clsf":"메인링크"}'>내
+											보험료 확인</a>
+									</div>
+								</div>
+							</li>
+							<!-- <li class="insurance isa8" style="display:none">어린이보장보험</li>
+			<li class="insurance isa9" style="display:none">어린이저축보험</li> -->
+							<li class="insurance isa10" style="display:none;">
+								<!-- 가족사랑정기보험 -->
+								<div class="main_text_area">
+									<div class="title">남아있는 유자녀를 위해 <br />월 생활비처럼 사망보험금을 <br />받는 정기보험</div>
+									<!-- 170202 수정 -->
+									<div class="btn_area">
+										<a href="/products/pe/HPPE400S1.dev" class="btn_calculator"
+											data-weblogclick='{"actn":"부모사랑정기보험-내 보험료 확인", "labl":"상단_배너클릭", "clsf":"메인링크"}'>내
+											보험료 확인</a>
+									</div>
+								</div>
+							</li>
+							<li class="insurance isa13" style="display:none;">
+								<!-- 치아보험 -->
+								<div class="main_text_area">
+									<div class="title">
+										자주 하는 충치치료<i>!</i><br />때우는 재료<br />상관 없이 든든하게 보장</span>
+									</div>
+									<div class="btn_area">
+										<a href="/products/pe/HPPE800S1.dev" class="btn_calculator"
+											data-weblogclick='{"actn":"치아보험-내 보험료 확인", "labl":"상단_배너클릭", "clsf":"메인링크"}'>내
+											보험료 확인</a>
+									</div>
+								</div>
+							</li>
+							<li class="insurance isa12" style="top:0">
+								<!-- 바른보장 서비스 -->
+								<div class="main_text_area">
+									<div class="title">
+										<!-- 180516 수정 -->내 보험 제대로 된 걸까?<br />놓친 보장이 걱정된다면?<br /><span
+											class="sub_title"><span class="point_ye2">바른보장 서비스</span>로 내 보험 한눈에
+											확인<i>!</i></span>
+									</div>
+									<div class="btn_area">
+										<a href="/analysis/na/NA01000S.dev" class="btn"
+											data-weblogclick='{"actn":"바른보장 서비스 시작", "labl":"상단_배너클릭", "clsf":"메인링크"}'>바른보장
+											서비스 시작</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="main_visual_right">
+						<ul>
+							<li class="action acn0" style="display:none">
+								<div class="main_visual_motion_area main_01">
+									<div class="item text_box01 tooltip_include">업계평균 대비 <span
+											class="data_num">10</span>% 저렴한 월 보험료
+										<div class="box_tooltip">
+											<a href="javascript:;" class="tooltip">도움말</a>
+											<div class="tooltip_cnt"
+												style="left:270px;font-size:12px;line-height:18px;letter-spacing:0">
+												보험감독규정 제7-45조 제7항의 보험가격지수를 반영하여, 업계평균보험료(보험가격지수 100%)와의 차이를 나타낸 수치입니다.
+											</div>
+										</div>
+									</div>
+									<div class="item flip_box type_big">
+										<div class="main_position">
+											<div class="number_box">
+												<span class="number num1 seat10">1</span>
+												<span class="number num0 seat1">0</span>
+												<span class="number dot">.</span>
+												<span class="number num0 seat01">0</span>
+											</div>
+											<span class="number percent">%</span>
+											<div class="box_over"></div>
+										</div>
+									</div>
+									<div class="item time_line_box">
+										<div class="main_position">
+											<ul class="btn_list">
+												<li><a href="javascript:;"
+														data-weblogclick='{"labl":"상단_배너클릭_우측", "clsf":"메인링크"}'>표준체</a>
+												</li>
+												<li><a href="javascript:;"
+														data-weblogclick='{"labl":"상단_배너클릭_우측", "clsf":"메인링크"}'>비흡연체</a>
+												</li>
+												<li class="eq3"><a href="javascript:;"
+														data-weblogclick='{"labl":"상단_배너클릭_우측", "clsf":"메인링크"}'>건강체</a>
+												</li>
+												<li><a href="javascript:;"
+														data-weblogclick='{"labl":"상단_배너클릭_우측", "clsf":"메인링크"}'>슈퍼건강체</a>
+												</li>
+											</ul>
+											<ul class="text_list">
+												<li>표준체</li>
+												<li>비흡연체</li>
+												<li>건강체</li>
+												<li>슈퍼건강체</li>
+											</ul>
+											<div class="item item_dot"></div>
+										</div>
+									</div>
+									<div class="item tip_text tooltip_include">남자40세, 보험가입금액 1억원, 20년만기, 전기납(20년납), 월납,
+										순수보장형 기준
+										<!-- 190225 수정 -->
+										<div class="box_tooltip" style="vertical-align:middle">
+											<a href="javascript:;" class="tooltip">도움말</a>
+											<div class="tooltip_cnt"
+												style="left:270px;font-size:12px;line-height:18px;letter-spacing:0">
+												'고의적 사고 및 2년 이내 자살'의 경우에 사망보험금 지급 제한됩니다. 자세한 내용은 약관 및 상품요약서 참고해주세요.
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="action acn1" style="display:none">
+								<div class="item title_copy">종신보험 특징 카피 문구</div>
+								<div class="item motion_item">
+									<div class="motion_box">
+										<div class="motion1">M</div>
+										<div class="motion2">O</div>
+										<div class="motion3">T</div>
+										<div class="motion4">I</div>
+										<div class="motion5">O</div>
+										<div class="motion6">N</div>
+									</div>
+								</div>
+								<div class="item tip_text">상품에 대한 설명 문구</div>
+							</li>
+							<li class="action acn2" style="display:none">
+								<div class="main_visual_motion_area main_03">
+									<!-- 180813 수정 -->
+									<div class="item text_box01 tooltip_include">해지환급금 미지급형으로 <br /><span
+											class="point_ye">당사 기존 암보험보다 낮은 보험료</span></div>
+									<!-- //180813 수정 -->
+									<div class="item flip_box type_big">
+										<div class="main_position">
+											<div class="number_box">
+												<span class="number num2 seat10">2</span> <!-- 180813 수정 -->
+												<span class="number num0 seat1">0</span> <!-- 180813 수정 -->
+												<span class="number dot">.</span>
+												<span class="number num0 seat01">0</span>
+											</div>
+											<span class="number percent">%</span>
+											<div class="box_over"></div>
+										</div>
+									</div>
+									<!-- 180813 삭제 -->
+									<!-- 180813 수정 -->
+									<div class="item tip_text">남자40세 표준체 보험가입금액 3천만원 100세만기 전기납 기준<br />(무)라이프플래닛e암보험Ⅲ
+										순수보장형 대비</div>
+								</div>
+							</li>
+							<li class="action acn3" style="display:none">
+								<div class="item title_copy">5대성인병보험 특징 카피 문구</div>
+								<div class="item motion_item">
+									<div class="motion_box">
+										<div class="motion1">M</div>
+										<div class="motion2">O</div>
+										<div class="motion3">T</div>
+										<div class="motion4">I</div>
+										<div class="motion5">O</div>
+										<div class="motion6">N</div>
+									</div>
+								</div>
+								<div class="item tip_text">상품에 대한 설명 문구</div>
+							</li>
+							<li class="action acn4" style="display:none">
+								<div class="item title_copy">상해보험 특징 카피 문구</div>
+								<div class="item motion_item">
+									<div class="motion_box">
+										<div class="motion1">M</div>
+										<div class="motion2">O</div>
+										<div class="motion3">T</div>
+										<div class="motion4">I</div>
+										<div class="motion5">O</div>
+										<div class="motion6">N</div>
+									</div>
+								</div>
+								<div class="item tip_text">상품에 대한 설명 문구</div>
+							</li>
+							<li class="action acn5" style="display:none">
+								<div class="item title_copy">연금보험 특징 카피 문구</div>
+								<div class="item motion_item">
+									<div class="motion_box">
+										<div class="motion1">M</div>
+										<div class="motion2">O</div>
+										<div class="motion3">T</div>
+										<div class="motion4">I</div>
+										<div class="motion5">O</div>
+										<div class="motion6">N</div>
+									</div>
+								</div>
+								<div class="item tip_text">상품에 대한 설명 문구</div>
+							</li>
+							<li class="action acn6" style="display:none">
+								<div class="main_visual_motion_area main_07">
+									<div class="item text_box01">납입보험료에 따른 <span class="point_ye">세액공제
+											금액<i>!</i></span><br />(관련세법 요건 충족 시)</div>
+									<div class="item flip_box type_small">
+										<div class="number_box">
+											<span class="number num1 minus">-</span>
+											<span class="number num1 seat100000">1</span>
+											<span class="number num0 seat10000">0</span>
+											<span class="number num0 seat1000">0</span>
+											<span class="number comma">,</span>
+											<span class="number num0 seat100">0</span>
+											<span class="number num0 seat10">0</span>
+											<span class="number num0 seat1">0</span>
+										</div>
+										<span class="number won">원</span>
+									</div>
+									<div class="item time_line_box">
+										<div class="main_position">
+											<ul class="btn_list">
+												<li><a href="javascript:;">월 10만원</a></li>
+												<li><a href="javascript:;">월 20만원</a></li>
+												<li><a href="javascript:;">월 30만원</a></li>
+												<li class="last"><a href="javascript:;">월 34만원</a></li>
+											</ul>
+											<ul class="text_list">
+												<li>월 10만원</li>
+												<li>월 20만원</li>
+												<li>월 30만원</li>
+												<li>월 34만원</li>
+											</ul>
+											<div class="item item_dot"></div>
+										</div>
+									</div>
+									<div class="item tip_text">
+										<ul>
+											<li>- 최대 66만원 : 연간 공제한도 400만원, 지방소득세 포함 세액공제율 16.5%</li>
+											<li>- 최대 52.8만원 : 총급여 5,500만원 또는 종합소득금액 4천만원 초과자 13.2% </li>
+										</ul>
+										<p>※ 총 급여 1.2억원 또는 종합소득금액 1억원 초과자는 연간 공제한도 300만원</p>
+									</div>
+								</div>
+							</li>
+							<li class="action acn7" style="display:none">
+								<!-- 170626 수정 -->
+								<div class="main_visual_motion_area main_08">
+									<div class="item text_box01">10년 이상 유지시, <span>비과세 혜택<i>!</i></span><br />(관련세법 요건
+										충족 시)</div>
+									<div class="item text_box02">이자소득세 면제</div>
+									<div class="item flip_box type_small">
+										<div class="number_box">
+											<span class="number num1 seat10">1</span>
+											<span class="number num0 seat1">5</span>
+											<span class="number dot">.</span>
+											<span class="number num0 seat01">4</span>
+										</div>
+										<span class="number percent">%</span>
+									</div>
+									<div class="item text_box03">(지방소득세 포함)</div>
+									<div class="item tip_text">※ 모든 보험사의 월 평균 납입보험료 합이 150만원 미만일 경우</div>
+								</div>
+								<!-- 170626 수정 -->
+							</li>
+							<li class="action acn8" style="display:none">9</li>
+							<li class="action acn9" style="display:none">10</li>
+							<li class="action acn10" style="display:none">
+								<div class="main_visual_motion_area main_10">
+									<div class="item text_box01 tooltip_include">
+										<!-- 161223 수정 -->보험가입금액의 1%를 보험기간 동안<br /><span class="point_ye">매월 월지급사망보험금으로
+											받으세요<i>!</i></span>
+										<div class="box_tooltip">
+											<a href="javascript:;" class="tooltip">연금수령방식 도움말</a>
+											<div class="tooltip_cnt">
+												<p>보험기간 만기일이 되기 직전 5년 이내에 월지급사망보험금의 지급사유가 발생한 경우 최초 지급사유 발생일을 포함하여
+													5년(60회) 동안 매월 지급사유 발생해당일에 지급</p>
+											</div>
+										</div>
+									</div>
+									<div class="item flip_box type_small">
+										<div class="number_box">
+											<span class="number month">매월</span>
+											<span class="number num1 seat100000">1</span>
+											<span class="number num0 seat10000">0</span>
+											<span class="number num0 seat1000">0</span>
+										</div>
+										<span class="number won10000">만원</span>
+									</div>
+									<div class="item time_line_box">
+										<div class="main_position">
+											<ul class="btn_list">
+												<li><a href="javascript:;">월 10만원</a></li>
+												<li><a href="javascript:;">월 20만원</a></li>
+												<li class="last"><a href="javascript:;">월 34만원</a></li>
+											</ul>
+											<ul class="text_list">
+												<li>3천만원</li>
+												<li class="two">1억원</li>
+												<li class="thr">5억원</li>
+											</ul>
+											<div class="item item_dot"></div>
+										</div>
+									</div>
+									<!-- 160324 수정 -->
+									<div class="item tip_text">보험가입금액 3천만원/1억원/5억원 기준<br />※ '고의적 사고 및 2년 이내 자살' 경우
+										사망보험금 지급이 제한됩니다.</div>
+								</div>
+							</li>
+
+							<li class="action acn11" style="display:none">
+								<div class="movie_area">
+									<!-- 180516 수정 -->
+									<div class="img_ie8">
+										<img src="../../resources/images/main/img_pet_thumb.png" width="465" alt="" />
+									</div>
+
+									<video width="460" height="260" id="video_pet" controls
+										poster="../../resources/images/main/img_pet_thumb.png">
+										<source src="../../resources/video/common/pet_60s.mp4" type="video/mp4">
+									</video>
+
+									<script>
+										var vid = document.getElementById("video_pet");
+										vid.volume = 0.5;
+									</script>
+									<div id="showIe11" style="display:none;">
+										<object width="460" height="260"
+											data="//www.youtube.com/embed/raRB-_5Rp0A?loop=1&rel=0&playlist=raRB-_5Rp0A">
+											<param name="movie" value="//youtu.be/raRB-_5Rp0A">
+											<param name="allowFullScreen" value="true">
+											<param name="allowscriptaccess" value="always">
+											<embed
+												src="//www.youtube.com/embed/raRB-_5Rp0A?loop=1&rel=0&playlist=raRB-_5Rp0A"
+												type="application/x-shockwave-flash" width="460" height="260"
+												allowscriptaccess="always" allowfullscreen="true">
+										</object>
+									</div>
+									<!-- //180516 수정 -->
+								</div>
+							</li>
+							<li class="action acn12">
+								<div class="main_visual_motion_area main_12">
+									<div style="display:none">
+										<div class="item text_box01">
+											모바일 전용 <span>바른보장 서비스</span> 출시<i>!</i>
+											<p class="sub">"맞춤형 보장"과 "부족한 보장"을 한 번에 추천<i>!</i></p>
+										</div>
+										<div class="item text_box02">
+											<select class="sel_m" title="휴대전화번호 앞자리" name="selectCellphone"
+												id="selectCellphone" style="width:94px">
+												<option>010</option>
+											</select>
+											<input type="text" name="textCellphone" id="textCellphone"
+												class="tf_m type6" value="" placeholder="휴대전화번호 입력" title="휴대전화번호"
+												style="width:204px" maxlength="8">
+											<button class="btn_l2 type2 mt15" style="width:366px"
+												id="sendSms_barun">모바일로 URL 전송하기</button>
+										</div>
+										<div class="item tip_text">※ 바른보장 서비스는 모바일 전용 서비스 입니다.<br />※ 입력한 휴대전화번호는 별도로
+											저장되지 않으며, 수신된 URL로 접속 시<br />&nbsp;&nbsp;&nbsp;&nbsp;데이터 통화료가 발생할 수 있습니다.
+										</div>
+									</div>
+
+									<!-- 180928 수정 -->
+									<div class="item text_box01">
+										보장분석을 위해<br />
+										당신의 정보를 <span class="point1">입력해 주세요.</span>
+									</div>
+									<div class="item text_box02">
+										나의 이름은
+										<span class="area_cursor">
+											<span class="cursor" id="cursor"></span>
+											<a href="/analysis/na/NA01000S.dev"></a>
+										</span>
+										입니다
+									</div>
+									<!-- //180928 수정 -->
+								</div>
+							</li>
+							<li class="action acn13" style="display:none">
+								<div class="main_visual_motion_area main_13">
+									<div class="item text_box01 tooltip_include">업계평균 대비 <span
+											class="data_num">00</span>% 저렴한 월 보험료
+										<div class="box_tooltip">
+											<a href="javascript:;" class="tooltip">도움말</a>
+											<div class="tooltip_cnt"
+												style="left:270px;font-size:12px;line-height:18px;letter-spacing:0">
+												보험감독규정 제7-45조 제7항의 보험가격지수를 반영하여, 업계평균보험료(보험가격지수 100%)와의 차이를 나타낸 수치입니다.
+											</div>
+										</div>
+									</div>
+									<div class="item flip_box type_big">
+										<div class="main_position">
+											<div class="number_box">
+												<span class="number num1 seat10">1</span>
+												<span class="number num0 seat1">0</span>
+												<span class="number dot">.</span>
+												<span class="number num0 seat01">0</span>
+											</div>
+											<span class="number percent">%</span>
+											<div class="box_over"></div>
+										</div>
+									</div>
+									<div class="item tip_text">남자 40세, 보험가입금액 1천만원, 10년 만기, 10년 납 기준</div>
+								</div>
+							</li>
+							<!-- 191115 추가 -->
+							<li class="action acn14" style="display:none">
+								<div class="main_visual_motion_area main_14">
+									<div class="item text_box01 tooltip_include">연평균 <span class="point_ye">미세먼지 농도
+											감소율</span>에 따른<br /> 보험료 할인 혜택</div>
+									<div class="item flip_box type_big">
+										<div class="main_position">
+											<div class="number_box">
+												<span class="number num0 seat1">0</span>
+												<span class="number dot">.</span>
+												<span class="number num0 seat01">0</span>
+											</div>
+											<span class="number percent">%</span>
+											<div class="box_over"></div>
+										</div>
+									</div>
+									<div class="item tip_text">연평균 미세먼지 농도 감소율 15% 이상 기준</div>
+								</div>
+							</li>
+							<!-- //191115 추가 -->
+							<!-- 200506 여성건강보험 추가 -->
+							<li class="action acn15" style="display:none">
+								<div class="main_visual_motion_area main_15">
+									<div class="item text_01">3대암(위&middot;간&middot;폐 등), 감상선암, 유방암,<br />여성생식기암 등 <span
+											class="point_ye">주요 여성 질환 보장</span></div>
+									<div class="item motion_item">
+										<div class="motion_box">
+											<div class="txt_left">최대</div>
+											<div class="txt_big1">2</div>
+											<div class="txt_big2">천</div>
+											<div class="txt_right">만원</div>
+										</div>
+									</div>
+									<div class="item tip_text">보험가입금액 2천만원 기준<br />(단, 55~60세는 보험가입금액 최대 1천만원까지)</div>
+								</div>
+							</li>
+							<!-- //200506 여성건강보험 추가 -->
+							<!-- 200706 e저축보험 추가 -->
+							<li class="action acn16" style="display:none">
+								<div class="main_visual_motion_area main_16">
+									<div class="item text_box01">복리 이자는 물론,<br><span class="point_ye">만기유지보너스로 환급률
+											UP<i>!</i></span></div>
+									<div class="item flip_box type_small">
+										<div class="main_position">
+											<div class="number_box">
+												<span class="number num0 seat1">0</span>
+												<span class="number dot">.</span>
+												<span class="number num0 seat01">0</span>
+												<span class="number num0 seat02">0</span>
+											</div>
+											<span class="number percent">%</span>
+										</div>
+									</div>
+									<div class="item text_box02"><em id="yearSave">10년</em>만기 시 <span
+											class="point_ye">만기유지보너스 +<em id="yearRate">1.8</em>%</span> 지급<i>!</i>
+									</div><!-- 200717 수정 -->
+									<div class="item time_line_box">
+										<div class="main_position">
+											<ul class="btn_list">
+												<li><a href="javascript:;">가입</a></li>
+												<li><a href="javascript:;">1년</a></li>
+												<li><a href="javascript:;">2년</a></li>
+												<li><a href="javascript:;">3년</a></li>
+												<li><a href="javascript:;">10년</a></li>
+											</ul>
+											<ul class="text_list">
+												<li>가입</li>
+												<li>1년</li>
+												<li>2년</li>
+												<li>3년</li>
+												<li>10년</li>
+											</ul>
+											<div class="item item_dot"></div>
+										</div>
+									</div>
+									<div class="item tip_text">(한 달 유지 시 100% 이상 환급)<br>※ 자세한 내용은 상품 안내 페이지 및 약관, 상품설명서
+										참조</div>
+								</div>
+							</li>
+							<!-- //200706 e저축보험 추가 -->
+						</ul>
+					</div>
+				</div>
+				<!-- // 상단 메뉴순서 영역 끝-->
+
+				<!-- 띠배너 영역 시작-->
+				<div class="box_banner" id="box_banner_top" role="banner"
+					style="border-bottom:1px solid #cedce4;background:#ddecff;">
+					<div class="inner">
+						<p><a
+								href="/lifesquare/event/HPLC01S1.dev?boardPage=1&boardRowCcn=6&emId=1585&emEventCode=MW&eventStatus=O&eventFlag=&evntCd=MW01&evntMagSq=85"><img
+									src="/commons/slink/administrator/homepage/img/01_MainLineBanner_201120.png"
+									alt="연금저축보험 가입 시 신세계상품권 3만원 증정(월 보험료 10만원 이상 가입 시)"></a></p>
+					</div>
+				</div>
+
+				<!-- 띠배너 영역 끝-->
+
+				<!-- 상품 해쉬 영역 시작 -->
+
+				<div class="main_sorting_area">
+					<div class="tab_sorting">
+						<ul>
+							<li><a href="#tab_product_popular" data-key="10052,10037,10001,10049,10010,10004"
+									data-weblogclick='{"labl":"Tab_상품분류", "clsf":"메인링크"}'><span
+										class="sharp">#</span>12월 인기상품</a></li>
+							<li><a href="#tab_product_all"
+									data-key="10052,10037,10001,10049,10010,10004,10041,10043,10003,10002,10028,10029,10017,10008,10007"
+									data-weblogclick='{"labl":"Tab_상품분류", "clsf":"메인링크"}'><span
+										class="sharp">#</span>전체</a></li>
+							<li><a href="javascript:;" data-key="10008,10007"
+									data-weblogclick='{"labl":"Tab_상품분류", "clsf":"메인링크"}'><span
+										class="sharp">#</span>우리아이</a></li>
+							<li><a href="#tab_product_annuity" data-key="10010,10004,10003"
+									data-weblogclick='{"labl":"Tab_상품분류", "clsf":"메인링크"}'><span
+										class="sharp">#</span>연금저축보험</a></li>
+							<li><a href="#tab_product_health" data-key="10052,10037,10049,10041,10043,10028,10029"
+									data-weblogclick='{"labl":"Tab_상품분류", "clsf":"메인링크"}'><span
+										class="sharp">#</span>건강</a></li>
+							<li><a href="#tab_product_exemption" data-key="10004"
+									data-weblogclick='{"labl":"Tab_상품분류", "clsf":"메인링크"}'><span
+										class="sharp">#</span>연말정산</a></li>
+							<li><a href="#tab_product_child" data-key="10010,10004,10003"
+									data-weblogclick='{"labl":"Tab_상품분류", "clsf":"메인링크"}'><span
+										class="sharp">#</span>목돈마련</a></li>
+							<li><a href="#tab_product_pollution" data-key="10041"
+									data-weblogclick='{"labl":"Tab_상품분류", "clsf":"메인링크"}'><span
+										class="sharp">#</span>미세먼지</a></li>
+						</ul>
+					</div>
+					<div class="con_sorting">
+						<div class="sorting_area">
+							<div class="sorting_item sitem20" data-key="10052">
+								<div class="inners">
+									<div class="header">
+										<strong class="tit">뇌·심장보험</strong>
+										<strong class="new_mark"><span class="blind">NEW</span></strong>
+									</div>
+									<p class="txt">뇌·심장 관련 질환을<br>폭 넓게 보장!</p>
+									<div class="area_detail">
+										<a href="/products/pf/HPPF200S1.dev" class="btn_m3">상품 자세히 보기</a>
+									</div>
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+								</div>
+							</div>
+							<div class="sorting_item sitem16" data-key="10037">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">비갱신암보험</strong>
+									</div>
+									<p class="txt">
+										처음 보험료 그대로<br>
+										최대 100세까지 보장
+									</p>
+									<div class="area_detail">
+										<a href="/products/pe/HPPE700S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"100세까지암보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem1" data-key="10001">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">정기보험</strong>
+									</div>
+									<p class="txt">
+										흡연여부와 건강에 따라<br />
+										<em>보험료 할인율 UP!</em>
+									</p>
+									<div class="area_detail">
+										<a href="/products/pd/HPPD100S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"정기보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem19" data-key="10049">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">여성건강보험</strong>
+									</div>
+									<p class="txt">처음 보험료 그대로<br> 여성 주요 질환 집중 보장!</p>
+									<div class="area_detail">
+										<a href="/products/pf/HPPF100S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"여성건강보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem8" data-key="10010">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">저축보험</strong>
+									</div>
+									<p class="txt">
+										원금 보장은 물론,<br>
+										만기유지보너스까지!
+									</p>
+									<div class="area_detail">
+										<a href="/products/pd/HPPD700S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"저축보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem7" data-key="10004">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">연금저축보험</strong>
+
+									</div>
+									<p class="txt">
+										노후준비와 세액공제를 동시에!<br />
+										(관련 세법 충족 시)
+										<!--191217 수정-->
+									</p>
+									<div class="area_detail">
+										<a href="/products/pd/HPPD400S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"연금저축보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem18" data-key="10041">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">미세먼지질병보험</strong>
+									</div>
+									<p class="txt">
+										호흡기 및 심혈관 관련 질병<br>
+										든든하게 보장!
+									</p>
+									<div class="area_detail">
+										<a href="/products/pe/HPPE900S1.dev" class="btn_m3">상품 자세히 보기</a>
+									</div>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem17" data-key="10043">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">치아보험</strong>
+									</div>
+									<p class="txt">
+										때우고 씌우는 충치치료<br>
+										재료 상관없이 보장!
+									</p>
+									<div class="area_detail">
+										<a href="/products/pe/HPPE800S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"치아보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem3" data-key="10011">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">암보험</strong>
+									</div>
+									<p class="txt">
+										처음 낸 보험료 그대로,<br />
+										<em>비흡연자 할인까지!</em>
+									</p>
+									<div class="area_detail">
+										<a href="/products/pd/HPPD800S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"암보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem6" data-key="10003">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">연금보험</strong>
+									</div>
+									<p class="txt">
+										<em>10년 유지 시 비과세 혜택!</em><br />
+										(관련 세법 충족 시)
+									</p>
+									<div class="area_detail">
+										<a href="/products/pd/HPPD300S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"연금보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem2" data-key="10002">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">종신보험</strong>
+
+									</div>
+									<p class="txt">
+										흡연여부와 건강에 따라<br />
+										<em>보험료 할인율 UP!</em>
+									</p>
+									<div class="area_detail">
+										<a href="/products/pd/HPPD200S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"종신보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem12" data-key="10028">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">입원비보험</strong></div>
+									<p class="txt">
+										꼭 맞는 <em>연령대별 보장일수</em><br>
+										보험료가 오르지 않는 <em>비갱신!</em>
+									</p>
+									<div class="area_detail">
+										<a href="/products/pe/HPPE500S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"입원비보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem13" data-key="10029">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">수술비보험</strong></div>
+									<p class="txt">
+										<em>연간 3회, 최대 100만원</em>까지!<br>
+										든든한 수술보험
+									</p>
+									<div class="area_detail">
+										<a href="/products/pe/HPPE600S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"수술비보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem5" data-key="10017">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">상해보험</strong>
+									</div>
+									<p class="txt">
+										재해사망 · 장해 · 골절 등<br>
+										<em>일상생활 보장!</em>
+									</p>
+									<div class="area_detail">
+										<a href="/products/pe/HPPE300S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"상해보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+
+									<span class="event_mark"><span class="blind">이벤트</span></span>
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem10" data-key="10008">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">어린이저축보험</strong>
+									</div>
+									<p class="txt">
+										자녀에게 꼭 필요한<br />
+										<em>교육자금 맞춤설계</em>
+									</p>
+									<div class="area_detail">
+										<a href="/products/pd/HPPD600S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"어린이저축보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="sorting_item sitem9" data-key="10007">
+								<div class="inners">
+
+									<div class="header">
+										<strong class="tit">어린이보장보험</strong>
+									</div>
+									<p class="txt">
+										어린이 <em>10대질병<br />집중보장!</em>
+									</p>
+									<div class="area_detail">
+										<a href="/products/pd/HPPD500S1.dev" class="btn_m3"
+											data-weblogclick='{"actn":"어린이보장보험 상품 자세히 보기", "labl":"카드형_상품분류", "clsf":"메인링크"}'>상품
+											자세히 보기</a>
+									</div>
+
+
+
+
+								</div>
+							</div>
+
+
+
+						</div>
+					</div>
+				</div>
+
+
+				<!-- // 상품 해쉬 영역 끝 -->
+
+				<div class="cont type6">
+					<div class="inner">
+						<a href="/innovation/is/HPIS150S1.dev" target="_blank"
+							data-weblogclick='{"actn":"포인트 혜택 바로가기", "labl":"하단_띠배너", "clsf":"메인링크"}'>
+							<img src="../../resources/images/main/v171101_img_banner_innovation.png"
+								alt="라이프플래닛의 다양한 포인트 혜택을 만나보세요. 혜택 바로가기">
+						</a>
+					</div>
+				</div>
+
+				<!-- 메인배너 영역 시작 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div class="cont box_event">
+					<h2 class="blind">이벤트</h2>
+					<div class="event_btn">
+						<a href="javascript:;" class="btn_play _pause"><span class="blind">일시정지</span></a>
+					</div>
+
+					<ul class="list_event">
+
+
+
+
+
+
+
+						<li class="li">
+
+							<div class="area_event" style="background:#ddecff">
+								<div class="inner">
+									<img src="/commons/slink/administrator/homepage/img/P_MainLowerBanner_1600x269_201120.png"
+										alt="연금저축보험 가입 시 신세계상품권 3만원 증정!(월 기본보험료 10만원 이상 가입 시)" />
+									<a href="/lifesquare/event/HPLC01S1.dev?boardPage=1&boardRowCcn=6&emId=1585&emEventCode=MW&eventStatus=O&eventFlag=&evntCd=MW01&evntMagSq=85"
+										class="btn_s2"><span class="arrow">자세히 보기</span></a>
+								</div>
+							</div>
+
+
+						</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<li class="li" style="display:none;">
+
+							<div class="area_event" style="background:#d6ecf5">
+								<div class="inner">
+									<img src="/commons/slink/administrator/homepage/img/P_SavingMainLowerBanner_1600x269_201120.png"
+										alt="저축보험 가입 시 신세계상품권 3만원 증정!(월 기본보험료 10만원 이상 가입 시)" />
+									<a href="/lifesquare/event/HPLC01S1.dev?boardPage=1&boardRowCcn=6&emId=1584&emEventCode=MV&eventStatus=O&eventFlag=&evntCd=MV01&evntMagSq=84"
+										class="btn_s2"><span class="arrow">자세히 보기</span></a>
+								</div>
+							</div>
+
+
+						</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<li class="li" style="display:none;">
+
+							<div class="area_event" style="background:#def6f2">
+								<div class="inner">
+									<img src="/commons/slink/administrator/homepage/img/P_MainLowerBanner_1600x269_201026.png"
+										alt="건강한 나를 위한 2020년 이벤트 혜택 보장성 보험 10종 사입 시 최대 25만원 상품권 증정!" />
+									<a href="/bridge/bl/HPBL940S1.dev" class="btn_s2"><span class="arrow">자세히
+											보기</span></a>
+								</div>
+							</div>
+
+						</li>
+
+
+
+
+
+
+
+
+
+
+
+					</ul>
+				</div>
+
+
+
+
+
+
+				<!-- // 메인배너 영역 끝 -->
+
+				<!-- 360플래닛 영역 시작 -->
+				<div class="cont clearfix box_idea360">
+					<h2 class="blind">가입후기</h2>
+					<div class="cont_txt01">
+						<div>
+							<p>라이프플래닛에 제안하고 싶은 아이디어가 있으신가요? <br />여러분의 소중한 의견을 기다립니다.</p>
+							<a href="/innovation/ic/HPIC100S1.dev" target="_blank" class="btn_m2 type2"
+								data-weblogclick='{"actn":"아이디어 제안", "labl":"가입후기", "clsf":"메인링크"}'><span
+									class="arrow2">아이디어 제안</span></a>
+						</div>
+					</div>
+					<div class="cont_txt02">
+						<ul>
+							<li class="li01">
+								<strong>모든 아이디어</strong>
+								<p><a href="/innovation/ii/HPII100S1.dev"
+										data-weblogclick='{"actn":"모든 아이디어", "labl":"가입후기", "clsf":"메인링크"}'>13910</a>
+								</p>
+							</li>
+							<li class="li02">
+								<strong>개선된 아이디어</strong>
+								<p><a href="/innovation/ii/HPII100S1.dev?sch_stat=40"
+										data-weblogclick='{"actn":"개선된 아이디어", "labl":"가입후기", "clsf":"메인링크"}'>121</a></p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- // 360플래닛 영역 끝 -->
+
+				<!-- 가입후기 영역 시작 -->
+				<div class="cont type3 box_review box_rela_loading01">
+					<!-- 170411 수정 -->
+					<div class="box_loading01">
+						<div class="moction_circle">
+							<span></span><img src="../../resources/images/common/txt_loading01.png" alt="360 플래닛" />
+						</div>
+						<p>고객경험후기를 <span class="point_1">조회중</span> 입니다.</p>
+					</div>
+					<!-- // 170411 수정 -->
+					<h2 class="blind">가입후기</h2>
+					<div class="inner">
+						<div class="cont_tit">
+							<h3>라이프플래닛 고객님들이 직접 작성한 총 <span class="point_1" id="gradeCnt">6,675건</span>의 진솔한 이야기</h3>
+						</div>
+						<ul class="count">
+							<li class="li">
+								<strong class="tit">전체평점</strong>
+								<span class="count_num" id="totalCnt">9.0</span>
+							</li>
+						</ul>
+						<div class="wrap_slide review_area">
+							<!-- [D] : 동적으로 생성 -->
+						</div>
+						<div class="review_btn">
+							<!-- [D] : 동적으로 생성 -->
+						</div>
+						<!-- 170306 추가 -->
+						<div class="area_btn">
+							<a href="/innovation/ip/HPIP100S1.dev" class="btn_m2" target="_blank"
+								data-weblogclick='{"actn":"더 많은 고객경험후기 보기", "labl":"가입후기", "clsf":"메인링크"}'><span
+									class="arrow">더 많은 고객경험후기 보기</span></a>
+						</div>
+						<!-- //170306 추가 -->
+					</div>
+				</div>
+				<!-- // 가입후기 영역 끝 -->
+
+
+				<!-- 새소식 영역 시작  -->
+				<div class="cont box_news_new">
+					<h2 class="blind">모바일앱 다운로드, 새소식</h2>
+					<div class="inner">
+						<div class="apps">
+							<h3 class="h3">모바일로 스마트한 보험관리</h3>
+							<div class="download">
+								<strong>모바일 앱 다운받으시면,</strong>
+								<p class="txt">보험계약조회, 보험금 신청, 보험계약<br />대출 등을 언제나 편리하게 이용하실 수<br />있습니다.</p>
+								<button type="button" id="btn_layer_open" class="btn_s type7"
+									data-weblogclick='{"actn":"다운로드 주소받기", "labl":"APP_다운로드", "clsf":"메인링크"}'><span>다운로드
+										주소받기</span></button>
+
+								<div role="dialog" class="layer_tel">
+									<button type="button" id="btn_layer_close" class="btn_close"><span
+											class="blind">닫기</span></button>
+									<p class="tit">모바일 앱 다운로드 주소 받기</p>
+									<div class="area_tel">
+										<select id="hndTphArno" class="sel_m" style="width:74px;visibility:hidden"
+											title="전화번호 앞자리">
+											<option value="010" selected>010</option>
+										</select>
+										-
+										<input type="text" name="hpAppDownUrl" id="hndTphno1" class="tf_m type2 box_c"
+											value="" style="width:36px;margin:0 5px" title="휴대전화번호 중간 자리" maxlength="4">
+										-
+										<input type="text" name="hpAppDownUrl" id="hndTphno2" class="tf_m type2 box_c"
+											value="" style="width:36px;margin:0 5px" title="휴대전화번호 마지막 자리"
+											maxlength="4">
+									</div>
+									<div class="area_btn">
+										<button type="button" class="btn_s type4" style="margin-left:-24px" id="sendSms"
+											data-weblogclick='{"actn":"다운로드 주소 전송", "labl":"APP_다운로드", "clsf":"메인링크"}'><span>다운로드
+												주소 전송</span></button>
+									</div>
+								</div>
+
+								<script>
+
+								</script>
+							</div>
+						</div>
+						<div class="news">
+							<h3 class="h3">새소식</h3>
+							<ul id="noticeDiv">
+							</ul>
+							<a href="/contact/noti/HPCF01S0.dev" class="btn_more"
+								data-weblogclick='{"actn":"새소식 더보기", "labl":"새소식", "clsf":"메인링크"}'><span
+									class="blind">새소식</span>더보기</a>
+						</div>
+						<div class="aside_new">
+							<h3 class="h3">No.1 라이프플래닛</h3>
+							<a href="/enterprise/pr/HPED41S5.dev" class="a" target="_blank"
+								data-weblogclick='{"actn":"소비자가 인정하는 라이프플래닛", "labl":"하단_홍보", "clsf":"메인링크"}'>
+								<strong class="strong">소비자가 인정하는<br />라이프플래닛</strong>
+								<i class="i awards"></i>
+							</a>
+							<a href="/enterprise/pr/HPED01S0.dev" class="a" target="_blank"
+								data-weblogclick='{"actn":"언론에서 바라 본 라이프플래닛", "labl":"하단_홍보", "clsf":"메인링크"}'>
+								<strong class="strong">언론에서 바라 본<br />라이프플래닛</strong>
+								<i class="i"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- // 새소식 영역 끝 -->
+
+				<!-- 고객센터 동영상 영역 시작 -->
+				<div class="cont box_cs new">
+					<h2 class="blind">고객센터</h2>
+					<video id="mianVideo" class="video">
+						<source src="https://cdn.lifeplanet.co.kr/bg_30sec.mp4" type="video/mp4" />
+						<source src="https://cdn.lifeplanet.co.kr/bg_30sec.webm" type="video/webm" />
+						<source src="https://cdn.lifeplanet.co.kr/bg_30sec.ogv" type="video/ogg" />
+						<img src="../../resources/images/main/bg_box_cs_sample.png" class="bg_video" alt="" />
+					</video>
+					<div class="dim"></div>
+					<div class="inner">
+						<p class="txt">혼자서 가입이 어려울 땐 전화로!</p>
+						<p class="num">고객센터 1566-0999</p>
+						<dl class="dl">
+							<dt class="dt">평<span class="s">일</span></dt>
+							<dd class="dd">오전<span class="s">9시</span> ~ 오후 7시</dd>
+						</dl>
+						<dl class="dl">
+							<dt class="dt">토요일</dt>
+							<dd class="dd">오전 10시 ~ 오후 1시</dd>
+						</dl>
+						<!-- 170706 수정 -->
+						<p class="txt type2">홈페이지에서 365일 24시간 보험가입이 가능합니다.</p>
+					</div>
+				</div>
+				<!-- // 고객센터 동영상 영역 끝 -->
+
+				<!-- 기타 링크 영역 시작 -->
+				<div class="cont type4">
+					<h2 class="blind">기타 링크</h2>
+					<div class="inner">
+						<ul class="list_etc">
+							<li class="li list1"><a href="http://www.kyobobook.co.kr" class="a" target="_blank"
+									data-weblogclick='{"actn":"꿈을 키우는 세상 인터넷교보문고", "labl":"기타링크", "clsf":"메인링크"}'><span
+										class="blind">꿈을키우는 세상 인터넷 교보문고</span></a></li>
+							<li class="li list2"><a href="javascript:;" id="btn_privacy_lock" class="a"
+									data-weblogclick='{"actn":"개인정보 유출관련 필수 체크사항 10가지", "labl":"기타링크", "clsf":"메인링크"}'><span
+										class="blind">개인정보 유출관련 필수 체크사항 10가지</span></a></li>
+							<li class="li list3"><a href="javascript:;" id="btn_flash" class="a"
+									data-weblogclick='{"actn":"소중한 개인정보 다함께 지켜요 홍보 동영상", "labl":"기타링크", "clsf":"메인링크"}'><span
+										class="blind">소중한 개인정보 다함께 지켜요 홍보 동영상</span></a></li>
+							<li class="li list4"><a href="javascript:;" id="btn_webtoon" class="a"
+									data-weblogclick='{"actn":"SIU 기동대 반드시 잡는다! 보험사기근절 웹툰", "labl":"기타링크", "clsf":"메인링크"}'><span
+										class="blind">SIU 기동대 반드시 잡는다! 보험사기근절 웹툰</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- // 기타 링크 영역 끝 -->
+
+			</div>
+		</div>
+		<hr />
+		<!-- // 푸터 영역 시작 -->
+		<footer role="contentinfo" id="footer" class="main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- 150413 수정 -->
+			<div class="box_menu_all">
+				<!-- 150507 수정 -->
+				<ul>
+					<li class="first"><img src="../../resources/images/common/bg_img_logo.gif" alt="lifeplanet 교보라이프플래닛생명">
+						<!-- 150902 접근성 -->
+						<ul>
+							<li class="bullet_no">
+								<a href="/products/pc/HPPC900S1.dev" class="btn_s"><span>간편 보험료 확인</span></a>
+								<!-- 160204 -->
+								<a href="/lifesquare/ls/HPLP130S1.dev" class="btn_s"><span>생명보험 가입 노하우</span></a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="/products/pd/HPPD000S1.dev">상품안내/가입</a>
+						<ul>
+							<li><a href="/products/pd/HPPD100S1.dev">정기보험</a></li>
+							<li><a href="/products/pd/HPPD200S1.dev">종신보험</a></li>
+							<li><a href="/products/pe/HPPE300S1.dev">상해보험</a></li><!-- 160525 상해보험 추가 -->
+							<li><a href="/products/pe/HPPE700S1.dev">비갱신암보험</a></li>
+							<li><a href="/products/pd/HPPD800S1.dev">암보험</a></li>
+							<li><a href="/products/pf/HPPF200S1.dev">뇌&middot;심장보험</a></li>
+							<li><a href="/products/pf/HPPF100S1.dev">여성건강보험</a></li>
+							<li><a href="/products/pe/HPPE900S1.dev">미세먼지질병보험</a></li>
+							<li><a href="/products/pe/HPPE800S1.dev">치아보험</a></li>
+							<li><a href="/products/pe/HPPE500S1.dev">입원비보험</a></li>
+							<li><a href="/products/pe/HPPE600S1.dev">수술비보험</a></li>
+							<li><a href="/products/pd/HPPD500S1.dev">어린이보장보험</a></li>
+							<li><a href="/products/pd/HPPD600S1.dev">어린이저축보험</a></li>
+							<li><a href="/products/pd/HPPD400S1.dev">연금저축보험</a></li>
+							<li><a href="/products/pd/HPPD700S1.dev">저축보험</a></li>
+							<li><a href="/products/pd/HPPD300S1.dev">연금보험</a></li>
+							<li><a href="/bridge/bl/HPBL950S1.dev">연금저축 계좌이전</a></li>
+							<!-- 160127 삭제 -->
+						</ul>
+					</li>
+					<li><a href="/lifesquare/ls/HPLS000S1.dev">이벤트 및 혜택</a>
+						<ul>
+							<li><a href="/lifesquare/event/HPLC01S0.dev">이벤트</a></li>
+							<li><a href="/lifesquare/ls/HPLS450S1.dev">보험건강나이</a></li><!-- 160530 추가 -->
+						</ul>
+					</li>
+					<li><a href="/contact/ct/HPCT000S1.dev">고객센터</a>
+						<ul>
+							<li><a href="/contact/faq/HPCB01S0.dev">자주 찾는 질문</a></li>
+							<li><a href="/contact/ct/HPCT100S1.dev">소비자 보호</a></li><!-- 161129 추가 -->
+							<li><a href="/contact/opin/HPCD01S0.dev">고객의 소리</a></li>
+							<li><a href="/contact/dclr/HPCE02S0.dev">신고센터</a></li>
+							<li><a href="/contact/noti/HPCF01S0.dev">공지사항</a></li>
+							<li><a href="/contact/pet/HPCG01S0.dev">보험금 신청안내</a></li>
+							<li><a href="/contact/scrt/HPCI01S0.dev">기타안내</a></li>
+						</ul>
+					</li>
+					<li><a href="/login/HPGA01S0.dev">마이페이지</a>
+						<ul>
+							<!-- 170801 수정 -->
+							<li><a href="/mypage/mm/HPMM100S1.dev">계약조회</a></li>
+							<li><a href="/mypage/ma/HPMA000S1.dev">계약변경</a></li>
+							<li><a href="/mypage/mi/HPMI100S1.dev">보험료납입</a></li>
+							<li><a href="/mypage/mc/HPMC100S1.dev">사고보험금신청</a></li>
+							<li><a href="/mypage/mp/HPMP100S1.dev">지급금신청</a></li>
+							<li><a href="/mypage/ml/HPML100S1.dev">보험계약대출</a></li>
+							<!-- //170801 수정 -->
+						</ul>
+					</li>
+					<li class="last"><a href="/enterprise/common/HPEA00S0.dev" target="_blank">회사소개</a>
+						<ul>
+							<li><a href="/enterprise/etrp/HPEB01S0.dev">기업소개</a></li>
+							<li><a href="/enterprise/pr/HPED31S0.dev">홍보</a></li>
+							<li><a href="/enterprise/sc/HPEF01S0.dev" target="_blank">사회공헌 활동</a></li>
+						</ul>
+						<!-- 160926 추가 -->
+						<a href="/innovation/ic/HPIC100S1.dev" target="_blank">360˚ 플래닛</a>
+						<ul>
+							<li><a href="/innovation/iq/HPIQ100S1.dev">커뮤니티</a></li>
+							<li><a href="/innovation/ih/HPIH100S1.dev">헬스스위치</a></li>
+							<li><a href="/innovation/is/HPIS150S1.dev">씨드포인트</a></li>
+							<li><a href="/innovation/is/HPIS300S1.dev">멤버십 혜택</a></li>
+
+							<li><a href="javascript:;"
+									onclick="alert('로그인 후 이용해 주세요.');PageUtil.movePage('/innovation/ic/HPIC100S1',{'callPopUrl' : '/innovation/ic/HPIC120P1' ,'returnLoginURL' : '/innovation/iy/HPIY100S1'},'','GET');">MY
+									360°</a></li>
+
+							<!-- //170801 추가 -->
+
+						</ul>
+						<!-- //160926 추가 -->
+					</li>
+				</ul>
+				<!-- 150507 수정 -->
+			</div>
+			<!-- // 150413수정 -->
+			<div class="inner">
+				<div class="footer_top">
+					<div class="area_l">
+						<ul class="util type2">
+							<!-- 151016 수정, class추가 -->
+							<li class="li"><strong><a href="javascript:;" onclick="setMoveLink(7);"
+										class="a">개인정보취급방침</a></strong></li>
+							<li class="li"><strong><a href="javascript:;" onclick="setMoveLink(0);"
+										class="a">개인정보처리방침</a></strong></li>
+							<li class="li"><a href="javascript:;" onclick="setMoveLink(8);" class="a">개인신용정보이용 &middot;
+									제공조회 시스템</a></li>
+
+							<li class="li"><a href="javascript:;" onclick="setMoveLink(1);" class="a">라이프플래닛 이용약관</a>
+							</li>
+							<li class="li"><a href="javascript:;" onclick="setMoveLink(9);" class="a">360&deg;플래닛
+									이용약관</a></li>
+
+							<li class="li"><a href="javascript:;" onclick="setMoveLink(2);" class="a">전자금융거래약관</a></li>
+
+							<li class="li first"><a href="javascript:;" onclick="setMoveLink(3);" class="a">이메일 무단수집
+									거부</a></li>
+							<li class="li"><a href="http://cmpl.fss.or.kr/kr/mw/inh/main.jsp" class="a"
+									target="_blank">상속인 금융거래통합조회<i class="blank"></i></a></li>
+							<li class="li first"><a href="javascript:;" onclick="setMoveLink(5);" class="a">장애인 및 장기기증자
+									보험가입 차별신고</a></li>
+							<li class="li"><strong><a href="javascript:;" onclick="setMoveLink(6);"
+										class="a">전자민원접수</a></strong></li>
+							<li class="li"><a href="http://www.fss.or.kr/s1332/" class="a" target="_blank">서민금융 1332<i
+										class="blank"></i></a></li>
+							<li class="li"><a href="javascript:;" onclick="setMoveLink(4);" class="a">e보험범죄신고</a></li>
+							<!-- 150414 추가 -->
+							<li class="li"><a href="/enterprise/common/HPEA00S0.dev" class="a" target="_blank">회사소개<i
+										class="blank"></i></a></li><!-- 151016 수정, target추가 -->
+							<li class="li"><a href="/enterprise/sc/HPEF01S0.dev" class="a" target="_blank">사회 공헌<i
+										class="blank"></i></a></li><!-- 151016 수정, target추가 -->
+							<li class="li"><a href="/common/ce/HPCE100S1.dev" class="a">사이트맵</a></li>
+							<li class="li"><a href="/disclosure/sfgr/HPDD21S0.dev" class="a">보호금융상품등록부</a></li>
+							<!-- 150619 수정 -->
+							<!-- 150414 추가 -->
+						</ul>
+						<!-- 160926 수정 -->
+						<address class="address clearfix">
+							<span class="s">교보라이프플래닛생명보험(주)</span>
+							<span class="s">대표이사 : 이학상</span>
+							<span class="s">사업자등록번호 : 107-88-02971</span>
+							<span class="s">서울시 영등포구 국제금융로6길 11 삼덕빌딩 8층 (07330)</span>
+						</address>
+						<p class="copy">COPYRIGHT &copy; KYOBO LIFEPLANET LIFE INSURANCE COMPANY ALL RIGHTS RESERVED.
+						</p>
+						<!-- //160926 수정 -->
+					</div>
+					<div class="area_r">
+						<div class="site_map">
+							<strong class="strong"><a href="#" class="a">FAMILY SITE</a></strong>
+							<ul style="display:none">
+								<li><a href="https://www.kyobo.co.kr" class="a" target="_blank">교보생명(주)</a></li>
+								<li><a href="http://www.iprovest.com" class="a" target="_blank">교보증권(주)</a></li>
+								<li><a href="http://www.kyoboaxa-im.co.kr" class="a" target="_blank">교보악사자산운용</a></li>
+								<li><a href="http://www.kyobobook.co.kr" class="a" target="_blank">(주)교보문고</a></li>
+								<li><a href="http://www.kico.co.kr" class="a" target="_blank">교보정보통신(주)</a></li>
+								<li><a href="http://www.sbtrust.co.kr" class="a" target="_blank">교보자산신탁(주)</a></li>
+								<li><a href="http://www.kyoborealco.com" class="a" target="_blank">교보리얼코(주)</a></li>
+								<li><a href="http://www.kcasonsa.co.kr/index.jsp" class="a" target="_blank">KCA손해사정</a>
+								</li>
+								<li><a href="http://www.andamc.com/andhome" class="a" target="_blank">A&amp;D신용정보(주)</a>
+								</li>
+								<li><a href="https://www.kcase.co.kr" target="_blank">KCA서비스</a></li>
+							</ul>
+						</div>
+						<!-- 150619 추가 -->
+						<div class="tooltip_check">
+							<a href="javascript:;" class="btn_m"><span><span class="icon icon_pdf">pc 아이콘</span> 내 PC
+									환경보기</span></a>
+						</div>
+						<!-- //150619 추가 -->
+						<div class="box_sns">
+							<a href="https://www.facebook.com/LifeplanetInsurance" target="_blank"
+								class="a facebook">facebook</a>
+							<a href="http://blog.naver.com/lifeplanet" target="_blank" class="a band">band</a>
+							<a href="http://lifeplanet.tistory.com" target="_blank" class="a tistory">tistory</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer_body">
+					<p class="copy">라이프플래닛과 함께 만들어나가는 미래의 가치<a href="/innovation/ic/HPIC100S1.dev" target="_blank"
+							class="btn_m2 point_1"><span class="arrow">360˚ 플래닛</span></a></p><!-- 160926 수정 -->
+					<div class="box_award">
+						<span class="a"><img src="../../resources/images/common/v200218_footer_img_award_01.png"
+								alt="2020년 소비자선정 최고의 브랜드대상 4년 연속 수상" /></span><!-- 200218 수정 -->
+						<span class="a"><img src="../../resources/images/common/footer_img_award_02.png"
+								alt="에코어워드 코리아 2018 비지니스 혁신부문 금융분야 대상" /></span>
+						<span class="a"><img src="../../resources/images/common/footer_img_award_03.png"
+								alt="웹어워드 코리아 2018 기술 이노베이션 대상" /></span>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- hpScriptFooter -->
+
+
+
+			<script type="text/javascript">
+				$(document).ready(function () {
+					if (typeof webLog != "undefined") {
+						webLog.runDataStory();
+						webLog.runGA();
+						webLog.runGATagMag();
+					}
+
+				});
+			</script>
+
+
+
+
+
+
+			<script type="text/javascript">
+				lifeplanetWeblog.insertPageLoadWeblog();
+			</script>
+
+			<script type="text/javascript">
+				/*
+					채널톡 삽입(내부망에서는 동작되지 않도록)
+					가입유의사항,청약단계은 채널톡 실행되지 않도
+				*/
+				if (location.pathname.indexOf('/HPPA') < 0) {
+					(function () {
+						if (remoteAddr.indexOf('192.168.5') < 0
+							&& remoteAddr.indexOf('192.168.6') < 0
+						) {
+							var w = window;
+							if (w.ChannelIO) {
+								return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
+							}
+							var d = window.document;
+							var ch = function () {
+								ch.c(arguments);
+							};
+							ch.q = [];
+							ch.c = function (args) {
+								ch.q.push(args);
+							};
+							w.ChannelIO = ch;
+							function l() {
+								if (w.ChannelIOInitialized) {
+									return;
+								}
+								w.ChannelIOInitialized = true;
+								var s = document.createElement('script');
+								s.type = 'text/javascript';
+								s.async = true;
+								s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+								s.charset = 'UTF-8';
+								var x = document.getElementsByTagName('script')[0];
+								x.parentNode.insertBefore(s, x);
+							}
+							if (document.readyState === 'complete') {
+								l();
+							} else if (window.attachEvent) {
+								window.attachEvent('onload', l);
+							} else {
+								window.addEventListener('DOMContentLoaded', l, false);
+								window.addEventListener('load', l, false);
+							}
+						}
+					})();
+					if (remoteAddr.indexOf('192.168.5') < 0
+						&& remoteAddr.indexOf('192.168.6') < 0
+					) {
+						ChannelIO('boot', {
+							"pluginKey": "2f442a7d-1398-4a3c-a534-8dffa72fb219"
+							, "zIndex": 500
+						});
+					}
+				}
+			</script>
+
+		</footer>
+		<!-- 170102 360플래닛 배너 추가 -->
+		<!-- 180611 삭제 : 아이디어제안
+	<div class="planet360_area">
+		<a href="/innovation/ii/HPII100S1.dev" target="_blank" class="planet360">
+			<img src="../../resources/images/main/img_360.png" alt="여러분의 소중한 아이디어를 기다립니다. 제안하기" />
+			<div class="blub_area"><img src="../../resources/images/main/bulb.png" alt="" /></div>
+			<div class="blub_area_on"><img src="../../resources/images/main/bulb_on.png" alt="" /></div>
+		</a>
+		<style>
+			.planet360_area{position:fixed;left:50%;bottom:20px;margin-left:530px}
+			.planet360_area a.planet360{position:relative;display:block;width:96px;height:128px}
+			.planet360_area a.planet360 img{width:96px;height:128px}
+			.planet360_area a.planet360 .blub_area{position:absolute;top:-37px;left:64px;width:59px;height:76px}
+			.planet360_area a.planet360 .blub_area img{width:59px;height:76px}
+			.planet360_area a.planet360 .blub_area_on{position:absolute;top:-37px;left:64px;width:59px;height:76px;z-index:10}
+			.planet360_area a.planet360 .blub_area_on img{width:59px;height:76px}
+		</style>
+		<script>
+			$(function(){
+				function fnBlub(){
+					var blub = $(".planet360_area a.planet360 .blub_area_on");
+					blub.animate({opacity: "0"},800,"easeInExpo",function(){
+						blub.animate({opacity: "1"},800,"easeOutExpo",function(){
+							setTimeout(fnBlub);
+						});
+					});
+				};
+				function winResizeBanner2(){
+					if($(window).width() < 1275){
+						$(".planet360_area").css({
+							marginLeft: ($(window).width()/2)-100+"px",
+						});
+					}else{
+						$(".planet360_area").css({
+							marginLeft: "530px"
+						});
+					}
+				};
+				$(window).resize(function(){
+					winResizeBanner2();
+				});
+				winResizeBanner2();
+				fnBlub();
+			});
+		</script>
+	</div> -->
+
+		<div class="planet360_area type2" style="display:none;">
+			<a href="/innovation/is/HPIS705S1.dev?evntId=A01" target="_blank" class="planet360">
+				<img src="../../resources/images/main/v171101_img_360.png" alt="톡소다 e캐시 2천원 증정 쿠폰받기" />
+			</a>
+			<!-- 190710 삭제(상단으로 위치이동) -->
+			<!-- <style>
+            .planet360_area.type2{position:fixed;left:50%;bottom:20px;margin-left:530px}
+            .planet360_area.type2 a.planet360{position:relative;display:block;width:96px;height:128px}
+            .planet360_area.type2 a.planet360 img{width:96px;height:128px}
+        </style> -->
+		</div>
+		<!-- //170102 360플래닛 배너 추가 -->
+		<!-- // 푸터 영역 끝 -->
+	</div>
+
+	<!-- DDN 웹로그 시작 -->
+	<script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>
+	<script type="text/javascript">
+		kakaoPixel('4595026545848203596').pageView('메인');
+	</script>
+	<!-- DDN 웹로그 끝 -->
+
+</body>
+
+</html>

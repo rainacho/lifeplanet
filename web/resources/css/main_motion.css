@@ -1,0 +1,1709 @@
+@charset "utf-8";
+
+/* main */
+.main_position {
+	position: relative;
+}
+.main_visual_area {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	min-width: 980px;
+}
+.main_visual_nav {
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	width: 490px;
+	margin-left: -490px;
+	z-index: 1;
+}
+.main_visual_nav li.navigation {
+	float: left;
+	margin: 0 5px;
+}
+.main_visual_nav li.navigation a {
+	display: inline-block;
+	height: 30px;
+	margin: 0 14px;
+	font-size: 14px;
+	letter-spacing: -0.08em;
+	line-height: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+.main_visual_nav li.navigation a:hover {
+	color: #ffc40d;
+}
+.main_visual_nav li.navigation a:first-child {
+	margin: 0;
+}
+.main_visual_nav li.active a {
+	color: #ffc40d;
+	border-bottom: 2px solid #ffc40d;
+}
+.main_visual_left {
+	float: left;
+	position: relative;
+	width: 50%;
+	min-width: 490px;
+	height: 400px;
+	background: #efefef;
+	overflow: hidden;
+}
+.main_visual_left li.insurance {
+	position: absolute;
+	top: -100%;
+	left: 0;
+	width: 100%;
+	height: 400px;
+}
+.main_visual_left li.insurance .main_text_area {
+	float: right;
+	width: 490px;
+	padding: 100px 0 0 0;
+}
+.main_visual_left li.insurance .main_text_area .title {
+	position: relative;
+	height: 144px;
+	font-size: 37px;
+	line-height: 48px;
+	color: #fff;
+	letter-spacing: -0.08em;
+}
+.main_visual_left li.insurance .main_text_area .title .sub_title {
+	font-size: 27px;
+	font-weight: normal;
+}
+.main_visual_left li.insurance.isa12 .main_text_area .title .sub_title {
+	font-size: 20px;
+}
+.main_visual_left li.insurance .main_text_area .title .ani_item {
+	position: absolute;
+	top: 132px;
+	left: 281px;
+}
+.title .ani_item .box {
+	position: relative;
+	width: 152px;
+	height: 98px;
+}
+.title .ani_item .box .text_area {
+	position: absolute;
+	left: 0;
+	top: 30px;
+	width: 152px;
+	z-index: 3;
+}
+.title .ani_item .box .tit {
+	width: 100%;
+	font-size: 15px;
+	line-height: 21px;
+	letter-spacing: -0.08em;
+	font-weight: bold;
+	color: #ffe81a;
+	text-align: center;
+}
+.title .ani_item .box .number {
+	width: 100%;
+	letter-spacing: 0;
+	line-height: 39px;
+	color: #fff;
+	text-align: center;
+}
+.title .ani_item .box .number em {
+	font-size: 38px;
+	line-height: 39px;
+	font-weight: bold;
+}
+.title .ani_item .box .number span {
+	font-size: 25px;
+	line-height: 39px;
+	font-weight: bold;
+}
+.title .ani_item .box .box_item {
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 152px;
+	z-index: 2;
+}
+.title .ani_item .box .box_item_s {
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 152px;
+	z-index: 1;
+}
+.title .ani_item .box .light1 {
+	position: absolute;
+	left: 39px;
+	top: 6px;
+	width: 20px;
+	z-index: 3;
+}
+.title .ani_item .box .light1 img {
+	width: 100%;
+}
+.title .ani_item .box .light2 {
+	position: absolute;
+	left: 27px;
+	top: 28px;
+	width: 14px;
+	z-index: 3;
+}
+.title .ani_item .box .light2 img {
+	width: 100%;
+}
+.title .ani_item p {
+	padding: 6px 0 0;
+	width: 152px;
+	font-size: 12px;
+	line-height: 15px;
+	letter-spacing: -0.08em;
+	text-align: center;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+.main_visual_left li.insurance .main_text_area .btn_area {
+	margin-top: 34px;
+}
+.main_visual_left li.insurance .main_text_area .btn {
+	display: inline-block;
+	height: 55px;
+	padding: 0 27px;
+	font-size: 20px;
+	color: #333;
+	font-weight: bold;
+	line-height: 51px;
+	letter-spacing: -0.08em;
+	background: #ffc40d;
+	border-radius: 4px;
+	text-decoration: none;
+}
+.main_visual_left li.insurance .main_text_area .btn_calculator {
+	display: inline-block;
+	height: 55px;
+	padding: 0 27px 0 59px;
+	font-size: 20px;
+	color: #333;
+	font-weight: bold;
+	line-height: 51px;
+	letter-spacing: -0.08em;
+	background: #ffc40d url(../../resources/images/main/icon_calculator.png) no-repeat 22px 15px;
+	border-radius: 4px;
+	text-decoration: none;
+}
+.main_visual_left li.insurance .main_text_area .btn_calculator.none {
+	background-image: none;
+	padding: 0;
+	width: 207px;
+	text-align: center;
+}
+.main_visual_left li.insurance.isa0 {
+	background: url(../../resources/images/main/bg_main_visual_00.png) no-repeat 100% 0;
+} /* 정기 */
+.main_visual_left li.insurance.isa1 {
+	background: #ffccff;
+}
+.main_visual_left li.insurance.isa2 {
+	background: url(../../resources/images/main/v180813_bg_main_visual_02.png) no-repeat 100% 0;
+} /* 암 => 100세까지암 */
+.main_visual_left li.insurance.isa3 {
+	background: #99ccff;
+}
+.main_visual_left li.insurance.isa4 {
+	background: #99ffff;
+}
+.main_visual_left li.insurance.isa5 {
+	background: #99ffcc;
+}
+.main_visual_left li.insurance.isa6 {
+	background: url(../../resources/images/main/bg_main_visual_06.png) no-repeat 100% 0;
+} /* 연금저축 */
+.main_visual_left li.insurance.isa7 {
+	background: url(../../resources/images/main/bg_main_visual_07.png) no-repeat 100% 0;
+} /* 저축 */
+.main_visual_left li.insurance.isa8 {
+	background: #ffffcc;
+}
+.main_visual_left li.insurance.isa9 {
+	background: #ffcccc;
+}
+.main_visual_left li.insurance.isa10 {
+	background: url(../../resources/images/main/bg_main_visual_10.png) no-repeat 100% 0;
+} /* 161213 부모사랑정기 */
+.main_visual_left li.insurance.isa11 {
+	background: url(../../resources/images/main/bg_main_visual_11.png) no-repeat 100% 0;
+} /* 180306 펫사랑 */
+.main_visual_left li.insurance.isa12 {
+	background: url(../../resources/images/main/v180928_bg_main_visual_12.png) no-repeat 100% 0;
+} /* 바른보장분석 */
+.main_visual_left li.insurance.isa13 {
+	background: url(../../resources/images/main/bg_main_visual_13.png) no-repeat 100% 0;
+} /* 치아보험 */
+.main_visual_left li.insurance.isa14 {
+	background: url(../../resources/images/main/bg_main_visual_14.png) no-repeat 100% 0;
+} /* 미세먼지질병보험 */
+.main_visual_left li.insurance.isa15 {
+	background: url(../../resources/images/main/bg_main_visual_15.png) no-repeat 100% 0;
+} /* 여성건강보험 */
+.main_visual_left li.insurance.isa16 {
+	background: url(../../resources/images/main/bg_main_visual_16.png) no-repeat 100% 0;
+} /* 1년부터e저축보험 */
+.main_visual_right {
+	float: right;
+	position: relative;
+	width: 50%;
+	min-width: 490px;
+	height: 400px;
+	background: #02a5af;
+}
+.main_visual_right li.action {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 400px;
+}
+.main_visual_right li.action .item {
+	position: absolute;
+	color: #fff;
+}
+.main_visual_right li.action .item .ani_text {
+	padding-bottom: 5px;
+}
+.main_visual_right li.action .title_copy {
+	display: none;
+	top: 40px;
+	left: 60px;
+	font-size: 30px;
+}
+.main_visual_right li.action .motion_item {
+	top: 70px;
+	left: 60px;
+	font-size: 80px;
+	font-weight: 700;
+}
+.main_visual_right li.action .motion_item .motion_box {
+	position: relative;
+}
+.main_visual_right li.action .motion_item .motion1 {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+.main_visual_right li.action .motion_item .motion2 {
+	display: none;
+	position: absolute;
+	top: 100px;
+	left: 80px;
+}
+.main_visual_right li.action .motion_item .motion3 {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 149px;
+}
+.main_visual_right li.action .motion_item .motion4 {
+	display: none;
+	position: absolute;
+	top: 100px;
+	left: 210px;
+}
+.main_visual_right li.action .motion_item .motion5 {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 247px;
+}
+.main_visual_right li.action .motion_item .motion6 {
+	display: none;
+	position: absolute;
+	top: 100px;
+	left: 310px;
+}
+.main_visual_left li.insurance.isa7 .title .ani_item p {
+	width: 210px;
+	margin-left: -29px;
+}
+
+.main_visual_right li.action.acn0 {
+}
+.main_visual_right li.action.acn1 {
+}
+.main_visual_right li.action.acn2 {
+}
+.main_visual_right li.action.acn3 {
+}
+.main_visual_right li.action.acn4 {
+}
+.main_visual_right li.action.acn5 {
+}
+.main_visual_right li.action.acn6 {
+}
+.main_visual_right li.action.acn7 {
+}
+.main_visual_right li.action.acn8 {
+}
+.main_visual_right li.action.acn9 {
+}
+.main_visual_motion_area {
+	position: relative;
+}
+.main_visual_motion_area .point_ye {
+	color: #ffe729 !important;
+}
+.main_visual_motion_area .flip_box {
+}
+.main_visual_motion_area .flip_box.type_small .number {
+	overflow: hidden;
+	display: inline-block;
+	width: 42px;
+	height: 70px;
+	margin: 0;
+	background: url(../../resources/images/main/number_small.png) no-repeat;
+	text-indent: -10000em;
+	vertical-align: top;
+}
+.main_visual_motion_area .flip_box.type_small .number.num0 {
+	background-position: 50% 0;
+}
+.main_visual_motion_area .flip_box.type_small .number.num1 {
+	width: 38px;
+	background-position: 50% -90px;
+}
+.main_visual_motion_area .flip_box.type_small .number.num2 {
+	background-position: 50% -180px;
+}
+.main_visual_motion_area .flip_box.type_small .number.num3 {
+	background-position: 50% -270px;
+}
+.main_visual_motion_area .flip_box.type_small .number.num4 {
+	background-position: 50% -360px;
+}
+.main_visual_motion_area .flip_box.type_small .number.num5 {
+	background-position: 50% -450px;
+}
+.main_visual_motion_area .flip_box.type_small .number.num6 {
+	background-position: 50% -540px;
+}
+.main_visual_motion_area .flip_box.type_small .number.num7 {
+	background-position: 50% -630px;
+}
+.main_visual_motion_area .flip_box.type_small .number.num8 {
+	background-position: 50% -720px;
+}
+.main_visual_motion_area .flip_box.type_small .number.num9 {
+	background-position: 50% -810px;
+}
+.main_visual_motion_area .flip_box.type_small .number.percent {
+	background-position: 50% -900px;
+}
+.main_visual_motion_area .flip_box.type_small .number.won {
+	background-position: 50% -990px;
+}
+.main_visual_motion_area .flip_box.type_small .number.dot {
+	width: 16px;
+	background-position: 50% -1080px;
+}
+.main_visual_motion_area .flip_box.type_small .number.comma {
+	width: 16px;
+	height: 90px;
+	background-position: 50% -1170px;
+}
+.main_visual_motion_area .flip_box.type_small .number.minus {
+	background-position: 50% -1260px;
+}
+.main_visual_motion_area .flip_box.type_big .number {
+	overflow: hidden;
+	display: inline-block;
+	width: 68px;
+	height: 104px;
+	background: url(../../resources/images/main/number_big.png) no-repeat;
+	text-indent: -10000em;
+	vertical-align: top;
+}
+.main_visual_motion_area .flip_box.type_big .number.num0 {
+	background-position: 50% 0;
+}
+.main_visual_motion_area .flip_box.type_big .number.num1 {
+	width: 50px;
+	background-position: 50% -120px;
+}
+.main_visual_motion_area .flip_box.type_big .number.num2 {
+	background-position: 50% -240px;
+}
+.main_visual_motion_area .flip_box.type_big .number.num3 {
+	background-position: 50% -360px;
+}
+.main_visual_motion_area .flip_box.type_big .number.num4 {
+	background-position: 50% -480px;
+}
+.main_visual_motion_area .flip_box.type_big .number.num5 {
+	background-position: 50% -600px;
+}
+.main_visual_motion_area .flip_box.type_big .number.num6 {
+	background-position: 50% -720px;
+}
+.main_visual_motion_area .flip_box.type_big .number.num7 {
+	background-position: 50% -840px;
+}
+.main_visual_motion_area .flip_box.type_big .number.num8 {
+	background-position: 50% -960px;
+}
+.main_visual_motion_area .flip_box.type_big .number.num9 {
+	background-position: 50% -1080px;
+}
+.main_visual_motion_area .flip_box.type_big .number.percent {
+	background-position: 50% -1200px;
+}
+.main_visual_motion_area .flip_box.type_big .number.dot {
+	width: 30px;
+	background-position: 50% -1320px;
+}
+
+.main_visual_motion_area .flip_box.type_small .month {
+	overflow: hidden;
+	display: inline-block;
+	width: 69px;
+	height: 70px;
+	margin: 0 15px 0 0;
+	background: url(../../resources/images/main/month_small.png) no-repeat 0 27px;
+	text-indent: -10000em;
+	vertical-align: top;
+}
+.main_visual_motion_area .flip_box.type_small .won10000 {
+	overflow: hidden;
+	display: inline-block;
+	width: 69px;
+	height: 70px;
+	margin: 0 0 0 15px;
+	background: url(../../resources/images/main/month_small.png) no-repeat 0 -55px;
+	text-indent: -10000em;
+	vertical-align: top;
+}
+
+/*정기보험*/
+.main_01 {
+}
+.main_01 .text_box01 {
+	display: none;
+	top: 58px;
+	left: 100px;
+	width: 490px;
+	font-size: 21px;
+	line-height: 28px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_01 .flip_box {
+	display: none;
+	top: 165px;
+	width: 490px;
+	height: 250px;
+	text-align: center;
+	padding-left: 10px;
+	overflow: hidden;
+}
+.main_01 .flip_box .number_box {
+	position: relative;
+	right: -10px;
+	display: inline-block;
+	width: 250px;
+}
+.main_01 .flip_box .box_over {
+	position: absolute;
+	top: -170px;
+	left: 15px;
+	width: 430px;
+	height: 169px;
+	background: url(../../resources/images/main/v170101_box_over_term.png) no-repeat 0 100%;
+}
+.main_01 .tip_box {
+	display: none;
+	top: 224px;
+	width: 490px;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_01 .time_line_box {
+	display: none;
+	top: 242px;
+	left: 106px;
+	width: 264px;
+	height: 18px;
+}
+.main_01 .time_line_box .btn_list {
+	width: 314px;
+	height: 18px;
+	background: url(../../resources/images/main/item_time_line1.png) no-repeat 1px 0;
+}
+.main_01 .time_line_box .btn_list li {
+	float: left;
+	margin-left: 61px;
+}
+.main_01 .time_line_box .btn_list li:first-child {
+	margin-left: 0px;
+}
+.main_01 .time_line_box .btn_list li.eq3 {
+	margin-left: 71px;
+}
+.main_01 .time_line_box .btn_list a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../../resources/images/main/item_point_btn.png) no-repeat;
+	overflow: hidden;
+	text-indent: -10000em;
+}
+.main_01 .time_line_box .text_list {
+	width: 330px;
+	margin-left: -27px;
+	padding-top: 7px;
+}
+.main_01 .time_line_box .text_list li {
+	float: left;
+	width: 70px;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: -0.03em;
+	text-align: center;
+	margin-left: 13px;
+}
+.main_01 .time_line_box .text_list li:first-child {
+	margin-left: 0;
+}
+.main_01 .time_line_box .text_list li em {
+	font-size: 14px;
+}
+.main_01 .time_line_box .item_dot {
+	top: -10px;
+	left: -14px; /*60,134,207,281*/
+	width: 47px;
+	height: 47px;
+	overflow: hidden;
+	background: url(../../resources/images/main/item_point.png) no-repeat;
+	text-indent: -10000em;
+}
+.main_01 .tip_text {
+	display: none;
+	top: 330px;
+	left: 30px;
+	font-size: 12px;
+	width: 490px;
+	text-align: center;
+}
+
+/*암보험*/
+.main_03 {
+}
+.main_03 .text_box01 {
+	display: none;
+	top: 58px;
+	left: 100px;
+	width: 490px;
+	font-size: 21px;
+	line-height: 28px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_03 .flip_box {
+	display: none;
+	top: 165px;
+	width: 490px;
+	height: 250px;
+	text-align: center;
+	padding-left: 10px;
+	overflow: hidden;
+}
+.main_03 .flip_box .number_box {
+	position: relative;
+	right: -17px;
+	display: inline-block;
+	width: 267px;
+}
+.main_03 .flip_box .box_over {
+	position: absolute;
+	top: -170px;
+	left: 15px;
+	width: 416px;
+	height: 169px;
+	background: url(../../resources/images/main/box_over_cancer.png) no-repeat 0 100%;
+}
+.main_03 .tip_box {
+	display: none;
+	top: 224px;
+	width: 490px;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_03 .time_line_box {
+	display: none;
+	top: 242px;
+	left: 178px;
+	width: 127px;
+	height: 18px;
+}
+.main_03 .time_line_box .btn_list {
+	width: 314px;
+	height: 18px;
+	background: url(../../resources/images/main/item_time_line3.png) no-repeat 1px 0;
+}
+.main_03 .time_line_box .btn_list li {
+	float: left;
+	margin-left: 90px;
+}
+.main_03 .time_line_box .btn_list li:first-child {
+	margin-left: 1px;
+}
+.main_03 .time_line_box .btn_list a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../../resources/images/main/item_point_btn.png) no-repeat;
+	overflow: hidden;
+	text-indent: -10000em;
+}
+.main_03 .time_line_box .text_list {
+	width: 200px;
+	margin-left: -29px;
+	padding-top: 7px;
+}
+.main_03 .time_line_box .text_list li {
+	float: left;
+	width: 80px;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: -0.03em;
+	text-align: center;
+	margin-left: 29px;
+}
+.main_03 .time_line_box .text_list li:first-child {
+	margin-left: 0;
+}
+.main_03 .time_line_box .text_list li em {
+	font-size: 14px;
+}
+.main_03 .time_line_box .item_dot {
+	top: -10px;
+	left: -14px; /*60,134,207,281*/
+	width: 47px;
+	height: 47px;
+	overflow: hidden;
+	background: url(../../resources/images/main/item_point.png) no-repeat;
+	text-indent: -10000em;
+}
+.main_03 .tip_text {
+	display: none;
+	top: 330px;
+	left: 30px;
+	font-size: 12px;
+	width: 490px;
+	text-align: center;
+}
+
+/*연금저축보험*/
+.main_07 {
+}
+.main_07 .text_box01 {
+	display: none;
+	top: 58px;
+	left: 100px;
+	width: 490px;
+	font-size: 21px;
+	line-height: 28px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_07 .flip_box {
+	display: none;
+	top: 155px;
+	width: 490px;
+	text-align: center;
+	padding-left: 10px;
+}
+.main_07 .flip_box .number_box {
+	display: inline-block;
+	width: 337px;
+}
+.main_07 .tip_box {
+	display: none;
+	top: 224px;
+	width: 490px;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_07 .time_line_box {
+	display: none;
+	top: 214px;
+	left: 88px;
+	width: 314px;
+	height: 18px;
+}
+.main_07 .time_line_box .btn_list {
+	width: 314px;
+	height: 18px;
+	background: url(../../resources/images/main/item_time_line7.png) no-repeat 1px 0;
+}
+.main_07 .time_line_box .btn_list li {
+	float: left;
+	margin-left: 81px;
+}
+.main_07 .time_line_box .btn_list li.last {
+	margin-left: 80px;
+}
+.main_07 .time_line_box .btn_list li:first-child {
+	margin-left: 0;
+}
+.main_07 .time_line_box .btn_list a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../../resources/images/main/item_point_btn.png) no-repeat;
+	overflow: hidden;
+	text-indent: -10000em;
+}
+.main_07 .time_line_box .text_list {
+	width: 400px;
+	margin-left: -36px;
+	padding-top: 7px;
+}
+.main_07 .time_line_box .text_list li {
+	float: left;
+	width: 98px;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: -0.03em;
+	text-align: center;
+	margin-left: 0px;
+}
+.main_07 .time_line_box .text_list li:first-child {
+	margin-left: 0;
+}
+.main_07 .time_line_box .text_list li em {
+	font-size: 14px;
+}
+.main_07 .time_line_box .item_dot {
+	top: -10px;
+	left: 282px; /*60,134,207,281*/
+	width: 47px;
+	height: 47px;
+	overflow: hidden;
+	background: url(../../resources/images/main/item_point.png) no-repeat;
+	text-indent: -10000em;
+}
+.main_07 .tip_text {
+	display: none;
+	top: 312px !important;
+	left: 30px;
+	font-size: 12px;
+	width: 490px;
+	text-align: center;
+} /*171108 수정*/
+.main_07 .tip_text ul {
+	display: inline-block;
+	width: auto;
+	margin: 0 auto;
+} /*171108 추가*/
+.main_07 .tip_text li {
+	text-align: left;
+} /*171108 추가*/
+.main_07 .tip_text p {
+	margin-top: 8px;
+} /*171108 추가*/
+
+/*저축보험*/
+.main_08 {
+}
+.main_08 .text_box01 {
+	display: none;
+	top: 51px;
+	left: 100px;
+	width: 490px;
+	font-size: 21px;
+	line-height: 30px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_08 .text_box01 span {
+	color: #ffe729;
+}
+.main_08 .text_box02 {
+	display: none;
+	top: 155px;
+	left: 0px;
+	width: 490px;
+	font-size: 21px;
+	line-height: 32px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_08 .text_box03 {
+	display: none;
+	top: 278px;
+	left: 0px;
+	width: 490px;
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_08 .flip_box {
+	display: none;
+	top: 203px;
+	width: 490px;
+	text-align: center;
+	padding-left: 10px;
+}
+.main_08 .flip_box .number_box {
+	display: inline-block;
+	width: 160px;
+}
+.main_08 .tip_box {
+	display: none;
+	top: 224px;
+	width: 490px;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_08 .time_line_box {
+	display: none;
+	top: 242px;
+	left: 88px;
+	width: 314px;
+	height: 18px;
+}
+.main_08 .time_line_box .btn_list {
+	width: 314px;
+	height: 18px;
+	background: url(../../resources/images/main/item_time_line.png) no-repeat 1px 0;
+}
+.main_08 .time_line_box .btn_list li {
+	float: left;
+	margin-left: 56px;
+}
+.main_08 .time_line_box .btn_list li.ml55 {
+	margin-left: 55px;
+}
+.main_08 .time_line_box .btn_list li:first-child {
+	margin-left: 0;
+}
+.main_08 .time_line_box .btn_list a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../../resources/images/main/item_point_btn.png) no-repeat;
+	overflow: hidden;
+	text-indent: -10000em;
+}
+.main_08 .time_line_box .text_list {
+	width: 350px;
+	margin-left: -16px;
+	padding-top: 7px;
+}
+.main_08 .time_line_box .text_list li {
+	float: left;
+	width: 50px;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: -0.03em;
+	text-align: center;
+	margin-left: 24px;
+}
+.main_08 .time_line_box .text_list li:first-child {
+	margin-left: 0;
+}
+.main_08 .time_line_box .item_dot {
+	top: -10px;
+	left: -14px; /*60,134,207,281*/
+	width: 47px;
+	height: 47px;
+	overflow: hidden;
+	background: url(../../resources/images/main/item_point.png) no-repeat;
+	text-indent: -10000em;
+}
+.main_08 .tip_text {
+	display: none;
+	top: 290px;
+	left: 30px;
+	font-size: 12px;
+	width: 490px;
+	padding-top: 10px;
+	letter-spacing: -0.08em;
+	text-align: center;
+}
+/* .main_08 .text_box01{display:none;top:65px;left:145px;width:251px;height:40px;font-size:16px;line-height:37px;color:#fff;background:url(../../resources/images/main/v170601_ani07_item01_bg.png) no-repeat}
+.main_08 .text_box01 span{color:#ffe729}
+.main_08 .text_box02{display:none;top:100px;left:0px;width:470px;margin-top:-15px;font-size:27px;line-height:27px;letter-spacing:-0.1em;text-align:center}
+.main_08 .text_box02 > span{display:inline-block;color:#ffe729;padding-bottom:5px}
+.main_08 .text_box03{display:none;top:154px;left:150px;width:229px;height:120px;padding-top:12px} */
+/*4월 1일 반영 부분*/
+.main_08.main_08_v0401 .text_box01 {
+	top: 61px;
+}
+.main_08.main_08_v0401 .text_box02 {
+	margin-top: -6px;
+}
+.main_08.main_08_v0401 .text_box02 > span {
+	display: inline-block;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+.main_08.main_08_v0401 .text_box03 {
+	padding-top: 22px;
+	padding-left: 10px;
+}
+.main_08.main_08_v0401 .tip_text {
+	margin-top: 25px;
+	padding-top: 0;
+	padding-left: 10px;
+}
+
+/*연금저축보험*/
+.main_10 {
+}
+.main_10 .text_box01 {
+	display: none;
+	top: 58px;
+	left: 100px;
+	width: 490px;
+	font-size: 21px;
+	line-height: 28px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_10 .flip_box {
+	display: none;
+	top: 165px;
+	width: 490px;
+	text-align: center;
+	padding-left: 10px;
+}
+.main_10 .flip_box .number_box {
+	display: inline-block;
+}
+.main_10 .tip_box {
+	display: none;
+	top: 224px;
+	width: 490px;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_10 .time_line_box {
+	display: none;
+	top: 242px;
+	left: 88px;
+	width: 314px;
+	height: 18px;
+}
+.main_10 .time_line_box .btn_list {
+	width: 314px;
+	height: 18px;
+	background: url(../../resources/images/main/item_time_line9.png) no-repeat 1px 0;
+}
+.main_10 .time_line_box .btn_list li {
+	float: left;
+	margin-left: 130px;
+}
+.main_10 .time_line_box .btn_list li.last {
+	margin-left: 129px;
+}
+.main_10 .time_line_box .btn_list li:first-child {
+	margin-left: 1px;
+}
+.main_10 .time_line_box .btn_list a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../../resources/images/main/item_point_btn.png) no-repeat;
+	overflow: hidden;
+	text-indent: -10000em;
+}
+.main_10 .time_line_box .text_list {
+	width: 400px;
+	margin-left: -36px;
+	padding-top: 7px;
+}
+.main_10 .time_line_box .text_list li {
+	float: left;
+	width: 98px;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: -0.03em;
+	text-align: center;
+	margin-left: 0px;
+}
+.main_10 .time_line_box .text_list li:first-child {
+	margin-left: 0;
+}
+.main_10 .time_line_box .text_list li.two {
+	margin-left: 47px;
+}
+.main_10 .time_line_box .text_list li.thr {
+	margin-left: 54px;
+}
+.main_10 .time_line_box .text_list li em {
+	font-size: 14px;
+}
+.main_10 .time_line_box .item_dot {
+	top: -10px;
+	left: -14px; /*60,134,207,281*/
+	width: 47px;
+	height: 47px;
+	overflow: hidden;
+	background: url(../../resources/images/main/item_point.png) no-repeat;
+	text-indent: -10000em;
+}
+.main_10 .tip_text {
+	display: none;
+	top: 330px;
+	left: 30px;
+	font-size: 12px;
+	width: 490px;
+	text-align: center;
+}
+.main_10 .text_box01 .box_tooltip .tooltip_cnt {
+	top: 64px;
+	left: 250px;
+	width: 220px;
+}
+.main_10 .text_box01 .box_tooltip .tooltip_cnt > ul > li {
+	padding-left: 8px;
+	text-indent: -6px;
+	font-size: 12px;
+	line-height: 18px;
+}
+.main_10 .text_box01 .box_tooltip .bg_arrow {
+	top: 58px;
+}
+
+/* 부모사랑정기보험 */
+.main_visual_right li.action.acn10 .tip_text {
+	top: 328px;
+	line-height: 20px;
+}
+
+/* 펫사랑m정기보험 */
+.main_visual_right li.action.acn11 .movie_area {
+	position: absolute;
+	top: 70px;
+	left: 30px;
+}
+.main_visual_right li.action.acn11 .movie_area .img_ie8 {
+	display: none;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.ie8 .main_visual_right li.action.acn11 .movie_area .img_ie8 {
+	display: block;
+}
+
+/* .main_sorting_area */
+/* .main_sorting_area{width:100%;background:#fff}
+.tab_sorting{width:100%;height:110px;padding-top:41px}
+.tab_sorting ul{width:100%;height:28px;text-align:center}
+.tab_sorting ul:after{content:'';display:block;clear:both}
+.tab_sorting li{display:inline-block;}
+.tab_sorting li a{display:inline-block;padding:5px 10px;font-size:14px;line-height:18px;text-decoration:underline}
+.con_sorting{padding-bottom:34px}
+.con_sorting .sorting_area{position:relative;width:980px;margin:0 auto;overflow:hidden}
+.con_sorting .sorting_area .sorting_item{position:absolute;top:0;left:0;width:314px;height:178px;border:1px solid #cfd6df;border-radius:5px;background:#efefef}
+.con_sorting .sorting_area .sorting_item p{padding:10px 0;text-align:center;font-size:18px} */
+/* //.main_sorting_area
+.main_banner_area{width:100%;height:1000px;background:#26c2cc}*/
+
+/*바른보장*/
+.main_12 {
+}
+.main_12 .text_box01 {
+	display: none;
+	top: 73px;
+	left: 100px;
+	width: 490px;
+	font-size: 21px;
+	line-height: 30px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_12 .text_box01 span {
+	color: #ffe729;
+}
+.main_12 .text_box01 .sub {
+	margin-top: 6px;
+	font-size: 21px;
+}
+.main_12 .text_box02 {
+	display: none;
+	top: 180px;
+	left: 100px;
+	width: 490px;
+	font-size: 28px;
+	line-height: 32px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_12 .tip_text {
+	display: none;
+	top: 290px;
+	top: 308px !important;
+	left: 30px;
+	padding-left: 64px;
+	font-size: 12px;
+	width: 490px;
+	letter-spacing: -0.08em;
+	line-height: 1.6;
+}
+.main_12 .text_box02 .tf_m {
+	font-size: 20px;
+}
+.main_12 .text_box02 .tf_m::placeholder {
+	color: #b8dee1;
+}
+.main_12 .text_box02 .tf_m::-webkit-input-placeholder {
+	position: relative;
+	top: -2px;
+	color: #b8dee1;
+}
+.main_12 .text_box02 .tf_m:-ms-input-placeholder {
+	color: #b8dee1;
+}
+.main_12 .text_box02 .tf_m::-ms-input-placeholder {
+	color: #b8dee1;
+}
+.main_12 .text_box02 .tf_m.placeholder {
+	color: #b8dee1;
+}
+.main_12 .text_box02 ._sel_tit {
+	font-size: 20px;
+	border: 2px solid #fff;
+	height: 51px;
+	line-height: 51px;
+	color: #fff;
+	border-radius: 4px;
+}
+.main_12 .text_box02 ._sel_tit strong {
+	text-align: left;
+	background: url(../../resources/images/main/sp_arrow_fakeselect.png) no-repeat 100% -19px;
+}
+.main_12 .text_box02 ._sel_tit.focus {
+	background: none;
+}
+.main_12 .text_box02 .area_cursor {
+	position: relative;
+	vertical-align: bottom;
+	display: inline-block;
+	width: 107px;
+	height: 30px;
+	border-bottom: 1px solid #fff;
+}
+.main_12 .text_box02 .area_cursor > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.main_12 .text_box02 .cursor {
+	position: absolute;
+	left: 2px;
+	bottom: 7px;
+	width: 3px;
+	height: 25px;
+	background: #67c9cf;
+}
+
+/*치아보험*/
+.main_13 {
+}
+.main_13 .text_box01 {
+	display: none;
+	top: 58px;
+	left: 100px;
+	width: 490px;
+	font-size: 21px;
+	line-height: 28px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_13 .flip_box {
+	display: none;
+	top: 165px;
+	width: 490px;
+	height: 250px;
+	text-align: center;
+	padding-left: 10px;
+	overflow: hidden;
+}
+.main_13 .flip_box .number_box {
+	position: relative;
+	right: -17px;
+	display: inline-block;
+	width: 267px;
+}
+.main_13 .flip_box .box_over {
+	position: absolute;
+	top: -170px;
+	left: 15px;
+	width: 416px;
+	height: 169px;
+	background: url(../../resources/images/main/box_over_cancer.png) no-repeat 0 100%;
+}
+.main_13 .tip_box {
+	display: none;
+	top: 224px;
+	width: 490px;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_13 .time_line_box {
+	display: none;
+	top: 242px;
+	left: 178px;
+	width: 127px;
+	height: 18px;
+}
+.main_13 .time_line_box .btn_list {
+	width: 314px;
+	height: 18px;
+	background: url(../../resources/images/main/item_time_line3.png) no-repeat 1px 0;
+}
+.main_13 .time_line_box .btn_list li {
+	float: left;
+	margin-left: 90px;
+}
+.main_13 .time_line_box .btn_list li:first-child {
+	margin-left: 1px;
+}
+.main_13 .time_line_box .btn_list a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../../resources/images/main/item_point_btn.png) no-repeat;
+	overflow: hidden;
+	text-indent: -10000em;
+}
+.main_13 .time_line_box .text_list {
+	width: 200px;
+	margin-left: -29px;
+	padding-top: 7px;
+}
+.main_13 .time_line_box .text_list li {
+	float: left;
+	width: 80px;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: -0.03em;
+	text-align: center;
+	margin-left: 29px;
+}
+.main_13 .time_line_box .text_list li:first-child {
+	margin-left: 0;
+}
+.main_13 .time_line_box .text_list li em {
+	font-size: 14px;
+}
+.main_13 .time_line_box .item_dot {
+	top: -10px;
+	left: -14px; /*60,134,207,281*/
+	width: 47px;
+	height: 47px;
+	overflow: hidden;
+	background: url(../../resources/images/main/item_point.png) no-repeat;
+	text-indent: -10000em;
+}
+.main_13 .tip_text {
+	display: none;
+	top: 330px;
+	left: 30px;
+	font-size: 12px;
+	width: 490px;
+	text-align: center;
+}
+
+/*미세먼지질병보험*/
+.main_14 {
+}
+.main_14 .text_box01 {
+	display: none;
+	top: 58px;
+	left: 100px;
+	width: 490px;
+	font-size: 21px;
+	line-height: 28px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_14 .flip_box {
+	display: none;
+	top: 165px;
+	width: 490px;
+	height: 250px;
+	text-align: center;
+	padding-left: 10px;
+	overflow: hidden;
+}
+.main_14 .flip_box .number_box {
+	position: relative;
+	right: -17px;
+	display: inline-block;
+	width: 267px;
+}
+.main_14 .flip_box .box_over {
+	position: absolute;
+	top: -170px;
+	left: 15px;
+	width: 416px;
+	height: 169px;
+	background: url(../../resources/images/main/box_over_cancer.png) no-repeat 0 100%;
+}
+.main_14 .tip_box {
+	display: none;
+	top: 224px;
+	width: 490px;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_14 .time_line_box {
+	display: none;
+	top: 242px;
+	left: 178px;
+	width: 127px;
+	height: 18px;
+}
+.main_14 .time_line_box .btn_list {
+	width: 314px;
+	height: 18px;
+	background: url(../../resources/images/main/item_time_line3.png) no-repeat 1px 0;
+}
+.main_14 .time_line_box .btn_list li {
+	float: left;
+	margin-left: 90px;
+}
+.main_14 .time_line_box .btn_list li:first-child {
+	margin-left: 1px;
+}
+.main_14 .time_line_box .btn_list a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../../resources/images/main/item_point_btn.png) no-repeat;
+	overflow: hidden;
+	text-indent: -10000em;
+}
+.main_14 .time_line_box .text_list {
+	width: 200px;
+	margin-left: -29px;
+	padding-top: 7px;
+}
+.main_14 .time_line_box .text_list li {
+	float: left;
+	width: 80px;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: -0.03em;
+	text-align: center;
+	margin-left: 29px;
+}
+.main_14 .time_line_box .text_list li:first-child {
+	margin-left: 0;
+}
+.main_14 .time_line_box .text_list li em {
+	font-size: 14px;
+}
+.main_14 .time_line_box .item_dot {
+	top: -10px;
+	left: -14px; /*60,134,207,281*/
+	width: 47px;
+	height: 47px;
+	overflow: hidden;
+	background: url(../../resources/images/main/item_point.png) no-repeat;
+	text-indent: -10000em;
+}
+.main_14 .tip_text {
+	display: none;
+	top: 330px;
+	left: 30px;
+	font-size: 12px;
+	width: 490px;
+	text-align: center;
+}
+
+/*여성건강보험*/
+.main_15 {
+}
+.main_15 .text_01 {
+	width: 490px;
+	padding-top: 73px;
+	font-size: 21px !important;
+	line-height: 28px;
+	text-align: center;
+}
+.main_visual_right li.action .main_15 .motion_item {
+	top: 137px;
+}
+.main_15 .txt_left {
+	position: absolute;
+	top: 89px;
+	left: 18px;
+	width: 80px;
+	height: 42px;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 42px;
+}
+.main_15 .txt_big1 {
+	position: absolute;
+	top: 28px;
+	left: 105px;
+	overflow: hidden;
+	display: inline-block;
+	width: 68px;
+	height: 104px;
+	background: url(../../resources/images/main/number_big.png) no-repeat;
+	text-indent: -10000em;
+	vertical-align: top;
+	background-position: 50% -240px;
+}
+.main_15 .txt_big2 {
+	position: absolute;
+	top: 6px;
+	left: 165px;
+	width: 100px;
+	height: 142px;
+	font-size: 110px;
+	line-height: 142px;
+}
+.main_15 .txt_right {
+	position: absolute;
+	top: 89px;
+	left: 280px;
+	width: 80px;
+	height: 42px;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 42px;
+}
+.main_15 .tip_text {
+	width: 490px;
+	margin-top: -42px;
+	text-align: center;
+}
+
+/*e저축보험*/
+.main_16 {
+}
+.main_16 .text_box01 {
+	display: none;
+	top: 55px;
+	left: 100px;
+	width: 490px;
+	font-size: 21px;
+	line-height: 28px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_16 .text_box02 {
+	display: none;
+	width: 460px;
+	margin-left: 30px;
+	font-size: 14px;
+	text-align: center;
+}
+.main_16 .flip_box {
+	display: none;
+	top: 165px;
+	width: 490px;
+	height: 250px;
+	text-align: center;
+	padding-left: 10px;
+	overflow: hidden;
+}
+.main_16 .flip_box .number_box {
+	position: relative;
+	display: inline-block;
+	width: 190px;
+}
+.main_16 .flip_box .box_over {
+	position: absolute;
+	top: -170px;
+	left: 15px;
+	width: 430px;
+	height: 169px;
+	background: url(../../resources/images/main/v170101_box_over_term.png) no-repeat 0 100%;
+}
+.main_16 .tip_box {
+	display: none;
+	top: 224px;
+	width: 490px;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: -0.08em;
+	color: #fff;
+	text-align: center;
+}
+.main_16 .time_line_box {
+	display: none;
+	top: 242px;
+	left: 106px;
+	width: 264px;
+	height: 18px;
+}
+.main_16 .time_line_box .btn_list {
+	width: 314px;
+	height: 21px;
+	background: url(../../resources/images/main/item_time_line2.jpg) 1px -1px no-repeat;
+}
+.main_16 .time_line_box .btn_list li {
+	float: left;
+	margin-left: 56px;
+}
+.main_16 .time_line_box .btn_list li:first-child {
+	margin-left: 0px;
+}
+.main_16 .time_line_box .btn_list li:first-child > a {
+	background: none;
+}
+.main_16 .time_line_box .btn_list li.eq3 {
+	margin-left: 71px;
+}
+.main_16 .time_line_box .btn_list a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(../../resources/images/main/item_point_btn.png) no-repeat;
+	overflow: hidden;
+	text-indent: -10000em;
+}
+.main_16 .time_line_box .text_list {
+	width: 370px;
+	margin-left: -27px;
+	padding-top: 7px;
+}
+.main_16 .time_line_box .text_list li {
+	float: left;
+	width: 63px;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: -0.03em;
+	text-align: center;
+	margin-left: 13px;
+}
+.main_16 .time_line_box .text_list li:first-child {
+	margin-left: 0;
+}
+.main_16 .time_line_box .text_list li em {
+	font-size: 14px;
+}
+.main_16 .time_line_box .item_dot {
+	top: -10px;
+	left: -14px; /*60,134,207,281*/
+	width: 47px;
+	height: 47px;
+	overflow: hidden;
+	background: url(../../resources/images/main/item_point.png) no-repeat;
+	text-indent: -10000em;
+}
+.main_visual_right li.action .main_16 .tip_text {
+	display: none;
+	top: 340px;
+	left: 30px;
+	font-size: 12px;
+	width: 490px;
+	text-align: center;
+}
+
+/*툴팁*/
+.tooltip_include {
+	position: relative;
+	margin-top: 15px;
+}
+.tooltip {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../../resources/images/product/v160101_icon_refer_2.png) no-repeat;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: 13px;
+}
+.tooltip:hover {
+	background: url(../../resources/images/product/v160101_icon_refer_on_2.png) no-repeat;
+}
+.box_tooltip {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	*height: 17px;
+	margin-left: 6px;
+}
+.box_tooltip._show .tooltip_cnt,
+.section_plan_result .box_confirm div .box_tooltip._show .tooltip_cnt {
+	display: block;
+}
+.tooltip_cnt,
+.section_plan_result .box_confirm div .tooltip_cnt {
+	display: none;
+	position: absolute;
+	top: 28px;
+	left: 210px;
+	z-index: 20;
+	padding: 10px;
+	width: 190px;
+	border-radius: 5px;
+	background: #7f8b8d;
+	text-indent: 0;
+	text-align: left;
+	z-index: 1000;
+}
+.tooltip.down + .tooltip_cnt {
+	width: 250px;
+}
+.tooltip_cnt p {
+	font-size: 12px;
+	color: #fff;
+	letter-spacing: -1px;
+	line-height: 19px;
+}
+.bg_arrow {
+	position: absolute;
+	top: 23px;
+	z-index: 10;
+	width: 10px;
+	height: 8px;
+	background: url(../../resources/images/product/bg_arrow_2.png) no-repeat;
+}
