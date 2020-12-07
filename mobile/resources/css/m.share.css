@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/* 공유하기 팝업 공통 */
+#sns_share {
+	z-index: 103;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+#sns_share .sns_share_pop {
+	position: absolute;
+	bottom: -9999px;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#sns_share .sns_share_pop .tit {
+	margin-bottom: 12px;
+	margin-left: 30px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 1.35em;
+	letter-spacing: -0.06em;
+}
+#sns_share .sns_share_pop .inner {
+	position: relative;
+	padding: 50px 30px 0;
+	border-radius: 20px 20px 0 0;
+	background: #fff;
+}
+#sns_share .sns_share_pop .sns_share_list li {
+	float: left;
+	width: 19.75%;
+	margin-right: 7%;
+	margin-bottom: 20px;
+}
+#sns_share .sns_share_pop .sns_share_list li:nth-child(4n) {
+	margin-right: 0;
+}
+#sns_share .sns_share_pop .sns_share_list li a {
+	display: block;
+	color: #333;
+	font-size: 0.857em;
+	letter-spacing: -0.06em;
+	text-align: center;
+}
+#sns_share .sns_share_pop .sns_share_list li a:before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto 3px;
+	background-image: url('../images/common/m.icon_sp_share.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#sns_share .sns_share_pop .sns_share_list li.share_email a:before {
+	background-position: 0 0;
+}
+#sns_share .sns_share_pop .sns_share_list li.share_sms a:before {
+	background-position: 0 -60px;
+}
+#sns_share .sns_share_pop .sns_share_list li.share_facebook a:before {
+	background-position: 0 -120px;
+}
+#sns_share .sns_share_pop .sns_share_list li.share_kakaotalk a:before {
+	background-position: 0 -180px;
+}
+#sns_share .sns_share_pop .sns_share_list li.share_line a:before {
+	background-position: 0 -240px;
+}
+#sns_share .sns_share_pop .sns_share_list li.share_band a:before {
+	background-position: 0 -300px;
+}
+#sns_share .btn_sns_share_close {
+	position: absolute;
+	left: 50%;
+	top: 0px;
+	width: 50px;
+	height: 40px;
+	margin-left: -25px;
+	color: transparent;
+	background: url('../images/common/m.arr_btm5.png') 50% 50% no-repeat;
+	background-size: 23px auto;
+	overflow: hidden;
+}
+
+.share_dim {
+	z-index: 101;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 0%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	transition: opacity 0.4s linear 0.2s, width 0s linear 0.6s;
+}
+.share_dim.on {
+	width: 100%;
+	opacity: 1;
+	transition: opacity 0.4s, width 0s;
+}
