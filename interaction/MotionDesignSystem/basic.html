@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nanum+Gothic:wght@400;700;800&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="./css/common.css">
+     <!-- favicon 추가 -->
+     <link rel="shortcut icon" href="https://rainacho.github.io/resources/img/profile_icon.png" type="image/x-icon">          
+    <title> 라이프플래닛 인터랙션가이드</title>
+</head>
+<body>
+    <!-- Side Menu Bar -->
+    <ul id="slide-out" class="sidenav">
+        <li><img class="logo" src="./images/lifeplanet_logo.png"></li>
+        <li class="menu"><a class="waves-effect" href="basic.html">Basic</a></li>
+        <li class="menu"><a class="waves-effect" href="rules.html">Rules</a></li>
+        <div class="itrc_guide_menus__wrapper">
+            <li id="itrc_guide_btn" class="menu"><a><i class="material-icons right arr_expand arr_up">expand_more</i>인터랙션가이드</a></li>
+            <div class="itrc_guide_menus">
+                <div>
+                    <li><a class="subheader">컴포넌트</a></li>
+                    <li><a class="waves-effect" href="cp_hamburger_menu_navigation.html">Hamburger Menu Navigation</a></li>
+                    <li><a class="waves-effect" href="#">Navigation(Slide Menu)</a></li>
+                    <li><a class="waves-effect" href="#">Step Progress Bar</a></li>
+                    <li><a class="waves-effect" href="cp_bottom_sheet.html">Bottom Sheets</a></li>
+                    <li><a class="waves-effect" href="#">Popup</a></li>
+                    <li><a class="waves-effect" href="#">ToolTip</a></li>
+                    <div class="list_wrapper"><!-- 버튼 -->
+                        <li class="two-depth-list _on"><a class="waves-effect" href="#"><i class="material-icons right arr_expand arr_up">expand_more</i>Button</a></li>
+                        <ul class="sub_list">
+                            <li>CTA</li>
+                            <li>Hamburger</li>
+                            <li>Toggle</li>
+                            <li>Check</li>
+                            <li>Previous/Next</li>
+                        </ul>
+                    </div>
+                    <div class="list_wrapper"><!-- 로딩바 -->
+                        <li class="two-depth-list _on"><a class="waves-effect" href="#"><i class="material-icons right arr_expand arr_up">expand_more</i>Loading</a></li>
+                        <ul class="sub_list">
+                            <li>Spinner</li>
+                            <li>Dot</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <li><a class="subheader">페이지트랜지션</a></li>
+                    <li><a class="waves-effect" href="pt_001.html">청약프로세스</a></li>
+                </div>
+            </div>
+        </div>
+    </ul>
+    <div id="float_sidemenu">
+        <a href="#" data-target="slide-out" class="sidenav-trigger btn-floating btn-large waves-effect waves-light"><i class="material-icons">menu</i></a>
+    </div>
+    <!-- // Side Menu Bar -->
+    <section class="container">
+        <div class="row">
+            <div class="col s12">
+                <!-- 모션 가이드라인 기본원칙 -->
+                <section class="contents_section">
+                    <h2 class="main_tit">인터랙션 기본규칙</h3>
+                    <p>
+                        인터랙션을 구성하는 element들이 어떻게 들어오고(enter), 나가고(exit) 움직이고(move) 변화(change)하는지를 정의한다. </br>
+                        규칙은 크게 세가지로 분류된다.</br>
+                    </p>
+                </section>
+                <!-- 움직임 & 기간 -->
+                <section class="contents_section">
+                    <h3 class="sub_tit">1) 움직임 & 기간(Movement & Duration)</h3>
+                    <div>
+                        <ul>
+                            <li>Ease out</li>
+                            <img src="images/easeout.gif" alt="easeout" style=" width: 50%;">
+                            <li>Ease in</li>
+                            <img src="images/easein.gif" alt="easein" style=" width: 50%;">
+                            <li>Ease-In-Out</li>
+                            <img src="images/easeinout.gif" alt="easeinout" style=" width: 50%;">
+                            <li>Duration</li>
+                            <img src="https://miro.medium.com/max/700/1*JOIVPVW3aQlMcI7rss_nVQ.jpeg" alt="duration"  style=" width: 50%;">
+                        </ul>
+                    </div>
+                </section>
+                <!-- 변화 -->
+                <section class="contents_section">
+                    <h3 class="sub_tit">2) 변화(Transitions)</h3>
+                    <div>
+                        <ul>
+                            <li>스크린에 새로 나타나는 요소(Incoming Elements)</li>
+                            <img src="images/incomingEl.gif" alt="">
+                            <li>스크린에서 사라지는 요소(Outgoing Elements)</li>
+                            <img src="images/outgoingEl.gif" alt="">
+                            <li>세로로 스크롤 할 수 있는 리스트(Vertically scrollable subject lists)</li>
+                            <img src="images/verticalScrollable.gif" alt="">
+                        </ul>
+                    </div>
+                </section>
+                <!-- 연출 -->
+                <section class="contents_section">
+                    <h3 class="sub_tit">3) 연출(Choreography)</h3>
+                    <div>
+                        <ul>
+                            <li>Fade In & Slide Up/Right</li>
+                            <img src="https://miro.medium.com/max/700/1*52IuSD4PN-4Uz1F4tb3kIw.gif" alt="">
+                            <li>Starting on the top/left and finishing at the bottom/right</li>
+                            <img src="https://miro.medium.com/max/700/1*FdT5fKtzrNqqsuhrfoHWnQ.gif" alt="">
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+          <div class="container">© 2021 Copyright By Life Planet</div>
+    </footer>
+    <!-- //footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.5/lottie.min.js"></script>
+    <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script><!-- materialized -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
+

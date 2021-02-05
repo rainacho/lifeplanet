@@ -1,0 +1,41 @@
+/*-----------------------*/
+/* 공통                   
+/*-----------------------*/
+.ft_ng {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.ft_rb {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.wrapper {
+	width: 320px;
+	height: 568px;
+	background: #02a5af;
+}
+.btn_01 {
+	margin-top: 10px;
+}
+nav {
+	background-color: #02a5af;
+}
+.nav-wrapper {
+	padding: 0 10px;
+}
+footer {
+	padding: 100px 0 50px;
+	text-align: center;
+}
+
+/*-----------------------*/
+/* 페이지                   
+/*-----------------------*/
+
+/* splash.html */
+#lottie_01,
+#lottie_02 {
+	width: 228px;
+	height: 80px;
+	position: relative;
+	top: 130px;
+	left: 10px;
+}
