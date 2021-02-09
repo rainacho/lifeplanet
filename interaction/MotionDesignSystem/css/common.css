@@ -41,13 +41,15 @@ body {
 .sidenav .logo {
 	position: relative;
 	padding: 32px 32px 0;
-	margin-bottom: 8px;
+	margin-bottom: 40px;
+	width: 143px;
 }
 
 #float_sidemenu {
 	position: fixed;
 	top: 10px;
 	left: 10px;
+	z-index: 900;
 }
 
 .list_wrapper .two-depth-list._on {
@@ -82,9 +84,10 @@ body {
 }
 
 .itrc_guide_menus .subheader {
-	font-size: 11px;
-	background: #171c33;
-	color: white;
+	font-size: 12px;
+	color: #26a69a;
+	display: inline-block;
+	font-weight: 700;
 }
 /* 인터랙션가이드 페이지 */
 .contents_section .contents_box ul {
@@ -110,6 +113,8 @@ body {
 	padding-left: 30px;
 	font-size: 13px;
 	color: gray;
+	word-break: break-word;
+	display: block;
 }
 
 .contents_box {
@@ -143,7 +148,7 @@ body {
 	font-weight: 600;
 }
 .contents_section ul {
-	padding-left: 33px;
+	padding-left: 10px;
 }
 .contents_section ul li {
 	list-style-type: disc;
@@ -163,12 +168,18 @@ body {
 .ft_green {
 	color: #00be59;
 }
-.ft_red {
-	color: rgb(255 68 5);
+.ft_yellow {
+	color: rgb(255 205 5);
 }
 .ft_black {
 	color: #000;
 }
 .ft_gray {
 	color: gray;
+}
+
+@media screen and (max-width: 600px) {
+	.contents_sorting_list_2 li {
+		margin-bottom: 20px;
+	}
 }
