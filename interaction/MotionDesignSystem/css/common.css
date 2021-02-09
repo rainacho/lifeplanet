@@ -52,9 +52,6 @@ body {
 	z-index: 900;
 }
 
-.list_wrapper .two-depth-list._on {
-	border-bottom: 1px solid #f0f0f0;
-}
 .list_wrapper ul.sub_list {
 	background: #fafafa;
 	padding: 10px 0px 10px 49px;
