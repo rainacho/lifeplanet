@@ -33,6 +33,21 @@ body {
 	clear: both;
 }
 
+.contents_section_lists .tit {
+	list-style: none;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.contents_section_lists_wrapper {
+	padding: 35px 0;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #ccc;
+}
+
 /* GNB */
 .sidenav li > a {
 	padding: 0 0 0 32px;
@@ -129,6 +144,12 @@ body {
 	margin-top: 20px;
 	width: 300px;
 	border: 0.1px solid #cbcbcb;
+}
+
+.usage_sample img {
+	margin-top: 20px;
+	border: 0.5px solid lightgray;
+	max-width: 280px;
 }
 
 /* font */
