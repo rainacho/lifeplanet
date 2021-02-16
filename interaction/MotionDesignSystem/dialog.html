@@ -28,19 +28,15 @@
         <!-- <li class="menu"><a class="" href="basic.html">Basic</a></li> -->
         <li class="menu"><a class="" href="rules.html">기본규칙</a></li>
         <div class="itrc_guide_menus__wrapper">
-            <li id="itrc_guide_btn" class="menu"><a><i
-                        class="material-icons right arr_expand arr_up">expand_more</i>인터랙션가이드</a></li>
+            <li id="itrc_guide_btn" class="menu"><a><i class="material-icons right arr_expand arr_up">expand_more</i>인터랙션가이드</a></li>
             <div class="itrc_guide_menus">
                 <div>
                     <li><a class="subheader">컴포넌트</a></li>
                     <li><a class="" href="#">Hamburger Menu Navigation</a></li>
-                    <li><a class="" href="#">Progress Bar</a></li>
-                    <li><a class="" href="#">Bottom Sheets</a></li>
-                    <li><a class="" href="#">Alert</a></li>
-                    <div class="list_wrapper">
-                        <!-- 버튼 -->
-                        <li class="two-depth-list _on"><a class="" href="#"><i
-                                    class="material-icons right arr_expand arr_up">expand_more</i>Button</a></li>
+                    <li><a class="" href="bottomsheets.html">Bottom Sheets</a></li>
+                    <li><a class="" href="#">Dialog</a></li>
+                    <div class="list_wrapper"><!-- 버튼 -->
+                        <li class="two-depth-list _on"><a class="" href="#"><i class="material-icons right arr_expand arr_up">expand_more</i>Button</a></li>
                         <ul class="sub_list">
                             <li>Button 1</li>
                             <li>Button 2</li>
@@ -49,15 +45,8 @@
                             <li>Button 5</li>
                         </ul>
                     </div>
-                    <div class="list_wrapper">
-                        <!-- 로딩바 -->
-                        <li class="two-depth-list _on"><a class="" href="#"><i
-                                    class="material-icons right arr_expand arr_up">expand_more</i>Loading</a></li>
-                        <ul class="sub_list">
-                            <li>Loading 1</li>
-                            <li>Loading 2 </li>
-                        </ul>
-                    </div>
+                    <li><a class="" href="#">Progress Bar</a></li>
+                    <li><a class="" href="#">Splash</a></li>
                 </div>
                 <!-- <div>
                     <li><a class="subheader">페이지트랜지션</a></li>
@@ -68,8 +57,7 @@
         </div>
     </ul>
     <div id="float_sidemenu">
-        <a href="#" data-target="slide-out" class="sidenav-trigger btn-floating btn-large  waves-light"><i
-                class="material-icons">menu</i></a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger btn-floating btn-large  waves-light"><i class="material-icons">menu</i></a>
     </div>
     <!-- // Side Menu Bar -->
     <section class="container">
@@ -81,31 +69,58 @@
                         <div class="col s12">
                             <a href="#" class="breadcrumb">인터랙션가이드</a>
                             <a href="#" class="breadcrumb">컴포넌트</a>
-                            <a href="cp_alert.html" class="breadcrumb">Alert</a>
+                            <a href="dialog.html" class="breadcrumb">Dialog</a>
                         </div>
                     </div>
                 </nav>
-                <!-- 1) Bottom Sheests -->
+                <!-- 1) Dialog -->
                 <section class="contents_section">
-                    <h3 class="sub_tit">Alert (no / single / multi Action)</h3>
-                    <ul>
-                        <!-- <div>
-                            <li>트랜지션플로우</li>
-                            <img src="images/hamburger_menu_navigation_img.png" alt="" style="margin-top: 20px;">
-                        </div>
-                        <div style="margin-top: 100px;">
-                            <li>Delay & Duration & Speed</li>
-                            <img src="images/hamburger_menu_navigation_chart.png" alt="" style="margin-top: 20px;">
-                        </div>
-                        <div style="margin-top: 100px;">
-                            <li>프로토타입</li>
-                            <div style="float: left;">
-                                <img class="prototype" src="images/hamburger_menu_navigation.gif">
+                    <h3 class="sub_tit">Dialog</h3>
+                    <p>Bottom Sheests는 주로 모바일에서 사용되며, 용도에 맞게 세가지 타입으로 분류한다.</p>
+                    <ul class="contents_section_lists">
+                        <div class="contents_section_lists_wrapper usage_sample">
+                            <li class="tit">1. Usage</li>
+                            <div class="row">
+                                <div class="col s12 m4">
+                                    <img src="images/Dialog_Confirmation.svg" alt="">
+                                    <p>Dialog (Confirmation)</p>
+                                </div>
+                                <div class="col s12 m4">
+                                    <img src="images/Dialog_Alert.svg" alt="">
+                                    <p>Dialog (Alert)</p>
+                                </div>
+                                <div class="col s12 m4">
+                                    <img src="images/Dialog_Simple.svg" alt="">
+                                    <p>Dialog (Simple)</p>
+                                </div>
                             </div>
-                            <div style="float: left;margin-left: 120px;">
-                                <img class="prototype" src="images/tag_animation.gif">
+                        </div>
+                        <hr>
+                        <div class="contents_section_lists_wrapper">
+                            <li class="tit">2. Anatomy</li>
+                            <div class="row">
+                                <div class="col s12 m6">
+                                    <img src="images/bottom_sheets_anatomy.svg" style="max-width: 600px;">
+                                </div>
+                                <div class="col s12 m6">
+                                    <p>1) Sheet</p>
+                                    <p>2) Contents</p>
+                                    <p>3) Scrim (Modal Only)</p>
+                                </div>
                             </div>
-                        </div> -->
+                        </div>
+                        <hr>
+                        <div class="contents_section_lists_wrapper">
+                            <li class="tit">3. Delay & Duration & Speed</li>
+                            <img src="images/bottom_sheets_chart.svg" alt="" style="max-width: 900px;margin-top: 20px;">
+                        </div>
+                        <hr>
+                        <div class="contents_section_lists_wrapper">
+                            <li class="tit">4.Prototype</li>
+                            <div>
+                                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);margin-top: 20px;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FH8zEVXYK5BxeKuRWGeVtaB%2FBottom-Sheets%3Fnode-id%3D210%253A53%26viewport%3D342%252C2646%252C1%26scaling%3Dscale-down" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </ul>
                 </section>
                 <!-- // 1) Bottom Sheests -->
