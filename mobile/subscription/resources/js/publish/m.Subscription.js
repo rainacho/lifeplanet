@@ -491,29 +491,29 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 		/* 아이폰 X 대응 */
 
 		//카카오 웹뷰 유입
-		if (iosCheck && globalVar.getParam('inSData').inflow == 'QH') {
-			kpayCheck();
-		}
+		// if (iosCheck && globalVar.getParam('inSData').inflow == 'QH') {
+		// 	kpayCheck();
+		// }
 
-		function kpayCheck() {
-			if (!WAVE.UserAgent.isKakaoPayApp() || !WAVE.UserAgent.isKakaoTalkApp()) {
-				// 카카오페이 or 카카오톡 앱이 아닌경우
-				return false;
-			}
+		// function kpayCheck() {
+		// 	if (!WAVE.UserAgent.isKakaoPayApp() || !WAVE.UserAgent.isKakaoTalkApp()) {
+		// 		// 카카오페이 or 카카오톡 앱이 아닌경우
+		// 		return false;
+		// 	}
 
-			if (screen.width == 1125 && screen.height === 2436) {
-				// iPhone X / Xs Detection
-				$('body').addClass('iosX');
-			} else if (screen.width == 1242 && screen.height === 2688) {
-				// iPhone Xs Max
-				$('body').addClass('iosX');
-			} else if (screen.width == 828 && screen.height === 1792) {
-				// iPhone Xr
-				$('body').addClass('iosX');
-			} else {
-				//return false;
-			}
-		}
+		// 	if (screen.width == 1125 && screen.height === 2436) {
+		// 		// iPhone X / Xs Detection
+		// 		$('body').addClass('iosX');
+		// 	} else if (screen.width == 1242 && screen.height === 2688) {
+		// 		// iPhone Xs Max
+		// 		$('body').addClass('iosX');
+		// 	} else if (screen.width == 828 && screen.height === 1792) {
+		// 		// iPhone Xr
+		// 		$('body').addClass('iosX');
+		// 	} else {
+		// 		//return false;
+		// 	}
+		// }
 
 		init();
 	}
