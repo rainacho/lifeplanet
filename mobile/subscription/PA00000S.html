@@ -1,0 +1,1398 @@
+<html lang="ko"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <!-- Description Area -->
+    <meta name="description" content=" ">
+    <link rel="apple-touch-icon-precomposed" href="/resources/images/common/img_appletouchicon_114.png"><!-- 150708 추가 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+    <!-- Keyword Area -->
+    <meta name="keyword" content=" ">
+    <title>청약 - 라이프플래닛</title>
+    <meta property="og:title" content="라이프플래닛 - 국내 최초 인터넷 생명보험회사">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://m.lifeplanet.co.kr:444/products/pa/PA00000S.dev">
+    <meta property="og:description" content="청약 진행중">
+    <meta property="og:article:author" content="Lifeplanet">
+    <meta property="og:article:author:url" content="https://m.lifeplanet.co.kr:444/products/pa/PA00000S.dev">
+    <meta property="og:image" content="https://m.lifeplanet.co.kr:444/resources/images/sns/lifeplanet_10000.png">
+    <meta property="og:article:thumbnailUrl" content="https://m.lifeplanet.co.kr:444/resources/images/sns/lifeplanet_10000.png">
+    <!-- 네이버 웹마스터도구용 메타태그 삽입 마케팅팀 요청 2016-03-10 -->
+    <!-- <meta name="naver-site-verification" content="1f2884748c89c6ca0ae74de16e871f334c7844e5"> -->
+    <!-- <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script> -->
+    <!-- <script type="text/javascript" async="" src="https://www.google-analytics.com/gtm/js?id=GTM-NWCSWVG&amp;cid=1819328386.1595412068"></script> -->
+    <!-- <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script> -->
+    <!-- <script src="https://connect.facebook.net/signals/config/219723133150877?v=2.9.33&amp;r=stable" async=""></script> -->
+    <!-- <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script> -->
+    <!-- <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-P2PNP8L"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script> -->
+    <script type="text/javascript"> var cacheJS ="2021.02.19"; var cacheCommon ="2021.02.19"; </script>
+
+    
+    
+    <script type="text/javascript">
+        // [TODO] MW 객체 생성 후 속성으로 뺄 것! - 박경서, 2014-11-20
+        var context_root = '/';
+    </script>
+    
+    <!-- [3rd-party Libraries] -->
+    
+    <!--
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/v3vaccine/avm.min.js"></script>
+    -->
+    <script type="text/javascript" src="https://mpl.ahnlab.com/js/mpl_webctl.js?v=2021.02.09"></script>
+    
+    
+    
+    <!-- [jQuery Libraries] --> 
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/jquery.easing.min.js"></script>
+    
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/jquery.form.min.js?v=2021.02.19"></script>
+
+    <!-- 청약 3단계 카카오페이 인증 관련-->
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.kakaopay.auth.js"></script>
+    
+    <!-- 네이버 인증 관련-->
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/views/common/thirdParty/js/NaverAuth.js?v=2021.02.09"></script> 
+    
+    <!--  v3 test -->
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.v3.js?v=2021.02.19"></script>
+    
+
+    <!-- [MXP Libraries] -->    
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mxp/mw.mxp.constants.js?v=2021.02.19"></script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mxp/mw.mxp.plugin.js?v=2021.02.19"></script>
+
+    <!-- [KDIMW Libraries] -->  
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.config.js?v=2021.02.19"></script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.webLog.js?v=2021.02.09"></script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.util.js?v=2021.02.19"></script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.util.string.js?v=2021.02.19"></script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.util.object.js?v=2021.02.19"></script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.util.mask.js?v=2021.02.19"></script>
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.util.event.js?v=2021.02.19"></script> -->
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.util.date.js?v=2021.02.19"></script> -->
+    
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.validate.js?v=2021.02.19"></script> -->
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.core.js?v=2021.02.19"></script> -->
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.message.js?v=2021.02.19"></script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.commData.js?v=2021.02.19"></script> -->
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.page.js?v=2021.02.19"></script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.customFunction.js?v=2021.02.19"></script>
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.sns_m.js?v=2021.02.19"></script> -->
+    
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.popup.js?v=2021.02.19"></script>
+    
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.talk.js?v=2021.02.19"></script> -->
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.goodsCookie.js?v=2021.02.19"></script> -->
+    
+    <!-- [Header] -->
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.header.js?v=2021.02.19"></script> -->
+
+    <!-- 보험가격지수 -->
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/PricePoint_m.js?v=2021.02.19"></script>
+    
+    <!-- 내부 웹로그 -->
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/m.lifeplanetWeblog.js?v=2021.02.19"></script> -->
+    
+    <!-- Data Story -->
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/dataStory/wl6.js?v=2021.02.09"></script>    
+
+
+    <!-- [키보드보안 Libraries] -->
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/TouchEnmTranskey/transkey_mobile/transkey.js"></script><script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/TouchEnmTranskey/transkey_mobile/rsa_oaep_files/rsa_oaep-min.js"></script><script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/TouchEnmTranskey/transkey_mobile/jsbn/sha256.js"></script><script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/TouchEnmTranskey/transkey_mobile/jsbn/core-min.js"></script><script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/TouchEnmTranskey/transkey_mobile/jsbn/jsbn-min.js"></script><script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/TouchEnmTranskey/transkey_mobile/TranskeyLibPack_op.js"></script><script type="text/javascript" src="/mtranskeyServlet?op=getToken&amp;1613721327410"></script>
+    <link type="text/css" rel="stylesheet" href="https://m.lifeplanet.co.kr:444/commons/3rd-party/TouchEnmTranskey/transkey_mobile/transkey.css"> -->
+    
+    <!-- [Appfree Libraries] -->
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/Appfree/js/appfreeCommon.js"></script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/Appfree/js/appfreeExec.js"></script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/Appfree/js/appfreeSiteAuth.js"></script>
+    
+    <!-- [SNS(Kakao Talk) Libraries] -->
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/SNS/kakao.min.js?v=2021.02.09"></script>
+    
+
+    
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/swiper-4.1.0.min.js"></script>  
+    
+    <!-- 자동 로그아웃 -->
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/js/header_m.js?v=2021.02.19"></script>
+    
+    <!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/publish/rate_m.js?v=2021.02.19"></script> -->
+
+    <!-- [JSON Libraries] -->
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/defiant-latest.min.js"></script>
+    
+    <!-- [Loadingbar 교체] -->
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/views/common/pub/loading_pub.js?v=2021.02.19"></script>
+    
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/publish/m.common.js?v=2021.02.19"></script>
+
+    
+    
+<link rel="shortcut icon" href="/favicon.ico">
+
+<!-- 페이지 별 CSS파일 분기 | 청약 -->
+<link rel="stylesheet" href="https://m.lifeplanet.co.kr:444/resources/css/m.common.css?v=2021.02.18">
+<link rel="stylesheet" href="resources/css/m.subscription.css">
+<link rel="stylesheet" href="https://m.lifeplanet.co.kr:444/resources/css/m.popup.css?v=2021.02.18">
+
+
+<!-- as-is 소스 사용 2018.05.16-->
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/jquery.bpopup.custom.min.js"></script>
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/jquery.easing.min.js"></script>
+<!--! 공통 JS 최적화 v1.0 삭제 -->
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/jquery.form.min.js"></script><!--! 공통 JS 최적화 v1.0 수정 -->
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/jquery.diagram.min.js"></script><!--! 공통 JS 최적화 v1.0 수정 -->
+
+<!-- [javascript libraries for UI] -->
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/TweenLite.min.js"></script>
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/ScrollToPlugin.min.js"></script>
+
+<!--! 공통 JS 최적화 v1.0 삭제 -->
+
+
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/planetCommon.js"></script>
+<!-- // as-is 소스 사용 -->
+
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/lib/mobiscroll/js/mobiscroll-2.14.4.min.custom.js"></script>
+<link rel="stylesheet" href="https://m.lifeplanet.co.kr:444/resources/css/mobiscroll.jquery.custom.css?v=20200911">
+
+
+<!-- <script type="text/javascript">
+var require = {
+    urlArgs : "v="+cacheJS
+};
+</script> -->
+<!-- data-main 속성값 페이지별 변경됨 | 청약 -->
+<script data-main="resources/js/m.products_pa.main" src="resources/js/lib/require.js"></script>
+
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/views/common/cc/include/FileUpload.js?v=2021.02.19"></script>
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/planetCommon.js?v=2021.02.19"></script>
+
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/views/products/pa/js/PA00100S.js?v=2021.02.19"></script></head>
+  <body>
+  
+    <div id="subsciption" class="wrap" style="min-height: 602px;"><!-- wrap start -->
+        <div id="container_wrap" class="PA"><!-- D:PA페이지 class속성(헤더변경용) -->
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- header -->
+<div id="header_wrap" class="exception more">
+	<div id="header_main" class="main_header">
+		<div class="inner">
+			    <a href="javascript:;" class="btn_wb_back" id="kakaoPrdInfoBack" data-weblogclick="{&quot;labl&quot;:&quot;상품안내 단건&quot;, &quot;clsf&quot;:&quot;내 보험 관리&quot;}" style="display:none;"><span class="hidden">뒤로가기</span></a><!-- 200302 수정 - QH 유입 && 단건 상품안내에서만 노출 -->
+			    <a href="javascript:;" class="header_hamburger" data-weblogclick="{&quot;actn&quot;:&quot;전체메뉴&quot;, &quot;labl&quot;:&quot;전체메뉴_열기&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><i class="icon_hamburger">메뉴</i></a>
+                
+			<div class="header_title"></div>
+			<div class="quick">
+			    
+			    <a href="javascript:;" class="btn_sns_share icon">공유하기</a><!-- 190926 추가 -->
+			    
+				<div class="counsel">
+					<button class="btn_counsel" data-dupid="counselReserve">상담하기</button>
+					
+					<ul data-dupid="ul_counsel">
+						<li class="call"><a href="tel:1566-0999" data-dupid="callContact">전화상담</a></li>
+						<li class="reserve"><a href="javascript:;" class="btn_popup" id="telContactPop1">상담예약</a></li>
+						<li class="chat"><a href="javascript:;" class="btn_popup" data-dupid="talkOn">채팅상담</a></li>
+					</ul>
+					
+					<a href="javascript:;" class="counsel_tip_noti">상담예약하기</a>
+				</div>
+				<a href="javascript:;" class="btn_basket" id="CC06060P1">장바구니<em data-cert="null"></em>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- products_header -->
+	<div id="header_products" class="exception">
+		<div class="inner">
+            <a href="javascript:;" class="btn_home">메인 페이지로 이동</a>
+			<a href="javascript:;" class="btn_history_back"></a>
+			<h1 id="h1_title"><a href="javascript:;">(무)라이프플래닛<span class="e">e</span>암보험Ⅲ(순수보장형,비흡연체)</a></h1>
+			<div class="quick">
+			    
+			    <a href="javascript:;" class="btn_sns_share icon">공유하기</a><!-- 190926 추가 -->
+			    
+				<div class="counsel">
+					<button class="btn_counsel" data-dupid="counselReserve">상담하기</button>
+					
+					<ul data-dupid="ul_counsel">
+						<li class="call"><a href="tel:1566-0999" data-dupid="callContact">전화상담</a></li>
+	                    <li class="reserve"><a href="javascript:;" class="btn_popup" id="telContactPop2">상담예약</a></li>
+	                    <li class="chat"><a href="javascript:;" class="btn_popup" data-dupid="talkOn">채팅상담</a></li>
+					</ul>
+					
+					<a href="javascript:;" class="counsel_tip_noti">상담예약하기</a>
+				</div>
+                <a href="javascript:;" class="btn_basket" id="CC06060P2">장바구니<em data-cert="null"></em>
+				</a>
+				
+			</div>
+			<a href="javascript:;" class="btn_wb_back" style="display:none;" id="kakaoPrdInfoBackPG" data-weblogclick="{&quot;labl&quot;:&quot;상품안내 단건&quot;, &quot;clsf&quot;:&quot;내 보험 관리&quot;}"><span class="hidden">뒤로가기</span></a><!-- 200302 수정 - QH 유입 && 단건 상품안내에서만 노출 -->
+		</div>
+	</div>
+</div>
+<!-- end products_header -->
+
+<!-- gnb start -->
+<!-- 상품안내 에서만 적용 -->
+
+<script>
+    var isKDIMWLogin = false
+
+    /**
+     * 지문인증으로 인한 추가
+     */
+    var loginNewChk = true;
+    function loginNew(){
+        if(MXP_PLUGIN.getOSInfo().name.indexOf('APP') > -1 && MXP_PLUGIN.isAndroid()) {// 안드로이드 라이프플래닛앱 일 경우
+                if(loginNewChk){
+                    loginNewChk = false;
+                    document.addEventListener("deviceready", onDeviceReadyMain, false);
+                    setTimeout(function(){
+                        loginNewChk =  true;
+                    },2000);
+                }
+        }else{
+            PageUtil.movePage('/common/ca/CA01000S');
+        }
+    }
+
+    function onDeviceReadyMain(){
+            MXP_PLUGIN.FIDO.supportDevice(function(data){
+                if(data.supported != 'false' ){
+                    var objParam    = new Object();
+                    objParam.supportedChk = "Y";
+                    PageUtil.movePage('/common/ca/CA01000S',objParam);
+
+                }else{
+                    PageUtil.movePage('/common/ca/CA01000S');
+                }
+            });
+    }
+
+    function setPush() {
+        document.addEventListener("deviceready", onDeviceReadyPush, false);
+    }
+
+    function onDeviceReadyPush() {
+        var appSetting = {
+                'cVer' : "",        // 설치된버전
+                'nVer' : "",        // 최신버전
+                'url'  : "",        // Market URL 주소
+                'regi' : "false",   // PUSH 수신 여부
+            };
+        var OSInfo = MXP_PLUGIN.getOSInfo().name;
+
+        appSetting.cVer = device.appVersion;    // 설치된 앱버전
+
+        // PUSH 설정값 가져옴
+        // status : PUSH 수신동의 여부 (true : 수신 , falase : 미수신)
+        // sound  : PUSH 알림음 (0 : 라플음 , 1: 시스템 기본음)
+
+        MXP_PLUGIN.getPushRegiStatus(function(data) {
+            if(data.status == 'true') {
+                appSetting.regi = 'true';
+            }
+
+            appSetting.pushSound = data.pushSound; //알림음 설정
+
+            if ( OSInfo == MXP_PLUGIN_CONST.ACCESS_PATH.APP_ANDROID ) {
+                appSetting.url = MXP_PLUGIN_CONST.store.android.url;
+                appSetting.nVer = MXP_PLUGIN_CONST.store.android.newVersion;
+                appSetting.os   = "android";
+            } else {
+                appSetting.url = MXP_PLUGIN_CONST.store.ios.url;
+                appSetting.nVer = MXP_PLUGIN_CONST.store.ios.newVersion;
+                appSetting.os   = "ios";
+            }
+
+            sessionStorage.setItem('appPushSetting', JSON.stringify(appSetting));
+
+            PageUtil.movePage('/common/cc/MWCC500S1', appSetting);
+
+        }, function() {
+
+        });
+    }
+
+    function moveToMWMC200S1(tabIndex){
+        if(isKDIMWLogin){ 
+            var param = {'tabIndex' : tabIndex}; // 팝업으로 전달될 Parameter 01:알림함 02: 받은메시지함
+            PageUtil.movePage('/mypage/mc/MWMC200S1',param);
+        }else{
+            var url  = "/common/ca/CA01000S";
+            var param = {'returnUrl' : '/mypage/mc/MWMC200S1'}; // 팝업으로 전달될 Parameter
+            sessionStorage.setItem('returnUrl','/mypage/mc/MWMC200S1');
+            PageUtil.movePage(url, param);
+        }
+    }
+
+   function getPgUrl(param, menuViewYn) {
+       var url = "";
+       if (param == "pg01") {
+           webLog.runGAQ('GNB_e정기', '버튼클릭', '10001');
+           url ='/products/pg/PG01000S';
+       } else if (param == "pg02") {
+           webLog.runGAQ('GNB_e종신', '버튼클릭', '10002');
+           url ='/products/pg/PG02000S';
+       } else if (param == "pg03") {
+           webLog.runGAQ('GNB_e연금', '버튼클릭', '10048');
+           url ='/products/pg/PG03000S';
+       } else if (param == "pg04") {
+           webLog.runGAQ('GNB_e연금저축', '버튼클릭', '10047');
+           url ='/products/pg/PG04000S';
+       } else if (param == "pg25") {
+           webLog.runGAQ('GNB_1년부터e저축', '버튼클릭', '10050');
+           url ='/products/pg/PG25000S';
+       } else if (param == "pg11") {
+           webLog.runGAQ('GNB_e암', '버튼클릭', '10011');
+           url ='/products/pg/PG11000S';
+       } else if (param == "pg12") {
+           webLog.runGAQ('GNB_e뇌&middot;심장', '버튼클릭', '10052');
+           url ='/products/pg/PG52000S';
+       } else if (param == "pg43") {
+           webLog.runGAQ('GNB_건강치아보험', '버튼클릭', '10043');
+           url ='/products/pg/PG43000S';
+       }else if (param == "pg07") {
+           webLog.runGAQ('GNB_e플러스어린이', '버튼클릭', '10007');
+           url ='/products/pg/PG07000S';
+       } else if (param == "pg08") {
+           webLog.runGAQ('GNB_e에듀케어저축', '버튼클릭', '10008');
+           url ='/products/pg/PG08000S';
+       } else if (param == "pg17") {
+           webLog.runGAQ('GNB_e상해', '버튼클릭', '10017');
+           url ='/products/pg/PG17000S';
+       } else if (param == "pg23") {
+           webLog.runGAQ('GNB_자녀사랑e정기', '버튼클릭', '10023');
+           //url ='/products/pg/PG23000S');
+       } else if (param == "pg28") {
+           webLog.runGAQ('GNB_e입원비', '버튼클릭', '10028');
+           url ='/products/pg/PG28000S';
+       } else if (param == "pg29") {
+           webLog.runGAQ('GNB_e수술비', '버튼클릭', '10029');
+           url ='/products/pg/PG29000S';
+       } else if (param == "pg32") {
+           webLog.runGAQ('GNB_펫사랑m정기', '버튼클릭', '10032');
+           url ='/products/pe/MWPE910S1';
+       } else if (param == "pg31") {
+           webLog.runGAQ('GNB_만원부터m저축', '버튼클릭', '10031');
+           url ='/products/pe/MWPE810S1';
+       } else if (param == "pg37") {
+           webLog.runGAQ('GNB_비갱신암', '버튼클릭', '10037');
+           url ='/products/pg/PG37000S';
+       }else if (param == "NB") {
+           if(MXP_PLUGIN.getOSInfo().name.indexOf('APP') > -1){
+                url  ='/analysis/nb/NB01000S';
+           }else{
+                url  ='/analysis/nb/NB01001S';
+           }
+       }else if (param == "pg41") {
+           webLog.runGAQ('GNB_미세먼지질병보험', '버튼클릭', '10041');
+            url  ='/products/pg/PG41000S';
+       }else if (param == "pg49") {
+           webLog.runGAQ('GNB_여성건강보험', '버튼클릭', '10049');
+            url  ='/products/pg/PG49000S';
+       }else if (param == "pg53") {
+           webLog.runGAQ('GNB_m특정감염병사망보험', '버튼클릭', '10053');
+            url  ='/products/pg/PG53000S';
+       }
+       return url ;
+    }
+    function movePage(param, menuViewYn) {
+        var url = getPgUrl(param);
+        if (param == "bannerNA") {
+            webLog.runGAQ('GNB_배너', '버튼클릭', '00000');
+            PageUtil.movePage('/analysis/na/NA01000S');
+            return false;
+        } else if (param == "bannerML") {
+            webLog.runGAQ('GNB_배너', '버튼클릭', '00000');
+            if(isKDIMWLogin){
+                 PageUtil.movePage('/mypage/ml/MWML210S1');
+                return false;
+            } else {
+                alert("로그인 후 이용가능합니다.");
+                var nextUrl  = "/common/ca/CA01000S";
+                PageUtil.movePage(nextUrl);
+                return false;
+            }
+        } else if(param == "bannerEV") {
+            webLog.runGAQ('GNB_배너', '버튼클릭', '00000');
+            PageUtil.movePage('/bridge/bl/MWBL630S1');
+            return false;
+        } else if(param == "bannerEV2") {
+            webLog.runGAQ('GNB_배너', '버튼클릭', '00000');
+            PageUtil.movePage('/contact/ct/MWCT145S1',{"anSrno":"113"});
+            return false;
+        }else if(param == "bannerEV3") {
+            webLog.runGAQ('GNB_배너', '버튼클릭', '00000');
+            PageUtil.movePage('/bridge/bl/BL00090S');
+            return false;
+        } else if(param == "bannerEV5") {
+            webLog.runGAQ('GNB_배너', '버튼클릭', '00000');
+            var eventCd_svng = (util.getDate()<'20210201') ? 'MV01' : 'NB01'; // 저축보험 이벤트코드
+            PageUtil.movePage('/lifesquare/ls/MWLS215S1', {"tradeKey" :"retrieve", "eventStatus":"O","eventFlag":"", "evntCd":eventCd_svng});            
+            return false;
+        } else if(param == "bannerEV6") {
+            webLog.runGAQ('GNB_배너', '버튼클릭', '00000');
+            var eventCd_pnsa = (util.getDate()<'20210201') ? 'MW01' : 'NC01'; // 연금저축 이벤트코드
+            PageUtil.movePage('/lifesquare/ls/MWLS215S1', {"tradeKey" :"retrieve", "eventStatus":"O","eventFlag":"", "evntCd":eventCd_pnsa});
+            return false;
+        } else if(param == "bannerEV7") {
+            webLog.runGAQ('GNB_배너', '버튼클릭', '00000');
+            PageUtil.movePage('/lifesquare/ls/MWLS215S1', {"tradeKey" :"retrieve", "eventStatus":"O","eventFlag":"","evntCd":"NA01"});
+            return false;
+        } else if (param == "kwin") {
+            PageUtil.movePage('/contact/ct/MWCT145S1', {"anSrno":"118"});
+            return ;
+        } else if (param == "bannerEV5") {
+            var option = {
+                    location : 'browserPopUp',
+                    url : 'https://event.lifeplanet.co.kr'
+                };
+            PageUtil.openPopup(option);
+            return false;
+        }
+
+        PageUtil.movePage(url);
+    }
+   
+
+    //웹 iphone x 확인을 위한 쿠기 저장
+    $(document).ready(function(){
+
+        var web_faceid = util.nvl(util.getCookie("web_faceid"),"");
+
+        if(MXP_PLUGIN.getOSInfo().name == "WEB_IOS" && web_faceid != "Y"){
+            if(MXP_PLUGIN.isiPhoneX()){
+                util.setCookie("web_faceid","Y");
+            }
+        }
+        
+        $('.r_nav').children().find('a').off ('click').on ('click', function () {
+             var text =$(this).text();
+            var url = $(this).attr('href').split("'")[1];
+            if(util.isNull(url) || url.split("/").length != 4){ // 상품, 받은메시지함 
+                if( $(this).attr('href').indexOf("moveToMWMC200S1") > 0 ){//받은메시지함 
+                    menuView.init("/mypage/mc/MWMC200S1", text);
+                    return;
+                }else{
+                    url = getPgUrl(url);
+                }
+            }
+            if(!util.isNull(url) && !(url.indexOf("MWMC000S1") > 0) ){
+            menuView.init(url, text);
+            }
+        });
+
+    });
+</script>
+    <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/mw.menuCookie.js?v=2021.02.19"></script>
+<div id="gnb" class="gnb_renew">
+    <div class="gnb_dim"></div>
+    <div id="gnb_wrap" role="navigation">
+        
+            
+        
+        <div class="gnb_header "><!-- D: 로그인일 경우 / add class login -->
+            <div class="user_info">
+                
+            </div>
+            <div class="btn_wrap">
+                <a href="javascript:PageUtil.movePage('/common/cm/CM01000S');" class="btn_gnb_home" data-weblogclick="{&quot;actn&quot;:&quot;홈&quot;, &quot;labl&quot;:&quot;상단유틸&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><i class="icon_home"></i>홈</a>
+                <a href="javascript:loginNew();" class="btn_gnb_login" data-weblogclick="{&quot;actn&quot;:&quot;로그인&quot;, &quot;labl&quot;:&quot;상단유틸&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><i class="icon_login"></i>로그인</a>
+                <a href="javascript:PageUtil.movePage('/common/ca/CA06000S');" class="btn_gnb_certi" data-weblogclick="{&quot;actn&quot;:&quot;통합인증센터&quot;, &quot;labl&quot;:&quot;상단유틸&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><i class="icon_certi"></i>인증센터</a>
+                <a href="javascript:MXP_PLUGIN.NativeApp.presentNativeEst();" class="btn_gnb_config" style="display:none;" data-weblogclick="{&quot;actn&quot;:&quot;설정&quot;, &quot;labl&quot;:&quot;상단유틸&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"> <i class="icon_config"></i>설정</a><!-- 앱에서만 노출 200615 수정 -->
+            </div>
+            <div class="util_wrap">
+                <!-- <a href="#" class="btn_gnb_settings"><i class="icon_settings"></i>설정</a> -->
+                <a href="javascript:moveToMWMC200S1('01');" class="btn_gnb_alarm" data-weblogclick="{&quot;actn&quot;:&quot;나의 알림&quot;, &quot;labl&quot;:&quot;상단유틸&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><i class="icon_alarm"></i><span class="hidden">나의 알림</span></a>
+                <a href="javascript:Main.logoutNew();" class="btn_gnb_logout" data-weblogclick="{&quot;actn&quot;:&quot;로그아웃&quot;, &quot;labl&quot;:&quot;상단유틸&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><i class="icon_logout"></i><span class="hidden">로그아웃</span></a>
+            </div>
+            <div class="latest_wrap">
+                <h3>최근 본 상품</h3>
+                <div class="latest_inner">
+                    <p id="gnb_goodsCookie" style="min-width:200px;"><a href="javascript:PageUtil.movePage('/products/pg/PG11000S.dev');" class="btn_prod" data-weblogclick="{'labl':'최근본상품', 'clsf':'GNB'}">#암</a><a href="javascript:PageUtil.movePage('/products/pg/PG53000S.dev');" class="btn_prod" data-weblogclick="{'labl':'최근본상품', 'clsf':'GNB'}">#m감염병</a><a href="javascript:PageUtil.movePage('/products/pg/PG01000S.dev');" class="btn_prod" data-weblogclick="{'labl':'최근본상품', 'clsf':'GNB'}">#정기</a><a href="javascript:PageUtil.movePage('/products/pg/PG17000S.dev');" class="btn_prod" data-weblogclick="{'labl':'최근본상품', 'clsf':'GNB'}">#상해</a><a href="javascript:PageUtil.movePage('/products/pg/PG37000S.dev');" class="btn_prod" data-weblogclick="{'labl':'최근본상품', 'clsf':'GNB'}">#비갱신암</a><a href="javascript:PageUtil.movePage('/products/pg/PG49000S.dev');" class="btn_prod" data-weblogclick="{'labl':'최근본상품', 'clsf':'GNB'}">#여성건강</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gnb_body" style="height: 504px;">
+            <div class="l_nav"> 
+                <ul id="gnbTab" class="dep1 gnb_state products"><!-- addClass products, contract -->
+                    <li><a href="#menu01" class="on" data-weblogclick="{&quot;labl&quot;:&quot;Tab_클릭&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span>보험상품</span></a></li>
+                    <li><a href="#menu02" data-weblogclick="{&quot;labl&quot;:&quot;Tab_클릭&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span>계약관리</span></a></li>
+                    <li><a href="#menu03" data-weblogclick="{&quot;labl&quot;:&quot;Tab_클릭&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span>이벤트</span></a></li>
+                    <li><a href="#menu04" data-weblogclick="{&quot;labl&quot;:&quot;Tab_클릭&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span>고객센터</span></a></li>
+                </ul>
+                <a href="javascript:PageUtil.movePage('/innovation/ic/MWIC100S1');" class="btn_360" data-weblogclick="{&quot;actn&quot;:&quot;360 플래닛&quot;, &quot;labl&quot;:&quot;360 플래닛&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">
+                    <span class="ani_logo">
+                        <i class="icon_360"></i>
+                        <span class="t1">360</span>
+                        <span class="t2">건강</span>
+                    </span>
+                    <span class="txt">플래닛</span>
+                </a>                
+            </div>
+            
+            <div class="r_nav">
+                <!-- 상품 -->
+                <div id="menu01" class="dep2">
+                     <p class="top_link"><span>1분만에 알아보는 나의 부족한 보험</span><br><a href="javascript:PageUtil.movePage('/analysis/na/NA01000S');" data-weblogclick="{&quot;actn&quot;:&quot;바른보장 서비스&quot;, &quot;labl&quot;:&quot;바른보장&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">바른보장 서비스</a></p>
+                    <h2 class="s_tit">mini</h2>
+                    <ul>
+                        <!-- <li><a href="javascript:movePage('pg53');" data-weblogclick="{&quot;actn&quot;:&quot;m감염병&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10053">m감염병</span><span class="new"><img src="/resources/images/common/m.main_carousel_new.png" alt="new"></span></a></li> -->
+                    </ul>
+                    <h2 class="s_tit">정기·종신</h2>
+                    <ul>
+                        <li><a href="javascript:movePage('pg01');" data-weblogclick="{&quot;actn&quot;:&quot;정기&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10001">정기</span><span class="hot"><img src="/resources/images/common/m.main_carousel_hot.png" alt="hot"></span></a></li>
+                        <li><a href="javascript:movePage('pg02');" data-weblogclick="{&quot;actn&quot;:&quot;종신&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10002">종신</span></a></li>
+                        <li><a href="javascript:movePage('pg17');" data-weblogclick="{&quot;actn&quot;:&quot;상해&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10017">상해</span></a></li>
+                    </ul>
+                    <h2 class="s_tit">암·건강·치아</h2>
+                    <ul>
+                        <li><a href="javascript:movePage('pg37');" data-weblogclick="{&quot;actn&quot;:&quot;비갱신암&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10037">비갱신암</span><span class="best"><img src="/resources/images/common/m.main_carousel_best.png" alt="best"></span></a></li>
+                        <li><a href="javascript:movePage('pg11');" data-weblogclick="{&quot;actn&quot;:&quot;암&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10011">암</span></a></li>
+                        <li><a href="javascript:movePage('pg12');" data-weblogclick="{&quot;actn&quot;:&quot;뇌·심장보험&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10052">뇌·심장</span><span class="new"><img src="/resources/images/common/m.main_carousel_new.png" alt="new"></span></a></li>
+                        <li><a href="javascript:movePage('pg49');" data-weblogclick="{&quot;actn&quot;:&quot;여성건강&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10049">여성건강</span></a></li>
+                        <li><a href="javascript:movePage('pg41');" data-weblogclick="{&quot;actn&quot;:&quot;미세먼지&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10041">미세먼지질병</span></a></li>
+                        <li><a href="javascript:movePage('pg43');" data-weblogclick="{&quot;actn&quot;:&quot;치아&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10043">치아</span></a></li>
+                        <li><a href="javascript:movePage('pg28');" data-weblogclick="{&quot;actn&quot;:&quot;입원비&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10028">입원비</span></a></li>
+                        <li><a href="javascript:movePage('pg29');" data-weblogclick="{&quot;actn&quot;:&quot;수술비&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10029">수술비</span></a></li>
+                    </ul>
+                    <h2 class="s_tit">어린이</h2>
+                    <ul>
+                        <li><a href="javascript:movePage('pg07');" data-weblogclick="{&quot;actn&quot;:&quot;어린이보장&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10007">어린이보장</span></a></li>
+                        <li><a href="javascript:movePage('pg08');" data-weblogclick="{&quot;actn&quot;:&quot;어린이저축&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10008">어린이저축</span></a></li>
+                    </ul>
+                    <h2 class="s_tit">연금·저축</h2>
+                    <ul>
+                        <li><a href="javascript:movePage('pg04');" data-weblogclick="{&quot;actn&quot;:&quot;연금저축&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10004">연금저축</span><span class="hot"><img src="/resources/images/common/m.main_carousel_hot.png" alt="hot"></span></a></li>
+                        <li><a href="javascript:movePage('pg25');" data-weblogclick="{&quot;actn&quot;:&quot;저축&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10050">저축</span></a></li> 
+                        <li><a href="javascript:movePage('pg03');" data-weblogclick="{&quot;actn&quot;:&quot;연금&quot;, &quot;labl&quot;:&quot;보험상품&quot;, &quot;clsf&quot;:&quot;GNB&quot;}"><span class="name" data-cd="10003">연금</span></a></li>
+                        <!-- <li><a href="javascript:movePage('pg31');" data-weblogclick='{"actn":"만원부터m저축보험", "labl":"mini_보험", "clsf":"GNB"}'><span class="name">만원부터 m저축</span></a></li> -->
+                    </ul>
+                </div>
+                
+                <!-- 마이 -->
+                <div id="menu02" class="dep2" style="display:none">
+                    <h2 class="s_tit">MY</h2>
+                    <ul>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mc/MWMC000S1');" data-weblogclick="{&quot;actn&quot;:&quot;마이페이지&quot;, &quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">마이페이지 <i class="icon_next"></i></a></li>
+                        <li class="dep3">
+                            <a href="#">내정보관리 <i class="icon_state"></i></a>
+                            <ul style="display:none;">
+                                <li><a href="javascript:PageUtil.movePage('/mypage/mm/MWMM510S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">상담내역</a></li>
+                                <li><a href="javascript:moveToMWMC200S1('02');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">받은 메시지함</a></li>
+                                <li><a href="javascript:PageUtil.movePage('/mypage/mm/MWMM100S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">연락처수정</a></li>
+                                <li><a href="javascript:PageUtil.movePage('/mypage/mm/MWMM700S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">수익자 연락처 입력/수정</a></li>
+                                <li><a href="javascript:PageUtil.movePage('/mypage/mm/MWMM310S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">혜택정보 수신동의 변경</a></li>
+                                <!-- <li><a href="javascript:PageUtil.movePage('/mypage/mm/MWMM210S1');">출금이체동의철회신청</a></li> -->
+                                <li><a href="javascript:PageUtil.movePage('/mypage/mm/MWMM410S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">ARS비밀번호 관리</a></li>
+                                <li><a href="javascript:PageUtil.movePage('/mypage/mm/MWMM600S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">개인신용정보 이용·제공현황</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li id="appNB"><a href="javascript:movePage('NB');" class="dpeth1_el">실손보험금 청구대행서비스</a></li> -->
+                    </ul>
+                    <h2 class="s_tit">계약</h2>
+                    <ul>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/ms/MWMS100S1');" data-weblogclick="{&quot;actn&quot;:&quot;계약조회&quot;, &quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">계약조회</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/ma/MWMA000S1');" data-weblogclick="{&quot;actn&quot;:&quot;계약변경 신청&quot;, &quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">계약변경 신청</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/ma/MWMA100S1');" data-weblogclick="{&quot;actn&quot;:&quot;계약변경 내역&quot;, &quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">계약변경 내역</a></li>
+                    </ul>
+                    <h2 class="s_tit">보험료 납입</h2>
+                    <ul>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mi/MWMI210S1');" data-weblogclick="{&quot;actn&quot;:&quot;기본보험료 즉시납입&quot;, &quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">기본보험료 즉시납입</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mi/MWMI310S1');" data-weblogclick="{&quot;actn&quot;:&quot;추가/자유납보험료 즉시납입&quot;, &quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">추가/자유납보험료 즉시납입</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mi/MWMI400S1');" data-weblogclick="{&quot;actn&quot;:&quot;추가/자유납보험료 즉시납입&quot;, &quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">추가/자유납보험료 자동이체</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mi/MWMI110S1');" data-weblogclick="{&quot;actn&quot;:&quot;자동이체계좌변경&quot;, &quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">자동이체계좌변경</a></li>
+                    </ul>
+                    <h2 class="s_tit">사고보험금 신청</h2>
+                    <ul>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mo/MWMO101S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">보험금 신청</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mo/MWMO170S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">보험금 신청내역</a></li>
+                    </ul>
+                    <h2 class="s_tit">지급금 신청</h2>
+                    <ul>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mo/MWMO210S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">중도인출 신청 </a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mo/MWMO610S1')" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">중도인출 내역</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mo/MWMO700S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">만기보험금 신청</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mo/MWMO800S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">휴면보험금 신청</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mo/MWMO300S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">연금 신청</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mo/MWMO500S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">해지 신청</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mo/MWMO410S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">자동송금서비스 신청/변경</a></li>
+                    </ul>
+                    <h2 class="s_tit">보험계약대출</h2>
+                    <ul>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/ml/MWML210S1');" data-weblogclick="{&quot;actn&quot;:&quot;보험계약대출 신청&quot;, &quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">대출 신청</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/ml/MWML110S1');" data-weblogclick="{&quot;actn&quot;:&quot;보험계약대출 조회/상환&quot;, &quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">대출 조회/상환</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/ml/MWML410S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">이자납입자동이체계좌변경</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/ml/MWML310S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">지정계좌 설정</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/ml/MWML510S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">보험료 자동대출납입 신청</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/ml/MWML550S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">보험료 자동대출납입 해지</a></li>
+                    </ul>
+                    <h2 class="s_tit">보험계약철회</h2>
+                    <ul>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mr/MWMR210S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">청약철회/결제취소</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mr/MWMR320S1');" data-weblogclick="{&quot;labl&quot;:&quot;계약관리&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">책임보상신청</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 이벤트 -->
+                <div id="menu03" class="dep2" style="display:none">
+                    <h2 class="s_tit">이벤트</h2>
+                    <ul>
+                        <li><a href="javascript:PageUtil.movePage('/lifesquare/ls/MWLS210S1');" data-weblogclick="{&quot;labl&quot;:&quot;이벤트_혜택&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">진행중인 이벤트</a></li>
+                    </ul>
+                    <h2 class="s_tit">혜택</h2>
+                    <ul>
+                        <li><a href="javascript:PageUtil.movePage('/lifesquare/ls/MWLS450S1');" data-weblogclick="{&quot;labl&quot;:&quot;이벤트_혜택&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">보험건강나이</a></li>
+                        <!-- <li><a href="javascript:PageUtil.movePage('/lifesquare/ls/MWLS340S1');" data-weblogclick='{"labl":"이벤트_혜택", "clsf":"GNB"}'>내아이꿈응원 서비스</a></li> 200914 삭제 -->
+                    </ul>
+
+                    <div id="event_banner_box" class="banner swiper_carousel swiper_container swiper-container-horizontal swiper-container-android swiper-container-wp8-horizontal" data-pagination="{&quot;el&quot;:&quot;.pagination .swiper-pagination&quot;}">
+                        <div class="pagination">
+                            <div class="swiper-pagination swiper-pagination-bullets"></div>
+                        </div>
+                        <ul class="swiper-wrapper" style="transition-duration: 0ms;">
+                            <li class="swiper-slide" style="background-color:#d2e3f8">
+                                <a href="javascript:movePage('bannerEV7');" data-weblogclick="{&quot;actn&quot;:&quot;m감염병보험 이벤트&quot;, &quot;labl&quot;:&quot;배너_롤링&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">
+                                    <img src="/resources/images/common/m.bann_lnb09.png" alt="">
+                                </a>
+                            </li>
+                            <li class="swiper-slide" style="background-color:#ddecff">
+                                <a href="javascript:movePage('bannerEV6');" data-weblogclick="{&quot;actn&quot;:&quot;환급 원정대&quot;, &quot;labl&quot;:&quot;배너_롤링&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">
+                                    <img src="/resources/images/common/m.bann_lnb07.jpg" alt="2021 ‘환급’원정대 EVENT 최대 99만원 연말정산 환급 기회">
+                                </a>
+                            </li>
+                            <li class="swiper-slide" style="background-color:d6ecf5">
+                                <a href="javascript:movePage('bannerEV5');" data-weblogclick="{&quot;actn&quot;:&quot;저축보험 이벤트&quot;, &quot;labl&quot;:&quot;배너_롤링&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">
+                                    <img src="/resources/images/common/m.bann_lnb06.jpg" alt="저축보험 가입 시 신세계상품권 3만원 증정! 월 기본보험료 10만원 이상 가입 시">
+                                </a>
+                            </li>
+                            <li class="swiper-slide" style="background-color:#ddf6f2">
+                                <a href="javascript:movePage('bannerEV3');" data-weblogclick="{&quot;actn&quot;:&quot;보장성보험 10종 이벤트&quot;, &quot;labl&quot;:&quot;배너_롤링&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">
+                                    <img src="/resources/images/common/v200619_m.bann_lnb02.jpg" alt="보장성 보험 10종 가입 시 최대 25만원 상품권 증정! (월 보험료 별, 1인 1회 계약 유지 고객 한정) 신세계 상품권 증정">
+                                </a>
+                            </li>
+                            <li class="swiper-slide" style="background-color:#e1e9ec">
+                                <a href="javascript:movePage('bannerNA');" data-weblogclick="{&quot;actn&quot;:&quot;바른보장서비스&quot;, &quot;labl&quot;:&quot;배너_롤링&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">
+                                    <img src="/resources/images/common/v201104_m.bann_lnb03.jpg" alt="바른보장서비스">
+                                </a>
+                            </li>
+                            <li class="swiper-slide" style="background-color:#e4ecee">
+                                <a href="javascript:movePage('bannerML');" data-weblogclick="{&quot;actn&quot;:&quot;보험계약대출&quot;, &quot;labl&quot;:&quot;배너_롤링&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">
+                                    <img src="/resources/images/common/m.bann_lnb04.jpg" alt="보험계약대출">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="menu04" class="dep2" style="display:none">
+                 <p class="gnb_limit">
+                        <a href="javascript:PageUtil.movePage('/common/ca/CA01000S',{'locationUrl':'/contact/ct/MWCT110S1'});" class="btn_limit">지급 제한 신청 및 해제</a>
+                    </p>
+                    <p class="cst_link">무엇을 도와드릴까요?<br>
+                        <a href="tel:1566-0999" data-weblogclick="{&quot;labl&quot;:&quot;고객센터&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">1566-0999</a>
+                    </p>
+                    <h2 class="s_tit">고객센터</h2>
+                    <ul>
+                        <li><a href="javascript:PageUtil.movePage('/contact/ct/MWCT100S1');" data-weblogclick="{&quot;labl&quot;:&quot;고객센터&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">고객센터이용안내</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/contact/ct/MWCT130S1');" data-weblogclick="{&quot;labl&quot;:&quot;고객센터&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">자주 찾는 질문</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/contact/ct/MWCT140S1');" data-weblogclick="{&quot;labl&quot;:&quot;고객센터&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">공지사항</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/contact/ct/MWCT211S1');" data-weblogclick="{&quot;labl&quot;:&quot;고객센터&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">금융거래10계명</a></li>
+                        <li><a href="javascript:PageUtil.movePage('/mypage/mo/MWMO101S1');" data-weblogclick="{&quot;labl&quot;:&quot;고객센터&quot;, &quot;clsf&quot;:&quot;GNB&quot;}">보험금 신청안내</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <a href="#" class="btn_gnb_close"><i class="icon_close"></i><span class="hidden">닫기</span></a>
+</div>
+<!-- gnb end -->
+
+            <input type="hidden" id="paStepIdx" value="load1">
+            
+            
+            <div id="loadPageArea">
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- content start -->
+            <div class="content product">
+                <form id="form_input" name="form_input">
+
+                    <input type="hidden" id="spb_encrHndTphno" title="암호화휴대전화번호">
+                    <input type="hidden" id="spb_spbSq" title="장바구니순번">
+                    <input type="hidden" id="spbSq" title="장바구니순번">
+                    <input type="hidden" id="entChnnScCd" value="MW" title="가입채널구분코드">
+                    <input type="hidden" id="csno" title="고객번호">
+                    <input type="hidden" id="ntnfScCd" title="내외국인구분코드" value="1">
+                    <input type="hidden" id="scpsProoScCd" title="신분증명구분코드">
+                    <input type="hidden" id="chld_ntnfScCd" title="자녀 내외국인구분코드" value="1">
+                    <input type="hidden" id="feta_ntnfScCd" title="태아 내외국인구분코드" value="1">
+                    <input type="hidden" id="nwcReiScCd" title="신계약부활구분코드" value="01">
+                    <input type="hidden" id="cstCbwrScCd" title="고객유무선구분코드" value="">
+
+                    <input type="hidden" id="agrInfoScCd_0506" value="">
+                    <input type="hidden" id="agrInfoScCd_0708" value="">
+                    <input type="hidden" id="agrInfoScCd_2020" value="">
+                    <input type="hidden" id="agrInfoScCd_1234" value="">
+                    <input type="hidden" id="agrInfoScCd_5678" value="">
+
+                    <input type="hidden" id="agrCk01" title="가입권유이메일수신동의여부" value="">
+                    <input type="hidden" id="agrCk02" title="가입권유SMS수신동의여부" value="">
+                    <input type="hidden" id="agrCk03" title="가입권유전화수신동의여부" value="">
+                    <input type="hidden" id="agrCk04" title="가입권유우편수신동의여부" value="">
+
+                    <input type="hidden" id="agrPeriod" title="수집이용정보보유이용기간" value="">
+                    <input type="hidden" id="prauExerAgrYn_success" title="친권동의" value="">
+                    <input type="hidden" id="passport_radio" title="신분증코드" value="1">
+
+                    <!-- //subscription --><!-- //청약 페이지 -->
+                    <div class="subscription">
+                        <!-- 인디게이터 S 200831 수정 -->
+                        <div class="indicator_wrapper">
+                            <div class="indicator">
+                                <div class="current_step">
+                                    <p class="tit">가입시작</p>
+                                </div>
+                                <div id="progress">
+                                    <div id="bar"></div>
+                                </div>
+                            </div>
+                        </div>
+	                    <!-- //인디게이터 E 200831 -->
+                        <div class="scene_area">
+
+                            <!-- PA00100S -->
+                            <div class="scene_item _active" data-step="1" data-sect="0" style="min-height: 602px;">
+                                <div class="scene">
+
+                                    <section>
+                                        <div class="tit_area">
+                                            <h2 class="tit_pord_info">안녕하세요. 고객님<br>지금부터 <em>가입</em>을 <em>시작</em>합니다</h2>
+                                        </div>
+	                                    <!-- 201222 수정 본인인증 skip S -->
+	                                    <div class="box_skip" id="skip_0" style="display:none;">
+	                                        <ul>
+	                                            <li><span>이름</span><strong id="skipTxt_name"></strong></li>
+	                                            <li><span>생년월일 / 성별</span><strong id="skipTxt_desc"></strong></li>
+	                                            <li><span>휴대폰</span><strong id="skipTxt_hndTphno"></strong></li>
+	                                        </ul>
+	                                        <div class="btn_area5 ac">
+	                                            <button type="button" class="noline btn_clear" id="btn_scrn_mdfc">수정</button><!-- 수정 클릭시 레이어팝업 호출(https://m.lifeplanet.co.kr:444/views/products/pa/PA00006L.jsp) -->
+	                                        </div>
+	                                    </div>
+	                                    <!-- 201222 수정 본인인증 skip E -->
+                                        <div class="subscription_inner" id="nonskip_0" style="display:block;">
+                                            <div class="native">
+                                                <label for="cstHanNm" class="tit_sub2">이름</label>
+                                                <div class="ipt">
+                                                    <input type="text" id="cstHanNm" data-constraint="kornameonly" style="ime-mode:active;" placeholder="이름 입력" maxlength="25" title="이름"><!-- 150909 접근성, title 추가 -->
+                                                </div>
+                                            </div>
+
+                                            <div class="foreigner" style="display:none;">
+                                                <label for="cstEngNm" class="tit_sub2">이름</label>
+                                                <div class="ipt">
+                                                    <input type="email" id="cstEngNm" placeholder="이름 입력" data-constraint="engnameonly" style="ime-mode:inactive;" maxlength="25" title="이름"><!-- 150909 접근성, title 추가 -->
+                                                </div>
+                                            </div>
+
+                                            <div class="ipt_set">
+                                                <input type="checkbox" id="frgnChk" name="check2" class="checkbox_type2" value="Y">
+                                                <label for="frgnChk">저는 외국인입니다.</label>
+                                            </div>
+
+                                            <!-- 200810 inflow QH S -->
+                                            <label for="hpNum" class="tit_sub2" data-dupid="kpPhnArea" style="display:none;">휴대전화번호</label>
+                                            <div class="ipt" data-dupid="kpPhnArea" style="display:none;">
+                                                <input type="tel" id="hpNum" name="hpNum" title="전화번호 입력" placeholder="전화번호" value="" readonly="">
+                                            </div>
+                                            <p class="desc_info1" data-dupid="kpPhnArea" style="display:none;">※ 핸드폰번호가 변경된 경우, 가입 후 고객센터(1566-6930)로 전화 주세요.</p>
+                                            <!-- //200810 inflow QH E -->
+                                        
+                                            <label for="psno2" id="step1_title" class="tit_sub2">주민등록번호</label>
+                                            <div class="form_group">
+                                                <span class="unit ipt"> <!-- 미리 내용 뿌려지는 항목에 class="highlight" 추가 -->
+                                                    <span id="psno1">821220</span>
+                                                </span>
+                                                <span class="unit ipt"> <!-- 값이 error일 경우 class="error 추가" -->
+                                                    <input type="password" name="psno2" id="psno2" data-tk-kbdtype="number" onclick="mtk.onKeyboard(this);" placeholder="주민번호 뒷자리" maxlength="7" readonly="readonly" title="주민번호 뒷자리">
+                                                </span>
+                                            </div>
+                                            <div class="mt25" data-dupid="phnCertArea">
+	                                            <label for="hndTphArno" class="tit_sub2" id="cellphone_Div">본인인증</label>
+	                                            <div class="picker" id="hp_cert_picker">
+	                                                <input type="text" id="slt_mc_dummy" class="mobipick middle" placeholder="" readonly="" title="통신사"><span id="slt_mc" class="dw-hsel" tabindex="-1" readonly="readonly"></span>
+	                                            </div>
+
+	                                            <!-- 전화번호 입력 필드 -->
+	                                            <div class="ipt">
+	                                                <input type="tel" id="hndTphno" placeholder="전화번호" class="tel" data-constraint="numberonly" maxlength="11" title="전화번호 입력">
+	                                                <span class="btn_area" id="btn_re_hp_cert" style="display:none;">
+	                                                    <button type="button" class="btn_type4_white">재전송</button>
+	                                                </span>
+	                                            </div>
+
+	                                            <!-- 인증번호 입력 필드 -->
+	                                            <div class="ipt ipt_count" id="cellphone_confirm_3" style="display:none;">
+	                                                <span class="count" id="timerArea">03:59</span>
+	                                                <input type="tel" id="txt_phnCerti" data-phncerti="Y" data-constraint="numberonly" placeholder="" title="인증번호 입력">
+	                                                <span class="btn_area">
+	                                                    <!-- button disabled 시 class="disabled" 추가 -->
+	                                                    <button type="button" id="fn_hp_cert_ok" class="btn_type4_yellow">인증</button>
+	                                                    <input type="hidden" id="cellphone_confirm_yn" alt="인증여부" value="">
+	                                                </span>
+	                                            </div>
+	                                            <p class="desc_info1" id="hp_cert_desc">※ 수신한 LMS에 포함된 개인정보 이용 및 제공동의 등의 안내사항을 확인 및 동의합니다. <br>
+	                                                <a href="javascript:;" id="pop_detail" class="btn_underline">본인확인서비스 이용관련 사항 자세히 보기</a>
+	                                            </p>
+
+	                                            <!-- 인증번호 받기 버튼 -->
+	                                            <div class="btn_area1">
+	                                                <button type="button" id="btn_hp_cert" class="btn_type1_yellow">인증번호 받기</button> <!-- button disabled 시 class="disabled" 추가 -->
+	                                            </div>
+
+	                                            <!-- 인증 완료 -->
+		                                        <div class="btn_area1">
+		                                             <!-- S :: 디자인 수정 반영 -->
+		                                            <p class="desc_confirm2" id="cellphone_confirm_cmt" style="display:none;">인증이 완료되었습니다.</p>
+		                                            <p class="desc_error2 red" id="cellphone_confirm_fail" style="display:none;"><i></i>인증이 실패하였습니다.</p>
+		                                            <!-- 191112 okcashback 이벤트 접근 시 -->
+	                                                <p class="okcash_confirm" id="okcash_confirm_cmt" style="display: none;"><i></i>OK캐쉬백 본인인증 이벤트 참여가 완료되었습니다.</p>
+	                                                <!-- //191112 okcashback 이벤트 접근 시 -->
+		                                        </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </div> <!-- // scene_item -->
+
+                            <!-- PA00110S -->
+                            <div class="scene_item" data-step="2" data-sect="1" style="min-height: 602px; display: none;">
+                                <div class="scene">
+                                    <section>
+                                        <!-- 내국인인 경우 -->
+                                        <div class="tit_area native">
+                                            <h2 class="tit_pord_info"><em>본인확인</em>을 위해 주민등록증 <br>또는 운전면허증 정보가 필요합니다</h2>
+                                        </div>
+                                        <!-- //내국인인 경우 -->
+
+                                        <!-- 외국인인 경우 -->
+                                        <div class="tit_area foreigner" style="display:none;">
+                                            <h2 class="tit_pord_info"><em>본인확인</em>을 위해 외국인등록증 <br>사본 첨부가 필요합니다</h2>
+                                        </div>
+                                        <!-- //외국인인 경우 -->
+
+                                        <div class="subscription_inner">
+
+                                            <!-- 내국인인 경우 -->
+                                            <div class="native">
+                                                <h3 class="tit_sub1">신분증 정보<a href="javascript:;" data-dupid="PA00101P" class="btn_pop1"></a></h3>
+
+                                                <ul class="tab_type2" id="idCardTab">
+                                                    <li class="on" data-key="1">
+                                                        <a href="#tab_cont1">주민등록증</a>
+                                                    </li>
+                                                    <li data-key="2">
+                                                        <a href="#tab_cont2">운전면허증</a>
+                                                    </li>
+                                                </ul>
+
+                                                <!-- 주민등록증 tab -->
+                                                <div id="tab_cont1" class="tab_cont">
+                                                    <ul class="list_type_bullet2">
+                                                        <li>주민등록증 앞면정보를 입력해 주세요.</li>
+                                                    </ul>
+
+                                                    <label for="scpsProoIssItttNm" class="tit_sub2 first">발급기관</label>
+                                                    <div class="ipt">
+                                                        <input type="text" id="scpsProoIssItttNm" title="발급기관" placeholder="예)마포구청장" maxlength="33">
+                                                    </div>
+
+                                                    <label for="scpsProoIssYmd" class="tit_sub2">발급일자</label>
+                                                    <div class="ipt">
+                                                        <input type="tel" id="scpsProoIssYmd" placeholder="예) 20170101" data-constraint="numberonly" maxlength="8" title="발급일자">
+                                                    </div>
+
+                                                    <div class="btn_area1">
+                                                        <button type="button" id="btn_idCard" data-key="1" class="btn_type1_yellow">신분증인증</button>
+                                                        <p class="desc_confirm2" id="btn_idCard_success" style="display:none;">신분증 인증이 완료되었습니다</p><!-- 인증 완료 시 노출 -->
+                                                        <p class="desc_error2 red" id="btn_idCard_fail" style="display:none;"><i></i>신분증 인증이 실패하였습니다.</p><!-- 인증 실패 시 노출 -->
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- 운전면허증 tab -->
+                                                <div id="tab_cont2" class="tab_cont" style="display:none;">
+                                                    <ul class="list_type_bullet2">
+                                                        <li>운전면허증 앞면 정보를 입력해 주세요.</li>
+                                                    </ul>
+                                                    <label for="vhclDrvLicNo_dummy" class="tit_sub2 first">면허번호</label>
+                                                    <div class="form_group quater_before">
+                                                        <span class="unit">
+                                                            <div class="picker">
+                                                                <input type="text" id="vhclDrvLicNo_dummy" class="mobipick undefined" placeholder="" readonly="" title="면허번호"><span id="vhclDrvLicNo" class="dw-hsel" tabindex="-1" readonly="readonly"></span>
+                                                            </div>
+                                                        </span>
+                                                        <span class="unit ipt"> <!-- 값이 error일 경우 class="error 추가" -->
+		                                                    <input type="password" name="vhclDrvLicNo_1" id="vhclDrvLicNo_1" data-tk-kbdtype="number" onclick="mtk.onKeyboard(this);" placeholder="'-' 없이 면허번호 입력" maxlength="10" readonly="readonly" title="'-' 없이 면허번호 입력">
+		                                                </span>
+                                                    </div>
+
+                                                    <div class="btn_area1">
+                                                        <button type="button" id="btn_driverLi" data-key="2" class="btn_type1_yellow">신분증인증</button> <!-- button disabled 시 class="disabled" 추가 -->
+                                                        <p class="desc_confirm2" id="btn_driverLi_success" style="display:none;">신분증 인증이 완료되었습니다</p><!-- 인증 완료 시 노출 -->
+                                                        <p class="desc_error2 red" id="btn_driverLi_fail" style="display:none;"><i></i>신분증 인증이 실패하였습니다.</p><!-- 인증 실패 시 노출 -->
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <!-- //내국인인 경우 -->
+
+                                            <!-- 신분증 인증 실패 시 노출 -->
+                                            <div class="confirm_fail" id="fail_idCard_area" style="display:none;">
+                                                <h2 class="tit_sub1">신분증 제출</h2>
+
+                                                <!-- 신분증 제출 전 -->
+                                                <div class="confirm_photo">
+                                                    <!-- 신분증 제출 방법 : 앱인 경우 노출 -->
+                                                    <ul class="list_btn_photo" id="fileBtnArea">
+                                                        <li class="camera" style="display: none;">
+                                                            <button type="button" id="cameraFile" style="display: none;"><span class="icon"></span>카메라</button>
+                                                        </li>
+                                                        <li class="camera full">
+                                                            <button type="button" id="selectFile">사진 촬영 또는 갤러리 선택</button><div id="inputFile"><input type="file" id="files" title="파일첨부" style="display:none;" name="attachFile"></div>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- //신분증 제출 방법 : 앱인 경우 노출 -->
+                                                    <!-- 200103 외국인일 경우 노출 --> 
+	                                                <p class="desc_info1 foreigner" style="text-indent:0;display:none;">고객님께서 입력하신 정보와 첨부하신 외국인등록증 사본이 일치할 경우에만 청약이 가능합니다.<br><br>※ jpg, jpeg, bmp, gif, png, pdf 형식의 파일만 첨부 가능(최대 5MB까지 가능)</p>
+	                                                <!-- //200103 외국인일 경우 노출 -->
+                                                    <div class="photo_preview" style="display:none;">
+                                                        <div class="photo_wrap" id="popInsertUploadForm" style="display:none;"><form id="uploadForm" name="uploadForm" method="POST" enctype="multipart/form-data" action="/common/thirdParty/KwScrapClient.ajax"><input id="CONTTYPE" name="CONTTYPE" value="text/html" type="hidden"><span class="photo" id="imgUploadList"></span></form>
+                                                            
+                                                        </div>
+
+                                                        <div class="btn_area1" id="btn_filupload_area" style="display:none;">
+                                                            <button type="button" id="btn_fileupload" style="display:none;" class="btn_type1_yellow">신분증 제출하기</button>
+                                                            <p class="desc_error2 red" id="btn_fileFail" style="display:none;"><i></i>제출 실패! 신분증 다시 제출하기</p>
+                                                            <p class="desc_confirm2" id="btn_fileSuccess" style="display:none;">인증이 완료되었습니다</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </div> <!-- // scene_item -->
+
+                            <!-- PA00120S -->
+                            <div class="scene_item" data-step="3" data-sect="2" style="min-height: 602px; display: none;">
+                                <div class="scene">
+                                    <section>
+                                        <div class="tit_area">
+                                            <h2 class="tit_pord_info">가입에 필요한 <br><em>기본정보</em>를 입력해 주세요</h2><!-- 200805 수정 -->
+                                        </div>
+
+                                        <!-- 외국인인 경우 -->
+                                        <div class="subscription_inner">
+                                            <div class="foreigner" style="display:none;">
+                                                <label for="natiNm" class="tit_sub2">국가</label>
+                                                <div class="ipt" id="btn_nati_srch">
+                                                    <!--입력 전 : input_search //  입력 후 input_modify -->
+                                                    <input type="text" id="natiNm" class="input_search btn_popup" placeholder="국가 검색" title="국가" readonly="readonly">
+                                                    <input type="hidden" id="natiCd">
+                                                </div>
+
+                                                <label for="stayQlfcNm" class="tit_sub2">체류자격</label>
+                                                <div class="ipt" id="btn_stayQlfc_srch">
+                                                    <!--입력 전 : input_search //  입력 후 input_modify -->
+                                                    <input type="text" id="stayQlfcNm" class="input_search btn_popup" placeholder="체류자격 검색" readonly="readonly">
+                                                    <input type="hidden" id="stayQlfcCd">
+                                                </div>
+
+                                                <div class="form_item" data-general="frgnGoodExplLangCd">
+	                                                <label for="frgnGoodExplLangCd_dummy" class="tit_sub2">언어별 상품설명서</label>
+	                                                <div class="picker">
+	                                                    <input type="text" id="frgnGoodExplLangCd_dummy" class="mobipick undefined" placeholder="" readonly="" title="언어별 상품설명서"><span id="frgnGoodExplLangCd" class="dw-hsel" tabindex="-1" readonly="readonly"></span>
+	                                                </div>
+                                                </div>
+                                            </div>
+
+                                            <strong class="tit_sub2">주소</strong>
+                                            <div class="radio_type2">
+                                                <span class="radio">
+                                                    <input type="radio" id="cstAddrScCd_1" name="cstAddrScCd" class="btn_popup" value="01">
+                                                    <label for="cstAddrScCd_1"><i class="check"></i>자택</label>
+                                                </span>
+                                                <span class="radio">
+                                                    <input type="radio" id="cstAddrScCd_2" name="cstAddrScCd" class="btn_popup" value="02">
+                                                    <label for="cstAddrScCd_2"><i class="check"></i>직장</label>
+                                                </span>
+                                                <span class="focus"></span>
+                                            </div>
+
+                                            <!-- 주소지 입력 후 -->
+                                            <div class="ipt" id="cstAddrScCd_find" style="display:none;">
+                                                <input type="text" id="cstAddrScCdArea" class="input_search btn_popup" placeholder="주소 검색" title="주소지" readonly="">
+                                                <input type="hidden" id="addr02">
+                                                <input type="hidden" id="addr03">
+                                            </div>
+                                            <!-- //주소지 입력 후 -->
+
+                                            <div class="form_item" data-general="email">
+	                                            <label for="emalAddr" class="tit_sub2">이메일</label>
+	                                            <div class="ipt">
+	                                                <input type="email" id="emalAddr" placeholder="이메일 주소 입력" data-constraint="emailonly" title="이메일" maxlength="30">
+	                                            </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </div> <!-- // scene_item -->
+
+
+                             <!-- // scene_item -->
+
+                            <!-- PA00130S -->
+                            <div class="scene_item" data-step="4" data-sect="4" style="min-height: 602px; display: none;">
+                                <div class="scene">
+                                    <section>
+                                        <div class="tit_area">
+                                            <h2 class="tit_pord_info"><em data-dupid="cstHanNm">홍길동</em>님에 대해서<br>좀 더 알아볼까요?</h2>
+                                        </div>
+
+                                        <div class="subscription_inner">
+
+                                            <div class="form_item" data-general="01">
+                                                <strong class="tit_sub2">직업은 무엇인가요?</strong>
+                                                <div class="ipt" id="insJobCd_srch">
+                                                    <input type="text" id="insJobCdNm" class="input_search btn_popup" placeholder="직업 찾기" title="직업 찾기" readonly="readonly">
+                                                    <input type="hidden" id="insJobCd">
+                                                </div>
+                                            </div>
+
+                                            
+
+                                            <!-- 부업/겸업 입력 후 -->
+                                            
+                                            <!-- //부업/겸업 입력 후 -->
+
+                                            
+
+                                            
+
+                                            <!-- 운전 여부 입력 후 -->
+                                            
+                                            <!-- //운전 여부 입력 후 -->
+
+                                            
+
+                                            <!-- 취미(위험활동) 입력 후 -->
+                                            
+                                            <!-- //취미(위험활동) 입력 후 -->
+
+
+                                            
+
+                                            <p class="desc_info1">※ 피보험자에 관한 직업, 부업/겹업, 운전여부, 취미활동 에 관한 사항은 회사가 보험 계약의 청약을 심사하고 인수하는데 필요한 자료이므로 보험계약자 및 피보험자는 사실대로 알려야 하며 직접 작성하시기 바랍니다. 만약 사실대로 알리지 않거나 사실과 다르게 알릴 경우에 보험가입이 거절될 수 있습니다.</p>
+											<p class="desc_info1">※ 특히, 직업, 운전여부, 취미활동 같이 중요한 사항<a href="#none" class="btn_pop1 btn_tooltip" data-tooltip-id="/common/ct/CT00403L.dev" style="margin-left:3px"></a> 에 해당하는 경우 보험약관에 따라 계약이 해지되거나 보장이 제한될 수 있습니다.</p>
+
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </div> <!-- // scene_item -->
+
+
+
+                            <div class="scene_item" data-step="5" data-sect="5" style="min-height: 602px; display: none;">
+                                <div class="scene">
+
+                                    <section>
+                                        <div class="tit_area">
+                                            <h2 class="tit_pord_info">보험가입에 중요한 정보입니다<br><em>꼭 확인해 주세요!</em></h2>
+                                        </div>
+
+                                        <div class="subscription_inner">
+
+                                            <div class="form_item" data-general="beneficiary" style="display:none;">
+		                                        <strong class="tit_sub2">만기 시 보험수익자</strong>
+		                                        <div class="ipt">
+		                                            <p>본인</p>
+		                                        </div>
+		                                        <p class="desc_info1">※ 순수보장형 상품은 만기환급금이 없습니다.</p>
+	                                        </div>
+
+                                            
+
+                                            
+
+                                            
+
+
+                                            <div class="form_item" data-general="08">
+	                                            <strong class="tit_sub2">고객님은 이 금융 거래의 실제 소유자이신가요?</strong>
+	                                            <div class="radio_type2 _left">
+	                                                <span class="radio">
+	                                                    <input type="radio" name="realOwner" id="realOwner_Y" value="Y" checked="checked">
+	                                                    <label for="realOwner_Y"><i class="check"></i>예</label>
+	                                                </span>
+	                                                <span class="radio">
+	                                                    <input type="radio" name="realOwner" id="realOwner_N" value="N">
+	                                                    <label for="realOwner_N"><i class="check"></i>아니오</label>
+	                                                </span>
+	                                                <span class="focus"></span>
+	                                            </div>
+                                                <p class="desc_info1">※ 위 질문은 특정금융거래정보의 보고  및 이용 등에 관한 법률 제5조의 2(금융회사 등의 고객 확인의무)에 의거합니다.</p>
+                                            </div>
+
+	                                        <!-- [D] 여성건강보험일 경우 201105 추가 -->
+	                                        
+	                                        <!-- //[D] 여성건강보험일 경우 201105 추가 -->
+                                        
+                                            <div class="form_item" data-general="09">
+	                                            <strong class="tit_sub2" id="agree_strong">필수 · 선택 사항 동의</strong>
+	                                            <div class="btn_area1">
+	                                                <button type="button" id="agreeBtn" class="btn_type1_yellow">확인</button>
+	                                            </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+
+                                </div>
+                            </div> <!-- // scene_item -->
+
+
+    <!-- PA00150S -->
+                             <!-- // scene_item -->
+
+
+                             <!-- // scene_item -->
+
+
+                        </div>
+
+                        <!-- 청약 진행 버튼 -->
+                        <div class="subscription_progress">
+                            <div class="progress_prev">
+                                <a href="javascript:;" class="btn_prev">이전</a>
+                                <span class="btn_bg"></span>
+                            </div>
+                            <div class="progress_next _on">
+                                <a href="javascript:;" class="btn_next">다음</a>
+                                <span class="btn_bg"></span>
+                                <div class="check_mark">
+                                    <div class="sa_success">
+                                        <span class="sa_line sa_tip animate_success_tip"></span>
+                                        <span class="sa_line sa_long animate_success_long"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //청약 진행 버튼 -->
+
+                    </div>
+                    <!-- //subscription -->
+                <input type="hidden" id="transkeyUuid" name="transkeyUuid" value="b9c5926c94e41eae6b0aaf65bd5be2dc3282c80a"><input type="hidden" id="transkey_psno2" name="transkey_psno2" value=""><input type="hidden" id="transkey_HM_psno2" name="transkey_HM_psno2" value=""><input type="hidden" id="transkey_vhclDrvLicNo_1" name="transkey_vhclDrvLicNo_1" value=""><input type="hidden" id="transkey_HM_vhclDrvLicNo_1" name="transkey_HM_vhclDrvLicNo_1" value=""><input type="hidden" id="transkey_chld_psno2" name="transkey_chld_psno2" value=""><input type="hidden" id="transkey_HM_chld_psno2" name="transkey_HM_chld_psno2" value=""></form>
+            </div>
+            <!-- END content -->
+
+             <div id="layerPopupArea"></div>
+
+
+
+</div><!-- content end -->
+             <div id="layerPopupArea"></div>
+        </div><!-- container end -->
+        
+    </div><!-- wrap end -->
+
+
+
+<!-- <script src="https://m.lifeplanet.co.kr:444/commons/3rd-party/vestpin/js/jsrose_crypto.min.js?v=2021.02.09"></script>
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/vestpin/js/vikie.js?v=2021.02.09"></script>
+
+<script src="https://m.lifeplanet.co.kr:444/commons/3rd-party/vestpin/js/vestpin.js?v=2021.02.09"></script>
+<script src="https://m.lifeplanet.co.kr:444/commons/3rd-party/vestpin/js/VestSubmit.js?v=2021.02.09"></script><script src="https://m.lifeplanet.co.kr:444/commons/3rd-party/vestpin/VestSubmit.jsp?v=0.23944126509108932"></script>
+
+<script src="https://m.lifeplanet.co.kr:444/commons/3rd-party/vestpin/js/vestPINFnc.js?v=2021.02.09"></script><iframe id="vikie" title="가상키패드" src="https://m.lifeplanet.co.kr:444/commons/3rd-party/vestpin/vikie_number20190917.html?v=20210204" scrolling="no" style="display: none; z-index: 9999999; border: 0px solid black; height: 0px; top: 602px;"></iframe> -->
+    
+<!-- quick -->
+<div class="quick_wrap">
+    
+</div>
+<!-- end quick -->
+<!-- dimmed -->
+<div class="page_dim"></div>
+<!-- end dimmed -->
+
+<!-- 190926 추가 : share dimmed -->
+<div class="share_dim"></div>
+<!-- 190926 추가 : end share dimmed -->
+
+<!-- popup -->
+<div class="popup_area"></div>
+<!-- end popup -->
+
+<!-- tooltip -->
+<div class="tooltip">
+    <div class="dim_panel"></div>
+    <div class="tip_content_wrap">
+        <a href="#" class="btn_tooltip_close"><span class="hidden">닫기</span></a>
+    </div>
+</div>
+<!-- end tooltip -->
+
+<!-- SNS 공유하기 레이어 팝업 -->
+
+
+
+
+<!-- 190926 추가 : SNS Share -->
+<!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/publish/m.share.js?v=2021.02.19"></script>
+<link type="text/css" rel="stylesheet" href="/resources/css/m.share.css?v=2021.02.18"> -->
+<!-- //190926 추가 : end SNS Share -->
+
+<!-- SNS 공유하기 Library -->
+
+
+<!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/js/snsShare/snsShareData.js?v=2021.02.19"></script>
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/js/snsShare/snsShareSend.js?v=2021.02.19"></script>
+<script type="text/javascript" src="https://m.lifeplanet.co.kr:444/commons/js/snsShare/snsShareEventHandler.js?v=2021.02.19"></script> -->
+
+<!-- SNS Share -->
+<!-- <div id="sns_share">
+	<div class="sns_share_wrap">
+		<div class="sns_share_pop" style="bottom: -180px;">
+			<h2 id="sns_share_popup_id" class="tit">청약 공유하기</h2>
+			<div class="inner">
+				<ul class="sns_share_list clearfix">
+					<li class="share_kakaotalk"><a href="javascript:;" data-target-media="kakaotalk">카카오톡</a></li>
+					
+					
+					<li class="share_facebook"><a href="javascript:;" data-target-media="facebook">페이스북</a></li>
+					<li class="share_line"><a href="javascript:;" data-target-media="line">라인</a></li>
+					<li class="share_band"><a href="javascript:;" data-target-media="band">밴드</a></li>
+				</ul>
+				<a href="javascript:;" class="btn_sns_share_close">닫기</a>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<!-- end SNS Share -->
+<!-- SNS 공유하기 레이어 팝업 -->
+
+<!-- 201202 추가 - 만족도 조사 레이어 팝업 -->
+
+
+<!-- <script type="text/javascript" src="https://m.lifeplanet.co.kr:444/resources/js/publish/m.satis.js"></script>
+<link type="text/css" rel="stylesheet" href="/resources/css/m.satis.css"> -->
+
+<!-- <div id="satis_lypop">
+	<div class="satis_wrap">
+		<div class="satis_pop" style="bottom: -307px;">
+			<div class="inner">
+			
+				<ul class="satis_list clearfix">
+					<li><a href="javascript:;" id="satis_01" data-value="5" data-weblogclick="{&quot;actn&quot;:&quot;매우 만족&quot;, &quot;labl&quot;:&quot;만족도 조사&quot;, &quot;clsf&quot;:&quot;상품 컨텐츠 만족도 조사&quot;}"><em>매우 만족</em>많은 도움이 되었습니다.</a></li>
+					<li><a href="javascript:;" id="satis_02" data-value="4" data-weblogclick="{&quot;actn&quot;:&quot;만족&quot;, &quot;labl&quot;:&quot;만족도 조사&quot;, &quot;clsf&quot;:&quot;상품 컨텐츠 만족도 조사&quot;}"><em>만족</em>충분히 이해할 수 있었습니다.</a></li>
+					<li><a href="javascript:;" id="satis_03" data-value="3" data-weblogclick="{&quot;actn&quot;:&quot;보통&quot;, &quot;labl&quot;:&quot;만족도 조사&quot;, &quot;clsf&quot;:&quot;상품 컨텐츠 만족도 조사&quot;}"><em>보통</em>도움이 되었습니다.</a></li>
+					<li><a href="javascript:;" id="satis_04" data-value="2" data-weblogclick="{&quot;actn&quot;:&quot;불만&quot;, &quot;labl&quot;:&quot;만족도 조사&quot;, &quot;clsf&quot;:&quot;상품 컨텐츠 만족도 조사&quot;}"><em>불만</em>이해하기 어려웠습니다.</a></li>
+					<li><a href="javascript:;" id="satis_05" data-value="1" data-weblogclick="{&quot;actn&quot;:&quot;매우 불만&quot;, &quot;labl&quot;:&quot;만족도 조사&quot;, &quot;clsf&quot;:&quot;상품 컨텐츠 만족도 조사&quot;}"><em>매우 불만</em>전혀 도움이 되지 않았습니다.</a></li>
+				</ul>
+				<a href="javascript:;" class="btn_satis_close">닫기</a>
+			
+			</div>
+		</div>
+	</div>
+</div> -->
+<!-- //201202 추가 - 만족도 조사 레이어 팝업 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- mwScriptFooter -->
+
+
+    
+
+
+    
+    
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            if (config.getEnv('getServerStatus')() == 'PROD'){
+            	webLog.runDataStory();
+                webLog.runGA();
+                webLog.runGATagMag();
+                webLog.runPixel();
+            }
+        });
+
+    </script>
+
+    
+
+
+<script type="text/javascript">
+    // lifeplanetWeblog.insertPageLoadWeblog();
+</script>
+
+
+<!-- end footer -->
+
+  
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2PNP8L" height="0" width="0" title="태그매니저" style="display:none;visibility:hidden"></iframe></noscript><div id="screen_off" class="dimbg">   <div class="mode_box"><span class="icon100 icon_warning"></span>모바일은 세로모드에 최적화되어 있습니다.</div></div><div id="mtk_psno2" class="transkey_div transkey_number2_div" style="background-image: url(&quot;/mtranskeyServlet?op=getKey&amp;name=psno2&amp;keyType=single&amp;keyboardType=numberMobile&amp;fieldType=password&amp;inputName=psno2&amp;transkeyUuid=b9c5926c94e41eae6b0aaf65bd5be2dc3282c80a&amp;TK_requestToken=1378308647&quot;);"><div id="mtk_psno2_Row0" class="transkey_row transkey_number2_row"><div ontouchstart="mtk.start(event, this, 0);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 1);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 2);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 3);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 4);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 5);" class="transkey_key transkey_number2_key1"></div></div><div id="mtk_psno2_Row1" class="transkey_row transkey_number2_row"><div ontouchstart="mtk.start(event, this, 6);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 7);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 8);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 9);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 10);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 11);" class="transkey_key transkey_number2_key1"></div></div><div id="mtk_psno2_Row2" class="transkey_row transkey_number2_row"><div ontouchstart="mtk.clear(event, this);" class="transkey_key transkey_number2_clear"></div><div ontouchstart="mtk.del(event, this);" class="transkey_key transkey_number2_del"></div><div ontouchstart="mtk.done(event, this);" class="transkey_key transkey_number2_done"></div></div></div><div id="mtk_vhclDrvLicNo_1" class="transkey_div transkey_number2_div" style="background-image: url(&quot;/mtranskeyServlet?op=getKey&amp;name=vhclDrvLicNo_1&amp;keyType=single&amp;keyboardType=numberMobile&amp;fieldType=password&amp;inputName=vhclDrvLicNo_1&amp;transkeyUuid=b9c5926c94e41eae6b0aaf65bd5be2dc3282c80a&amp;TK_requestToken=1378308647&quot;);"><div id="mtk_vhclDrvLicNo_1_Row0" class="transkey_row transkey_number2_row"><div ontouchstart="mtk.start(event, this, 0);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 1);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 2);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 3);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 4);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 5);" class="transkey_key transkey_number2_key1"></div></div><div id="mtk_vhclDrvLicNo_1_Row1" class="transkey_row transkey_number2_row"><div ontouchstart="mtk.start(event, this, 6);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 7);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 8);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 9);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 10);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 11);" class="transkey_key transkey_number2_key1"></div></div><div id="mtk_vhclDrvLicNo_1_Row2" class="transkey_row transkey_number2_row"><div ontouchstart="mtk.clear(event, this);" class="transkey_key transkey_number2_clear"></div><div ontouchstart="mtk.del(event, this);" class="transkey_key transkey_number2_del"></div><div ontouchstart="mtk.done(event, this);" class="transkey_key transkey_number2_done"></div></div></div><div id="mtk_chld_psno2" class="transkey_div transkey_number2_div" style="background-image: url(&quot;/mtranskeyServlet?op=getKey&amp;name=chld_psno2&amp;keyType=single&amp;keyboardType=numberMobile&amp;fieldType=password&amp;inputName=chld_psno2&amp;transkeyUuid=b9c5926c94e41eae6b0aaf65bd5be2dc3282c80a&amp;TK_requestToken=1378308647&quot;);"><div id="mtk_chld_psno2_Row0" class="transkey_row transkey_number2_row"><div ontouchstart="mtk.start(event, this, 0);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 1);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 2);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 3);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 4);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 5);" class="transkey_key transkey_number2_key1"></div></div><div id="mtk_chld_psno2_Row1" class="transkey_row transkey_number2_row"><div ontouchstart="mtk.start(event, this, 6);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 7);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 8);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 9);" class="transkey_key transkey_number2_key1"></div><div ontouchstart="mtk.start(event, this, 10);" class="transkey_key transkey_number2_key2"></div><div ontouchstart="mtk.start(event, this, 11);" class="transkey_key transkey_number2_key1"></div></div><div id="mtk_chld_psno2_Row2" class="transkey_row transkey_number2_row"><div ontouchstart="mtk.clear(event, this);" class="transkey_key transkey_number2_clear"></div><div ontouchstart="mtk.del(event, this);" class="transkey_key transkey_number2_del"></div><div ontouchstart="mtk.done(event, this);" class="transkey_key transkey_number2_done"></div></div></div></body></html> -->
