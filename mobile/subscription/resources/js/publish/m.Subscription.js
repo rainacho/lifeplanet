@@ -30,7 +30,7 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 
 				if (_height > 40) {
 					$('.indicator_wrapper').addClass('fixed');
-				} else if (_height == 0) {
+				} else {
 					$('.indicator_wrapper').removeClass('fixed');
 				}
 			});
