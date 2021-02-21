@@ -22,7 +22,7 @@ define(['fo', 'event', 'basicMotion'], function (fo, event, basicMotion) {
 		//initToggleDisplay();
 		toggleArea();
 		toggleConfirm();
-		inputFocus();
+		// inputFocus();
 		inputSearch();
 		setOrientationInfo();
 		setSize();
