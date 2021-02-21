@@ -165,7 +165,7 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 							$(this).html('가입시작');
 							n();
 						});
-					$('#progress #bar').css('width', '10%');
+					$('#progress #bar').css('width', '0%');
 					break;
 				case 2:
 					console.log('2단계');
@@ -175,7 +175,7 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 							$(this).html('신분증인증');
 							n();
 						});
-					$('#progress #bar').css('width', '20%');
+					$('#progress #bar').css('width', '10%');
 					break;
 				case 3:
 					console.log('3단계');
@@ -185,7 +185,7 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 							$(this).html('주소 &middot; 이메일');
 							n();
 						});
-					$('#progress #bar').css('width', '30%');
+					$('#progress #bar').css('width', '20%');
 					break;
 				case 4:
 					console.log('4단계');
@@ -195,7 +195,7 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 							$(this).html('직업 &middot; 부업 &middot; 운전 &middot; 취미');
 							n();
 						});
-					$('#progress #bar').css('width', '40%');
+					$('#progress #bar').css('width', '30%');
 					break;
 				case 5:
 					console.log('5단계');
@@ -205,7 +205,7 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 							$(this).html('수익자 &middot; 금융거래소유자 &middot; 약관');
 							n();
 						});
-					$('#progress #bar').css('width', '50%');
+					$('#progress #bar').css('width', '40%');
 					break;
 
 				default:
