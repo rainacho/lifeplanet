@@ -133,6 +133,8 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 		this.changeProgressbar = function (status) {
 			var _checkStep;
 			var _changedStep;
+			var _tdelay = 1000;
+			var _procNum = $('#procNum');
 
 			if (status == 'next') {
 				$('.scene_item').each(function (index, item) {
@@ -159,53 +161,63 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 			switch (_changedStep) {
 				case 1:
 					console.log('1단계');
-					$('.indicator .current_step .tit')
-						.delay(2000)
-						.queue(function (n) {
-							$(this).html('가입시작');
-							n();
-						});
 					$('#progress #bar').css('width', '0%');
+					_procNum.html('0');
+					$('#progress #bar')
+						.addClass('_on')
+						.delay(_tdelay)
+						.queue(function (next) {
+							$(this).removeClass('_on');
+							next();
+						});
 					break;
 				case 2:
 					console.log('2단계');
-					$('.indicator .current_step .tit')
-						.delay(2000)
-						.queue(function (n) {
-							$(this).html('신분증인증');
-							n();
-						});
+					_procNum.html('10');
 					$('#progress #bar').css('width', '10%');
+					$('#progress #bar')
+						.addClass('_on')
+						.delay(_tdelay)
+						.queue(function (next) {
+							$(this).removeClass('_on');
+							next();
+						});
 					break;
 				case 3:
 					console.log('3단계');
-					$('.indicator .current_step .tit')
-						.delay(2000)
-						.queue(function (n) {
-							$(this).html('주소 &middot; 이메일');
-							n();
-						});
+					_procNum.html('20');
 					$('#progress #bar').css('width', '20%');
+					$('#progress #bar')
+						.addClass('_on')
+						.delay(_tdelay)
+						.queue(function (next) {
+							$(this).removeClass('_on');
+							next();
+						});
 					break;
 				case 4:
 					console.log('4단계');
-					$('.indicator .current_step .tit')
-						.delay(2000)
-						.queue(function (n) {
-							$(this).html('직업 &middot; 부업 &middot; 운전 &middot; 취미');
-							n();
-						});
+					_procNum.html('30');
 					$('#progress #bar').css('width', '30%');
+					$('#progress #bar')
+						.addClass('_on')
+						.delay(_tdelay)
+						.queue(function (next) {
+							$(this).removeClass('_on');
+							next();
+						});
 					break;
 				case 5:
 					console.log('5단계');
-					$('.indicator .current_step .tit')
-						.delay(2000)
-						.queue(function (n) {
-							$(this).html('수익자 &middot; 금융거래소유자 &middot; 약관');
-							n();
-						});
+					_procNum.html('40');
 					$('#progress #bar').css('width', '40%');
+					$('#progress #bar')
+						.addClass('_on')
+						.delay(_tdelay)
+						.queue(function (next) {
+							$(this).removeClass('_on');
+							next();
+						});
 					break;
 
 				default:
@@ -314,7 +326,7 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 					sceneNum = sceneNum - 1;
 				}, 800);
 			}
-			commonFn.closeCounsel();
+			// commonFn.closeCounsel();
 		};
 
 		/* Subscription.getSceneNum

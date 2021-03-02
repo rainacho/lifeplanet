@@ -1916,7 +1916,34 @@
 	height: 3px;
 	border-radius: 5px;
 	background-color: #49506a;
-	transition: width 0.2s;
+	transition: width 0.2s ease-in-out;
+}
+#bar span {
+	/* display: none; */
+	font-size: 10px;
+	font-weight: 800;
+	display: inline-block;
+	font-size: 10px;
+	font-weight: 800;
+	left: 100%;
+	top: 5px;
+	position: relative;
+	background-image: url('../image/pin_ico.svg');
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	padding-top: 10px;
+	text-align: center;
+	color: #fff;
+	background-position: center;
+	background-size: contain;
+	transform-origin: left top;
+	transform: scale(0) translateX(-10px);
+	transition: all 0.2s ease-in-out;
+}
+#bar._on span {
+	transform: scale(1) translateX(-10px);
+	transform-origin: left top;
 }
 
 .indicator .current_step .tit {
@@ -1932,13 +1959,13 @@
 	width: 100%;
 	z-index: 999;
 	top: 0;
-	border-bottom: 1px solid #ddd;
 }
 
 .indicator_wrapper.fixed .indicator {
 	background: #fff;
+	padding: 0;
 }
 
-.indicator_wrapper.fixed .current_step .tit {
-	display: block;
+.indicator_wrapper.fixed #progress {
+	border-radius: 0;
 }
