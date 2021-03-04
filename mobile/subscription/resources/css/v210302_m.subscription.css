@@ -1952,7 +1952,7 @@
 	left: 100%;
 	top: 7px;
 	position: relative;
-	background-image: url(../image/step_ing.gif);
+	background-image: url(../image/charactor.png);
 	background-repeat: no-repeat;
 	height: 37px;
 	width: 37px;
@@ -1963,8 +1963,6 @@
 	transform-origin: left top;
 	transform: scale(0) translateX(-10px);
 	transition: all 0.2s ease-in-out;
-	border-radius: 50%;
-	filter: contrast(200%);
 }
 
 #bar._on span {
