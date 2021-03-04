@@ -219,6 +219,18 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 							next();
 						});
 					break;
+				case 6:
+					console.log('6단계');
+					_procNum.html('50');
+					$('#progress #bar').css('width', '50%');
+					$('#progress #bar')
+						.addClass('_on')
+						.delay(_tdelay)
+						.queue(function (next) {
+							$(this).removeClass('_on');
+							next();
+						});
+					break;
 
 				default:
 					console.log('현재 단계를 알 수 없습니다.');
@@ -233,6 +245,13 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 		*/
 		this.sceneMove = function (mode) {
 			if (mode == 'next') {
+				if (sceneNum == 4) {
+					alert('5단계');
+					// mission complete 애니메이션
+					// 토스트메세지
+					// 1단계 저장 로딩바 호출
+				}
+
 				scene.eq(sceneNum + 1).show(function () {
 					scene
 						.eq(sceneNum)
@@ -419,12 +438,11 @@ define(['fo', 'event', 'basicMotion', 'commonFn', 'swiper_old'], function (fo, e
 		function setProgressButton() {
 			/* 개발 validation 때문에 제어권 넘김 */
 			progressBox.find('.btn_next').click(function (e) {
-				if (_this.getSceneNum() < _this.getSceneTotal()) {
-					_this.readyNext();
-					_this.changeProgressbar('next');
-
-					e.preventDefault();
-				}
+				// if (_this.getSceneNum() < _this.getSceneTotal()) {
+				_this.readyNext();
+				_this.changeProgressbar('next');
+				e.preventDefault();
+				// }
 			});
 			progressBox.find('.btn_prev').click(function (e) {
 				if (_this.getSceneNum() > 0) {

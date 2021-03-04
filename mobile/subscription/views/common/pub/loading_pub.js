@@ -1,6 +1,7 @@
 /* 기존 로딩 수정 */
 var fnLoading_Show = function (key) {
 	$('#loading_area').remove();
+	// 20210331 기본로딩 수정
 	var loadingHtml =
 		'<div id="loading_area"><div class="spinner_wrapper"><div class="spinner_wrap" style="padding:0;"><div class="loading_default" style="width:50px;height:50px;"></div></div></div></div>'; // 190424 수정
 	switch (key) {
@@ -21,6 +22,11 @@ var fnLoading_Show = function (key) {
 				'<div id="loading_area"><div class="loading_wrap"><div class="inner"><div class="loading_tit">잠시만 기다려주세요</div><div class="loading_area type"><div class="loading_rel"><div class="item_pencil"><img src="/resources/images/analysis/m.item_pencil.png" alt="" /></div><div class="item_paper2"><div class="line line1"></div><div class="line line2"></div><div class="line line3"><span></span></div><div class="line line4"><span></span></div><div class="line line5"><span></span></div><div class="line line6"><span></span></div></div></div></div><div class="loading_list"><div class="loadaing_guide">고객님의 청구서를<br>생성 하는 중 입니다.</div></div></div></div></div>';
 			break;
 
+		// case 'loadingProduct_p1':
+		// 	loadingHtml =
+		// 		'<div id="loading_area"><div class="loading_wrap"><div class="inner"><div class="loading load_type2"><div class="load_motion"><div class="dot_wrap"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="ball_wrap"><span class="ball"></span><span class="ball"></span><span class="ball"></span><span class="shadow"></span></div></div><div class="copy">3단계 중 <strong>1단계</strong> <br><strong>정보를 저장 중</strong>이에요.</div></div></div></div></div>';
+		// 	break;
+		// 20210331 1단계정보저당 로딩 수정
 		case 'loadingProduct_p1':
 			loadingHtml =
 				'<div id="loading_area"><div class="loading_wrap"><div class="inner"><div class="loading load_type2"><div class="load_motion"><div class="dot_wrap"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div class="ball_wrap"><span class="ball"></span><span class="ball"></span><span class="ball"></span><span class="shadow"></span></div></div><div class="copy">3단계 중 <strong>1단계</strong> <br><strong>정보를 저장 중</strong>이에요.</div></div></div></div></div>';

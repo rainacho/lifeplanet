@@ -1918,29 +1918,55 @@
 	background-color: #49506a;
 	transition: width 0.2s ease-in-out;
 }
-#bar span {
+#a {
+	display: none;
+}
+#procNum {
 	/* display: none; */
 	font-size: 10px;
 	font-weight: 800;
 	display: inline-block;
-	font-size: 10px;
+	font-size: 11px;
 	font-weight: 800;
 	left: 100%;
 	top: 5px;
 	position: relative;
 	background-image: url('../image/pin_ico.svg');
 	background-repeat: no-repeat;
-	height: 20px;
-	width: 20px;
-	padding-top: 10px;
+	height: 25px;
+	width: 28px;
+	padding-top: 13px;
 	text-align: center;
 	color: #fff;
 	background-position: center;
-	background-size: contain;
+	background-size: 100%;
 	transform-origin: left top;
 	transform: scale(0) translateX(-10px);
 	transition: all 0.2s ease-in-out;
 }
+
+#procNum2 {
+	font-size: 10px;
+	font-weight: 800;
+	display: inline-block;
+	left: 100%;
+	top: 7px;
+	position: relative;
+	background-image: url(../image/step_ing.gif);
+	background-repeat: no-repeat;
+	height: 37px;
+	width: 37px;
+	text-align: center;
+	color: #fff;
+	background-position: center;
+	background-size: cover;
+	transform-origin: left top;
+	transform: scale(0) translateX(-10px);
+	transition: all 0.2s ease-in-out;
+	border-radius: 50%;
+	filter: contrast(200%);
+}
+
 #bar._on span {
 	transform: scale(1) translateX(-10px);
 	transform-origin: left top;
