@@ -196,6 +196,14 @@ hr {
 	color: gray;
 }
 
+.contents_section.easing .box1 {
+	background-color: #f7f7f7;
+	font-size: 12px;
+	padding: 10px;
+	color: #949494;
+	border-left: 4px solid #c6d0dc;
+}
+
 @media screen and (max-width: 600px) {
 	.contents_sorting_list_2 li {
 		margin-bottom: 20px;

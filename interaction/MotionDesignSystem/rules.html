@@ -88,12 +88,12 @@
                             <tr>
                                 <td>F2</td>
                                 <td>150ms</td>
-                                <td></td>
+                                <td>Bottom Sheets(Exit)</td>
                             </tr>
                             <tr>
                                 <td>N1</td>
                                 <td>200ms</td>
-                                <td>Bottom Sheets, Dialog</td>
+                                <td>Bottom Sheets(Enterance), Dialog</td>
                             </tr>
                             <tr>
                                 <td>N2</td>
@@ -124,23 +124,35 @@
                         </table>
                 </section>
                 <!-- 2) 기본 Easing 정의 -->
-                <section class="contents_section">
+                <section class="contents_section easing">
                     <h3 class="sub_tit">2. Easing</h3>
                     <ul class="list_style_none">
                         <li><span class="material-icons sorting_circle ft_green">stop_circle</span>Standard Easing(ease in - ease out)</li>
                         <p>
                             Element가 모션이 시작할때 부터 끝까지 보이는 경우에 사용한다.</br >
                             e.g. Tile expanding, Table rows sorting
+                            <div class="box1">
+                                - jQuery 사용법 : easeInOutQuart</br>
+                                - CSS 사용법 : cubic-bezier(0.76, 0, 0.24, 1)
+                            </div>
                         </p>
                         <li><span class="material-icons sorting_circle ft_yellow">stop_circle</span>Enterance Easing(ease out)</li>
                         <p>
                             화면에 새로운 Element가 추가 되는 경우에 사용한다. Element가 빠르게 나타나서 천천히 멈춘다.</br >
-                            e.g. dialog, toaster message, dropdown opening, toggle
+                            e.g. buttom sheets, dialog, toaster message, dropdown opening, toggle
+                            <div class="box1">
+                                - jQuery 사용법 : easeOutQuart</br>
+                                - CSS 사용법 : cubic-bezier(0.25, 1, 0.5, 1)
+                            </div>
                         </p>
                         <li><span class="material-icons sorting_circle ft_black">stop_circle</span>Exit Easing(ease in)</li>
                         <p>
                             화면에서 Element가 사라질 경우에 사용한다. Element가 빠르게 사라진다.</br >
-                            e.g. closing dialog, closing side navigation
+                            e.g. closing buttom sheets, closing dialog, closing side navigation
+                            <div class="box1">
+                                - jQuery 사용법 : easeInQuart</br>
+                                - CSS 사용법 : cubic-bezier(0.5, 0, 0.75, 0)
+                            </div>
                         </p>
                         <li><span class="material-icons sorting_circle ft_gray">stop_circle</span>Linear Easing</li>
                         <p>
